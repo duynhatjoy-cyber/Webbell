@@ -1,0 +1,348 @@
+<!doctype html>
+<html lang="vi">
+<head>
+<meta charset="utf-8">
+<title>Bellhop – Giải pháp cho chuỗi lưu trú</title>
+<script src="./vendor/react.js"></script>
+<script src="./vendor/react-dom.js"></script>
+<script src="./support.js"></script>
+<link rel="stylesheet" href="site.css">
+<link rel="stylesheet" href="site-t.css">
+</head>
+<body>
+<x-dc>
+<helmet>
+<link href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@400;500;600;700;800&amp;display=swap" rel="stylesheet">
+<style>body{margin:0}</style>
+</helmet>
+<div class="bh t">
+<dc-import name="Header" active="chain" start-open="{{ false }}" hint-size="100%,76px"></dc-import>
+
+<section class="p-hero">
+  <div class="wrap p-hero-in">
+    <div class="stack" style="gap: 24px">
+      <nav class="crumb" aria-label="Breadcrumb" style="margin-bottom: 0"><a href="Main.dc.html">Trang chủ</a><span>›</span><a href="Main.dc.html#giai-phap">Giải pháp</a><span>›</span><b style="color: #122745">Chuỗi lưu trú</b></nav>
+      <span class="eyebrow">Giải pháp cho chuỗi lưu trú</span>
+      <h1 class="display" style="font-size: clamp(38px, 5vw, 60px)">Mở thêm cơ sở, <span class="hl">không mở thêm mớ sổ sách</span></h1>
+      <p class="lead">Mỗi cơ sở vận hành trên cùng bộ công cụ: Bellhop PMS cho lễ tân và vận hành, CMS cho kênh bán và giá, Finance đưa số liệu sang phần mềm kế toán. Cùng một cách làm, cùng một chuẩn số liệu.</p>
+      <div class="btns"><a class="btn btn-primary" href="Main.dc.html#dang-ky">Dùng thử miễn phí</a><a class="btn btn-outline" href="#dang-ky">Đặt lịch demo</a></div>
+    </div>
+    <div class="stack" style="gap: 14px">
+      <div class="card" style="overflow: hidden">
+        <div class="row" style="justify-content: space-between; gap: 12px; padding: 14px 18px; border-bottom: 1px solid #E3E8F2; flex-wrap: wrap">
+          <span class="row" style="gap: 10px"><img src="./assets/4f97ede20a93cc1bba22d88175df59a4.png" alt="Bellhop" style="height: 22px; width: auto"></span>
+          <span class="row" style="gap: 8px; padding: 8px 12px; border-radius: 10px; border: 1px solid #E3E8F2; font-size: 13px"><span class="small" style="font-size: 12px">Cơ sở:</span><b><span class="ph">[Tên cơ sở 1]</span></b><span aria-hidden="true">▾</span></span>
+        </div>
+        <div style="padding: 14px 18px; display: flex; flex-direction: column; gap: 8px">
+          <span class="small" style="font-size: 12px; font-weight: 700; letter-spacing: 0.06em; text-transform: uppercase">Các cơ sở</span>
+          <div class="row" style="gap: 12px; padding: 12px; border-radius: 12px; background: #EAF1FF"><span class="tile t-navy" style="font-size: 12px; font-weight: 800">01</span><span style="flex: 1; min-width: 0; font-size: 14px"><b style="display: block"><span class="ph">[Cơ sở A]</span></b><span class="small" style="font-size: 12px"><span class="ph">[x]</span> phòng</span></span><span style="text-align: right; font-size: 13px"><span class="small" style="font-size: 12px; display: block">Công suất</span><b><span class="ph">[x]%</span></b></span></div>
+          <div class="row" style="gap: 12px; padding: 12px; border-radius: 12px; background: #F5F8FE"><span class="tile t-blue" style="font-size: 12px; font-weight: 800">02</span><span style="flex: 1; min-width: 0; font-size: 14px"><b style="display: block"><span class="ph">[Cơ sở B]</span></b><span class="small" style="font-size: 12px"><span class="ph">[x]</span> phòng</span></span><span style="text-align: right; font-size: 13px"><span class="small" style="font-size: 12px; display: block">Công suất</span><b><span class="ph">[x]%</span></b></span></div>
+          <div class="row" style="gap: 12px; padding: 12px; border-radius: 12px; background: #F5F8FE"><span class="tile t-orange" style="font-size: 12px; font-weight: 800">03</span><span style="flex: 1; min-width: 0; font-size: 14px"><b style="display: block"><span class="ph">[Cơ sở C]</span></b><span class="small" style="font-size: 12px"><span class="ph">[x]</span> phòng</span></span><span style="text-align: right; font-size: 13px"><span class="small" style="font-size: 12px; display: block">Công suất</span><b><span class="ph">[x]%</span></b></span></div>
+        </div>
+        <div style="display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 12px; padding: 0 18px 18px">
+          <div style="padding: 14px; border-radius: 12px; background: #F5F8FE; display: flex; flex-direction: column; gap: 4px"><span class="small" style="font-size: 12px">Doanh thu hôm nay · toàn chuỗi</span><b style="font-size: 18px">48.200.000đ</b></div>
+          <div style="padding: 14px; border-radius: 12px; background: #F5F8FE; display: flex; flex-direction: column; gap: 4px"><span class="small" style="font-size: 12px">Công suất trung bình</span><b style="font-size: 18px">82%</b></div>
+        </div>
+      </div>
+      <p class="note">Minh họa</p>
+    </div>
+  </div>
+</section>
+
+<section class="soft-grid sec" id="thach-thuc" style="padding-top: 72px; padding-bottom: 56px">
+  <div class="wrap stack" style="gap: 36px">
+    <div class="stack center" style="gap: 16px; align-items: center; max-width: 820px; margin: 0 auto">
+      <span class="eyebrow">Những thách thức quen thuộc</span>
+      <h2 class="h2">Thêm một cơ sở là thêm một nơi số liệu bị lệch</h2>
+    </div>
+    <div class="grid3">
+      <div class="fcard"><span class="tile t-navy"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M3 20V9l5-3 5 3v11M13 20V5l4-2 4 2v15M6 12h4M6 16h4M16 9h2M16 13h2" style="fill: none; stroke: #FFFFFF; stroke-width: 2; stroke-linecap: round; stroke-linejoin: round"></path></svg></span><h3 class="h4">Mỗi cơ sở một cách làm</h3><p class="p">Nơi dùng sổ, nơi dùng Excel, nơi dùng phần mềm riêng – số liệu không cùng chuẩn, tổng hợp cuối tháng mất nhiều ngày.</p></div>
+      <div class="fcard"><span class="tile t-blue"><svg viewBox="0 0 24 24" aria-hidden="true"><rect x="5" y="10" width="14" height="10" rx="2" style="fill: none; stroke: #FFFFFF; stroke-width: 2"></rect><path d="M8 10V7a4 4 0 0 1 8 0v3" style="fill: none; stroke: #FFFFFF; stroke-width: 2"></path></svg></span><h3 class="h4">Khó kiểm soát quyền và giá</h3><p class="p">Nhiều người cùng chỉnh giá trên nhiều kênh, không xác định được ai thay đổi và vào thời điểm nào.</p></div>
+      <div class="fcard"><span class="tile t-orange"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 20V10M12 20V4M19 20v-7" style="fill: none; stroke: #FFFFFF; stroke-width: 2.4; stroke-linecap: round"></path></svg></span><h3 class="h4">Kế toán nhập lại từ nhiều nguồn</h3><p class="p">Xuất báo cáo từ phần mềm quản lý, nhập lại vào phần mềm kế toán, đối chiếu từng khoản rồi tự tìm chênh lệch.</p></div>
+    </div>
+  </div>
+</section>
+
+
+<section class="soft-grid sec" id="mot-ngay" style="padding-top: 0">
+  <div class="wrap stack" style="gap: 40px">
+    <div class="stack center" style="gap: 16px; align-items: center; max-width: 820px; margin: 0 auto">
+      <span class="eyebrow">Một ngày làm việc</span>
+      <h2 class="h2">Từ quầy lễ tân đến văn phòng chuỗi</h2>
+      <p class="lead">Chọn một vai trò để xem họ làm việc trên Bellhop thế nào.</p>
+    </div>
+    <div class="tabs">
+      <sc-for list="{{days}}" as="t" hint-placeholder-count="3"><button class="tab {{t.cls}}" type="button" aria-pressed="{{t.pressed}}" onClick="{{t.pick}}">{{t.label}}</button></sc-for>
+    </div>
+    <div class="feat" style="gap: 56px">
+      <div class="feat-txt">
+        <span class="eyebrow">{{day.kicker}}</span>
+        <h3 class="h2" style="font-size: clamp(26px, 3vw, 38px)">{{day.title}}</h3>
+        <p class="p">{{day.desc}}</p>
+        <ul class="ticks">
+          <sc-for list="{{day.ticks}}" as="x" hint-placeholder-count="3"><li><span>{{x}}</span></li></sc-for>
+        </ul>
+        <a class="lnk" href="{{day.href}}">{{day.link}} <span class="arr">→</span></a>
+      </div>
+      <div class="feat-vis bg-tint" style="min-height: 420px; display: flex; flex-direction: column; justify-content: center">
+        <sc-if value="{{isD0}}" hint-placeholder-val="{{ true }}">
+          <div class="frame">
+            <div class="frame-bar"><i></i><i></i><i></i><span>app.bellhop.vn/dat-phong</span></div>
+            <img src="./assets/d8e97cd43f9f645eec6abba0f8eee195.png" alt="Màn hình Danh sách đặt phòng của Bellhop PMS">
+          </div>
+          <div class="card" style="position: relative; margin: -28px 0 0 auto; width: min(300px, 92%); padding: 16px 18px; display: flex; gap: 12px; align-items: center"><span class="tile t-blue"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12.5l4.5 4.5L19 7.5" style="fill: none; stroke: #FFFFFF; stroke-width: 2.6; stroke-linecap: round; stroke-linejoin: round"></path></svg></span><span><b style="display: block; font-size: 15px">Phòng 104 đã sẵn sàng</b><span class="small">Gán cho Ms. Sato · 14:00 · Minh họa</span></span></div>
+        </sc-if>
+        <sc-if value="{{isD1}}" hint-placeholder-val="{{ false }}">
+          <div class="card" style="overflow: hidden">
+            <div class="row" style="justify-content: space-between; gap: 12px; padding: 14px 18px; border-bottom: 1px solid #E3E8F2; flex-wrap: wrap"><b style="font-size: 15px">Báo cáo theo cơ sở · <span class="ph">[Tháng 10]</span></b><span class="chip" style="height: 24px; font-size: 11px; background: #E6F6F7; color: #1F7A84">Đang xác nhận</span></div>
+            <div style="display: grid; grid-template-columns: minmax(0, 1.2fr) minmax(0, 1fr) minmax(0, 0.8fr); gap: 12px; padding: 10px 18px; background: #F5F8FE; font-size: 12px; font-weight: 700; color: #4A5873"><span>Cơ sở</span><span>Doanh thu</span><span>Công suất</span></div>
+            <div style="display: grid; grid-template-columns: minmax(0, 1.2fr) minmax(0, 1fr) minmax(0, 0.8fr); gap: 12px; padding: 14px 18px; border-bottom: 1px solid #E3E8F2; font-size: 14px; align-items: center"><b><span class="ph">[Cơ sở A]</span></b><span class="ph">[x]đ</span><span class="ph">[x]%</span></div>
+            <div style="display: grid; grid-template-columns: minmax(0, 1.2fr) minmax(0, 1fr) minmax(0, 0.8fr); gap: 12px; padding: 14px 18px; border-bottom: 1px solid #E3E8F2; font-size: 14px; align-items: center"><b><span class="ph">[Cơ sở B]</span></b><span class="ph">[x]đ</span><span class="ph">[x]%</span></div>
+            <div style="display: grid; grid-template-columns: minmax(0, 1.2fr) minmax(0, 1fr) minmax(0, 0.8fr); gap: 12px; padding: 14px 18px; border-bottom: 1px solid #E3E8F2; font-size: 14px; align-items: center"><b><span class="ph">[Cơ sở C]</span></b><span class="ph">[x]đ</span><span class="ph">[x]%</span></div>
+            <div style="display: grid; grid-template-columns: minmax(0, 1.2fr) minmax(0, 1fr) minmax(0, 0.8fr); gap: 12px; padding: 14px 18px; font-size: 14px; font-weight: 800; align-items: center"><span>Toàn chuỗi</span><span class="ph">[x]đ</span><span class="ph">[x]%</span></div>
+            <p class="small" style="font-size: 12px; padding: 0 18px 16px">Minh họa</p>
+          </div>
+        </sc-if>
+        <sc-if value="{{isD2}}" hint-placeholder-val="{{ false }}">
+          <div class="card" style="overflow: hidden">
+            <div style="padding: 14px 18px; border-bottom: 1px solid #E3E8F2"><b style="font-size: 14px">Nhật ký đồng bộ · Bellhop Finance</b></div>
+            <div style="display: grid; grid-template-columns: minmax(0, 1fr) minmax(0, 1fr) minmax(0, 1.2fr); gap: 12px; padding: 10px 18px; background: #F5F8FE; font-size: 12px; font-weight: 700; color: #4A5873"><span>Thời điểm</span><span>Chứng từ</span><span>Trạng thái</span></div>
+            <div style="display: grid; grid-template-columns: minmax(0, 1fr) minmax(0, 1fr) minmax(0, 1.2fr); gap: 12px; padding: 14px 18px; border-bottom: 1px solid #E3E8F2; font-size: 14px; align-items: center"><span>23/10 23:00</span><b>42</b><span class="chip" style="height: 26px; font-size: 12px; justify-self: start">Thành công</span></div>
+            <div style="display: grid; grid-template-columns: minmax(0, 1fr) minmax(0, 1fr) minmax(0, 1.2fr); gap: 12px; padding: 14px 18px; font-size: 14px; align-items: center"><span>22/10 23:00</span><b>38 / 1 lỗi</b><span class="chip" style="height: 26px; font-size: 12px; justify-self: start; background: #E6F6F7; color: #1F7A84">Cần xử lý</span></div>
+            <div class="row" style="gap: 12px; margin: 0 18px 18px; padding: 12px 14px; border-radius: 12px; background: #E6F6F7; font-size: 13px"><span class="tile t-orange" style="width: 28px; height: 28px; border-radius: 8px; font-weight: 800">!</span><span>Thiếu mã hàng “NUOC-01”</span></div>
+            <p class="small" style="font-size: 12px; padding: 0 18px 16px">Dữ liệu minh họa</p>
+          </div>
+        </sc-if>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="sec" id="bo-cong-cu">
+  <div class="wrap stack" style="gap: 120px">
+    <div class="stack center" style="gap: 18px; align-items: center; max-width: 860px; margin: 0 auto">
+      <span class="eyebrow">Bộ công cụ cho chuỗi</span>
+      <h2 class="h2">Cùng phần mềm, cùng quy tắc giá, cùng chuẩn kế toán</h2>
+      <p class="lead">Dùng riêng từng sản phẩm hoặc kết hợp – tất cả chạy trên cùng một dữ liệu.</p>
+    </div>
+
+    <div class="feat">
+      <div class="feat-txt">
+        <span class="eyebrow">Vận hành · Bellhop PMS nâng cao</span>
+        <h3 class="h2" style="font-size: clamp(28px, 3.2vw, 42px)">Một chuẩn vận hành cho mọi cơ sở</h3>
+        <p class="p">Lễ tân, buồng phòng, kho, F&amp;B và thu chi trên cùng một phần mềm; mỗi nhân viên một tài khoản với quyền theo vai trò.</p>
+        <ul class="ticks">
+          <li><span><b>Lễ tân, sơ đồ phòng, buồng phòng</b> – miễn phí</span></li>
+          <li><span><b>Kho chuyên sâu</b>: nhập hàng, trả hàng, điều chuyển giữa các kho, kiểm kê định kỳ, công nợ nhà cung cấp</span></li>
+          <li><span><b>Tài chính</b>: hóa đơn điện tử, sổ sách, quỹ tiền mặt &amp; tiền gửi</span></li>
+          <li><span><b>AI &amp; Phân tích</b>: phân tích doanh thu, báo cáo chuyên sâu</span></li>
+        </ul>
+        <a class="lnk" href="https://bellhop.vn/san-pham/bellhop-pms">Tìm hiểu Bellhop PMS <span class="arr">→</span></a>
+      </div>
+      <div class="feat-vis bg-tint">
+        <div class="card" style="overflow: hidden"><img src="./assets/d967b787263d4b619b118217c8635099.png" alt="Màn hình Buồng phòng của Bellhop PMS" style="display: block; width: 100%; height: auto"></div>
+        <div class="card" style="position: relative; margin: -28px 0 0 auto; width: min(340px, 92%); padding: 16px 18px; display: flex; flex-direction: column; gap: 10px">
+          <b style="font-size: 15px">Mỗi người thấy đúng phần việc</b>
+          <div class="row" style="gap: 8px; flex-wrap: wrap"><span class="chip">Chủ cơ sở</span><span class="chip">Quản lý</span><span class="chip">Lễ tân</span><span class="chip">Buồng phòng</span><span class="chip">Kế toán</span></div>
+        </div>
+      </div>
+    </div>
+
+    <div class="feat rev">
+      <div class="feat-txt">
+        <span class="eyebrow">Kênh bán &amp; giá · Bellhop CMS</span>
+        <h3 class="h2" style="font-size: clamp(28px, 3.2vw, 42px)">Quy tắc giá thống nhất, biết rõ ai được đổi giá</h3>
+        <p class="p">Bellhop CMS đồng bộ giá, phòng trống và đặt phòng giữa Bellhop PMS với các kênh OTA, kèm định giá linh động theo nhu cầu và mùa vụ.</p>
+        <ul class="ticks">
+          <li><span>Cập nhật giá và tồn phòng hàng loạt theo khoảng ngày, hạng phòng</span></li>
+          <li><span>Giá theo mùa, ngày lễ, sự kiện và ngày trong tuần</span></li>
+          <li><span>Nhận đặt phòng từ OTA về Bellhop PMS</span></li>
+          <li><span>Phân quyền: kiểm soát người được thay đổi giá</span></li>
+        </ul>
+        <a class="lnk" href="https://bellhop.vn/san-pham/bellhop-cms">Tìm hiểu Bellhop CMS <span class="arr">→</span></a>
+      </div>
+      <div class="feat-vis bg-tint-o">
+        <div class="card" style="padding: 22px; display: flex; flex-direction: column; gap: 12px; max-width: 460px; margin: 0 auto">
+          <b style="font-size: 16px">Cập nhật hàng loạt</b>
+          <div style="display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 8px; font-size: 13px"><span style="padding: 10px 12px; border-radius: 10px; background: #F5F8FE"><span class="small" style="font-size: 12px">Từ ngày</span><br><b>01/12/2026</b></span><span style="padding: 10px 12px; border-radius: 10px; background: #F5F8FE"><span class="small" style="font-size: 12px">Đến ngày</span><br><b>05/01/2027</b></span></div>
+          <div class="row" style="gap: 8px; flex-wrap: wrap"><span class="chip" style="background: #1450F0; color: #FFFFFF">Deluxe</span><span class="chip" style="background: #1450F0; color: #FFFFFF">Family</span><span class="chip">Standard</span></div>
+          <div class="row" style="justify-content: space-between; padding: 12px 14px; border-radius: 10px; background: #F5F8FE; font-size: 14px"><span>Giá mới</span><b>+15% · mùa lễ hội</b></div>
+          <div class="row" style="justify-content: space-between; padding: 12px 14px; border-radius: 10px; background: #F5F8FE; font-size: 14px"><span>Áp dụng cho</span><b>Các kênh đã kết nối + website</b></div>
+          <span class="btn btn-primary btn-sm">Đồng bộ lên tất cả kênh</span>
+          <span class="small" style="font-size: 12px">Minh họa</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="feat">
+      <div class="feat-txt">
+        <span class="eyebrow">Kế toán · Bellhop Finance</span>
+        <h3 class="h2" style="font-size: clamp(28px, 3.2vw, 42px)">Số liệu từ quầy lễ tân sang sổ kế toán, không nhập lại</h3>
+        <p class="p">Bellhop Finance chuyển doanh thu, thu chi và hóa đơn từ hệ thống Bellhop sang phần mềm kế toán theo ánh xạ tài khoản của cơ sở.</p>
+        <ul class="ticks">
+          <li><span><b>Không nhập lại doanh thu</b>: phòng, dịch vụ, F&amp;B và thu chi</span></li>
+          <li><span><b>Nhật ký đồng bộ &amp; cảnh báo lỗi</b>: thời điểm, số chứng từ, trạng thái</span></li>
+          <li><span><b>Duyệt trước khi ghi sổ</b>: kế toán duyệt trước khi hạch toán</span></li>
+          <li><span><b>Phân quyền</b>: chỉ tài khoản được cấp xem dữ liệu tài chính</span></li>
+        </ul>
+        <a class="lnk" href="https://bellhop.vn/san-pham/bellhop-finance">Tìm hiểu Bellhop Finance <span class="arr">→</span></a>
+      </div>
+      <div class="feat-vis bg-soft">
+        <div class="stack" style="gap: 14px; max-width: 440px; margin: 0 auto">
+          <div class="card" style="padding: 20px; display: flex; gap: 14px; align-items: center"><span class="tile t-blue"><svg viewBox="0 0 24 24" aria-hidden="true"><rect x="4" y="4" width="16" height="16" rx="3" style="fill: none; stroke: #FFFFFF; stroke-width: 2"></rect><path d="M4 10h16M10 10v10" style="fill: none; stroke: #FFFFFF; stroke-width: 2"></path></svg></span><span><span class="small" style="font-size: 12px; font-weight: 700">Lễ tân tại từng cơ sở</span><b style="display: block">Bellhop PMS</b><span class="small">Xuất hóa đơn, ghi nhận thu chi khi khách trả phòng.</span></span></div>
+          <span style="align-self: center; font-size: 22px; color: #1450F0">↓</span>
+          <div class="card" style="padding: 20px; display: flex; gap: 14px; align-items: center; box-shadow: 0 0 0 2px #2E9AA5"><span class="tile t-orange"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 12a8 8 0 0 1 14-5.3M20 12a8 8 0 0 1-14 5.3M18 3v4h-4M6 21v-4h4" style="fill: none; stroke: #FFFFFF; stroke-width: 2; stroke-linecap: round; stroke-linejoin: round"></path></svg></span><span><span class="small" style="font-size: 12px; font-weight: 700">Tự động</span><b style="display: block">Bellhop Finance</b><span class="small">Chuyển chứng từ theo ánh xạ tài khoản.</span></span></div>
+          <span style="align-self: center; font-size: 22px; color: #1450F0">↓</span>
+          <div class="card" style="padding: 20px; display: flex; gap: 14px; align-items: center"><span class="tile t-navy"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 20V10M12 20V4M19 20v-7" style="fill: none; stroke: #FFFFFF; stroke-width: 2.4; stroke-linecap: round"></path></svg></span><span><span class="small" style="font-size: 12px; font-weight: 700">Kế toán</span><b style="display: block">Phần mềm kế toán</b><span class="small">Hạch toán, lập báo cáo từ số liệu có sẵn.</span></span></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="sec dark">
+  <div class="wrap stack" style="gap: 56px">
+    <div class="stack" style="gap: 16px">
+      <span class="eyebrow">Bộ công cụ gợi ý</span>
+      <h2 class="h2" style="color: #FFFFFF; font-size: clamp(26px, 3.2vw, 44px); text-wrap: nowrap; max-width: none">Bốn mảnh ghép cho một chuỗi lưu trú</h2>
+    </div>
+    <div class="picker">
+      <div class="pick-list">
+        <sc-for list="{{picks}}" as="k" hint-placeholder-count="4">
+          <button class="pick {{k.cls}}" type="button" aria-pressed="{{k.pressed}}" onClick="{{k.pick}}"><b>{{k.title}}</b><span>{{k.desc}}</span></button>
+        </sc-for>
+      </div>
+      <div style="border-radius: 28px; padding: 36px; background: radial-gradient(420px 300px at 85% 10%, rgba(27,69,196,.55), transparent 70%), linear-gradient(160deg, #1B3A5C, #122745); min-height: 420px; display: flex; flex-direction: column; justify-content: center">
+        <div class="card" style="padding: 26px; display: flex; flex-direction: column; gap: 16px; color: #122745">
+          <div class="row" style="gap: 12px"><span class="tile {{pk.tile}}"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12.5l4.5 4.5L19 7.5" style="fill: none; stroke: #FFFFFF; stroke-width: 2.6; stroke-linecap: round; stroke-linejoin: round"></path></svg></span><span><b style="display: block; font-size: 18px">{{pk.name}}</b><span class="small" style="font-size: 13px">{{pk.role}}</span></span></div>
+          <p class="p" style="font-size: 16px">{{pk.what}}</p>
+          <ul class="ticks">
+            <sc-for list="{{pk.ticks}}" as="x" hint-placeholder-count="3"><li><span style="font-size: 15px">{{x}}</span></li></sc-for>
+          </ul>
+          <a class="lnk" href="{{pk.href}}">{{pk.link}} <span class="arr">→</span></a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="soft-grid sec" id="bang-gia">
+  <div class="wrap stack" style="gap: 48px">
+    <div class="stack center" style="gap: 16px; align-items: center"><span class="eyebrow">Gói phù hợp</span><h2 class="h2">Nền tảng miễn phí, module nâng cao cho chuỗi</h2></div>
+    <div class="plans">
+      <div class="plan">
+        <span class="chip" style="align-self: flex-start">Miễn phí</span>
+        <h3 class="h3">Bellhop PMS</h3>
+        <div class="row" style="gap: 8px; align-items: baseline"><span class="price">0đ</span><span class="small">/ <span class="ph">[thời hạn · giới hạn phòng/người dùng]</span></span></div>
+        <ul class="ticks">
+          <li>Cài đặt cơ sở: sơ đồ phòng, phòng &amp; giá, dịch vụ, thuế/phí, mẫu in, phân quyền</li>
+          <li>Lễ tân &amp; đặt phòng · Sơ đồ phòng, timeline · Buồng phòng</li>
+          <li>Kho cơ bản · Tạo hóa đơn · Thu chi cơ bản · Thống kê</li>
+        </ul>
+        <a class="btn btn-outline" href="Main.dc.html#dang-ky" style="margin-top: auto">Dùng thử miễn phí</a>
+      </div>
+      <div class="plan hi">
+        <div class="row" style="gap: 8px; flex-wrap: wrap"><span class="chip" style="background: #E6F6F7; color: #1F7A84">Nâng cao</span><span class="chip">Gợi ý cho chuỗi</span></div>
+        <h3 class="h3">Cộng thêm theo module</h3>
+        <div class="row" style="gap: 8px; align-items: baseline"><span class="price"><span class="ph" style="font-size: 0.5em">[giá]</span></span><span class="small">/ tháng hoặc Liên hệ</span></div>
+        <ul class="ticks">
+          <li><b>Vận hành nâng cao</b>: F&amp;B, kho chuyên sâu, email marketing</li>
+          <li><b>Tài chính</b>: hóa đơn điện tử, sổ sách, quỹ tiền mặt &amp; tiền gửi</li>
+          <li><b>AI Concierge &amp; Phân tích</b>: trợ lý AI, phân tích doanh thu, báo cáo</li>
+        </ul>
+        <a class="btn btn-primary" href="#dang-ky" style="margin-top: auto">Đặt lịch demo cho chuỗi</a>
+      </div>
+    </div>
+    <div class="btns" style="justify-content: center"><a class="lnk" href="Main.dc.html#bang-gia">Xem bảng giá đầy đủ <span class="arr">→</span></a></div>
+  </div>
+</section>
+
+<section class="sec" id="faq">
+  <div class="wrap">
+    <div class="feat" style="align-items: start">
+      <div class="feat-txt">
+        <span class="eyebrow">FAQ</span>
+        <h2 class="h2">Câu hỏi thường gặp của chuỗi lưu trú</h2>
+        <p class="p">Chưa thấy câu trả lời bạn cần? Đội Bellhop sẵn sàng khảo sát mô hình chuỗi của bạn.</p>
+        <div class="faq-help">
+          <b>Chưa thấy câu trả lời?</b>
+          <span>Nhắn Zalo hoặc gọi trực tiếp cho đội Bellhop.</span>
+          <div class="btns"><a class="btn btn-primary btn-sm" href="#">Chat Zalo</a><a class="btn btn-outline btn-sm" href="tel:0972096499">Gọi 0972 096 499</a></div>
+        </div>
+      </div>
+      <div class="faq">
+        <sc-for list="{{faq}}" as="f" hint-placeholder-count="5">
+          <div>
+            <button class="faq-q" type="button" aria-expanded="{{f.exp}}" onClick="{{f.toggle}}"><span>{{f.q}}</span><span aria-hidden="true" style="font-size: 24px; color: #1450F0">{{f.sign}}</span></button>
+            <sc-if value="{{f.open}}" hint-placeholder-val="{{ false }}">
+              <div class="faq-a">
+                <sc-if value="{{f.hasA}}" hint-placeholder-val="{{ true }}"><span>{{f.a}} </span></sc-if>
+                <sc-if value="{{f.hasPh}}" hint-placeholder-val="{{ false }}"><span class="ph">{{f.ph}}</span></sc-if>
+              </div>
+            </sc-if>
+          </div>
+        </sc-for>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="sec" id="giai-phap-khac" style="padding-top: 0">
+  <div class="wrap stack" style="gap: 40px">
+    <div class="stack" style="gap: 14px"><span class="eyebrow">Giải pháp khác</span><h2 class="h2">Khám phá các giải pháp khác</h2></div>
+    <div class="plans">
+      <a class="rcard" href="GiaiPhapKhachSan.dc.html"><div class="top" style="background: linear-gradient(135deg, #8BE3E8, #1450F0)"></div><div class="body"><span class="chip" style="align-self: flex-start">PMS · CMS · Booking Engine</span><h3 class="h3">Khách sạn</h3><p class="small">Nhiều ca lễ tân, nhiều hạng phòng, bán trên nhiều OTA.</p><span class="lnk" style="margin-top: 6px">Xem giải pháp cho khách sạn <span class="arr">→</span></span></div></a>
+      <a class="rcard" href="GiaiPhapHomestay.dc.html"><div class="top" style="background: linear-gradient(135deg, #8BE3E8, #2E9AA5)"></div><div class="body"><span class="chip" style="align-self: flex-start">PMS miễn phí · Message · Website</span><h3 class="h3">Homestay &amp; Villa</h3><p class="small">Ít nhân sự, chủ tự vận hành qua điện thoại, khách hỏi nhiều qua mạng xã hội.</p><span class="lnk" style="margin-top: 6px">Xem giải pháp cho homestay &amp; villa <span class="arr">→</span></span></div></a>
+    </div>
+  </div>
+</section>
+
+<section class="sec" id="dang-ky" style="padding-top: 0">
+  <div class="wrap">
+    <div class="cta-band">
+      <h2 class="h2" style="color: #FFFFFF; max-width: 760px">Đang vận hành nhiều cơ sở? Nói chuyện với Bellhop</h2>
+      <p class="lead">Để lại thông tin để đội Bellhop khảo sát mô hình chuỗi của bạn và trình bày phương án triển khai PMS, CMS và Finance cho từng cơ sở.</p>
+      <div class="btns" style="justify-content: center"><a class="btn btn-primary" href="#">Đặt lịch demo</a><a class="btn btn-ghost" href="#">Dùng thử miễn phí</a></div>
+    </div>
+  </div>
+</section>
+
+<dc-import name="Footer" hint-size="100%,560px"></dc-import>
+</div>
+</x-dc>
+<script type="text/x-dc" data-dc-script data-props='{"$preview":{"width":1440,"height":7200}}'>
+class Component extends DCLogic {
+  constructor(p) { super(p); this.state = { day: 0, pick: 'pms', faq: 0 }; }
+  renderVals() {
+    const s = this.state;
+    const D = [
+      { label: 'Lễ tân tại cơ sở', kicker: 'Lễ tân · Bellhop PMS', title: 'Mỗi cơ sở vận hành theo cùng một cách', desc: 'Lễ tân ở cơ sở nào cũng làm việc trên cùng phần mềm: mọi đặt phòng – vãng lai, gọi điện, website, OTA – hiện trên một sơ đồ phòng và timeline.', ticks: ['Nhận, đổi, trả phòng trong vài thao tác', 'Buồng phòng cập nhật trạng thái, sơ đồ phòng đổi theo', 'Tạo hóa đơn, thu chi theo ca/ngày'], hasNote: false, note: '', href: 'https://bellhop.vn/san-pham/bellhop-pms', link: 'Tìm hiểu Bellhop PMS' },
+      { label: 'Quản lý chuỗi', kicker: 'Quản lý · PMS AI & Phân tích', title: 'Nhìn doanh thu, công suất mà không cần có mặt', desc: 'Chủ cơ sở và quản lý xem doanh thu, công suất, thu chi từ xa; gói AI & Phân tích bổ sung phân tích doanh thu và báo cáo chuyên sâu.', ticks: ['Doanh thu, công suất, thu chi từ xa', 'Phân tích doanh thu, báo cáo chuyên sâu – gói nâng cao', 'Phân quyền người được thay đổi giá trên CMS'], hasNote: true, note: '[Báo cáo hợp nhất nhiều cơ sở, chuyển đổi giữa các cơ sở]', href: 'https://bellhop.vn/san-pham/bellhop-pms#tai-chinh', link: 'Xem Tài chính & Báo cáo' },
+      { label: 'Kế toán', kicker: 'Kế toán · Bellhop Finance', title: 'Chỉ kiểm tra và xử lý ngoại lệ', desc: 'Dữ liệu đã được đồng bộ sang phần mềm kế toán. Kế toán kiểm tra danh sách chứng từ đã chuyển và tập trung vào các trường hợp ngoại lệ.', ticks: ['Nhật ký đồng bộ: thời điểm, số chứng từ, trạng thái', 'Cảnh báo lỗi kèm hướng dẫn xử lý', 'Duyệt trước khi hạch toán'], hasNote: true, note: '[Cách đồng bộ khi chuỗi có nhiều cơ sở]', href: 'https://bellhop.vn/san-pham/bellhop-finance', link: 'Tìm hiểu Bellhop Finance' }
+    ];
+    const days = D.map((d, i) => ({ label: d.label, cls: i === s.day ? 'on' : '', pressed: i === s.day ? 'true' : 'false', pick: () => this.setState({ day: i }) }));
+    const P = [
+      { key: 'pms', title: 'Bellhop PMS nâng cao', desc: 'Vận hành chuẩn cho từng cơ sở, cộng module nâng cao.', name: 'Bellhop PMS nâng cao', role: 'Vận hành · Tài chính · Phân tích', tile: 't-blue', what: 'Cùng một phần mềm cho mọi cơ sở: lễ tân, buồng phòng, kho, F&B, thu chi; mỗi nhân viên một tài khoản với quyền theo vai trò.', ticks: ['Kho chuyên sâu: điều chuyển giữa các kho, kiểm kê, công nợ', 'Tài chính: hóa đơn điện tử, sổ sách, quỹ', 'AI & Phân tích: phân tích doanh thu, báo cáo chuyên sâu'], hasNote: true, note: '[Phân quyền theo cơ sở, báo cáo hợp nhất, chuyển đổi giữa cơ sở]', href: 'https://bellhop.vn/san-pham/bellhop-pms', link: 'Tìm hiểu Bellhop PMS' },
+      { key: 'cms', title: 'Bellhop CMS', desc: 'Quy tắc giá và kênh OTA quản lý từ một nơi.', name: 'Bellhop CMS', role: 'Quản lý kênh OTA & định giá linh động', tile: 't-sky', what: 'Cập nhật một lần, giá và phòng trống lên mọi kênh đã kết nối; kiểm soát người được thay đổi giá.', ticks: ['Cập nhật hàng loạt theo khoảng ngày, hạng phòng', 'Giá theo mùa, ngày lễ, sự kiện', 'Đặt phòng OTA về Bellhop PMS'], hasNote: true, note: '[Quản lý giá tập trung cho nhiều cơ sở]', href: 'https://bellhop.vn/san-pham/bellhop-cms', link: 'Tìm hiểu Bellhop CMS' },
+      { key: 'fin', title: 'Bellhop Finance', desc: 'Đồng bộ doanh thu, thu chi, hóa đơn sang phần mềm kế toán.', name: 'Bellhop Finance', role: 'Kết nối kế toán', tile: 't-orange', what: 'Lễ tân, hệ thống và kế toán dùng chung một nguồn số liệu – kế toán không phải nhập lại.', ticks: ['Chuyển chứng từ theo ánh xạ tài khoản của cơ sở', 'Nhật ký đồng bộ, cảnh báo lỗi', 'Kế toán duyệt trước khi hạch toán'], hasNote: true, note: '[Đồng bộ khi chuỗi có nhiều cơ sở]', href: 'https://bellhop.vn/san-pham/bellhop-finance', link: 'Tìm hiểu Bellhop Finance' },
+      { key: 'web', title: 'Bellhop Website · mẫu Chuỗi', desc: 'Một thương hiệu, nhiều điểm đến, đặt phòng tập trung.', name: 'Bellhop Website – mẫu Chuỗi', role: 'Website cho chuỗi · Tích hợp Booking Engine', tile: 't-navy', what: 'Thương hiệu thống nhất cho cả chuỗi; khách tìm cơ sở theo điểm đến và đặt phòng trực tiếp.', ticks: ['Danh sách cơ sở', 'Trang riêng cho từng cơ sở', 'Tìm theo điểm đến'], hasNote: false, note: '', href: 'https://bellhop.vn/san-pham/bellhop-website', link: 'Tìm hiểu Bellhop Website' }
+    ];
+    const picks = P.map((k) => ({ title: k.title, desc: k.desc, cls: k.key === s.pick ? 'on' : '', pressed: k.key === s.pick ? 'true' : 'false', pick: () => this.setState({ pick: k.key }) }));
+    const pk = P.filter((k) => k.key === s.pick)[0] || P[0];
+    const F = [
+      { q: 'Quản lý nhiều cơ sở trên một tài khoản được không?', a: '', ph: '[Câu trả lời]' },
+      { q: 'Có phân quyền nhân viên theo từng cơ sở không?', a: 'Mỗi nhân viên có tài khoản riêng và quyền theo vai trò.', ph: '[Phân quyền theo từng cơ sở]' },
+      { q: 'Có báo cáo hợp nhất cho cả chuỗi không?', a: '', ph: '[Câu trả lời]' },
+      { q: 'Chuỗi có nhiều cơ sở thì đồng bộ kế toán ra sao?', a: '', ph: '[Câu trả lời]' },
+      { q: 'Website cho chuỗi có gì khác?', a: 'Mẫu Chuỗi có danh sách cơ sở, trang riêng cho từng cơ sở và tìm theo điểm đến, tích hợp sẵn Booking Engine.', ph: '' }
+    ];
+    const faq = F.map((x, i) => {
+      const o = s.faq === i;
+      return { q: x.q, a: x.a, ph: x.ph, hasA: x.a !== '', hasPh: x.ph !== '', open: o, exp: o ? 'true' : 'false', sign: o ? '−' : '+', toggle: () => this.setState({ faq: o ? -1 : i }) };
+    });
+    return { days, day: D[s.day], isD0: s.day === 0, isD1: s.day === 1, isD2: s.day === 2, picks, pk, faq };
+  }
+}
+</script>
+</body>
+</html>
