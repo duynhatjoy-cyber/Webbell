@@ -1,0 +1,22 @@
+{
+  "name": "Bellhop – Nền tảng quản lý lưu trú thông minh",
+  "short_name": "Bellhop",
+  "description": "Phần mềm quản lý khách sạn, homestay, villa và chuỗi lưu trú tại Việt Nam.",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#ffffff",
+  "theme_color": "#122745",
+  "icons": [
+    {
+      "src": "/favicon.svg",
+      "sizes": "any",
+      "type": "image/svg+xml",
+      "purpose": "any maskable"
+    },
+    {
+      "src": "/assets/4f97ede20a93cc1bba22d88175df59a4.png",
+      "sizes": "192x192",
+      "type": "image/png"
+    }
+  ]
+}

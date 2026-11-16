@@ -100,7 +100,7 @@ export default class HomePage extends DCLogic {
   }
 
   componentDidMount() {
-    document.title = "Bellhop – Trang chủ (bản công nghệ)";
+    document.title = "Bellhop – Nền tảng quản lý khách sạn thông minh";
   }
 
   render() {
