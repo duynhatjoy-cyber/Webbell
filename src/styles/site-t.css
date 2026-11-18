@@ -770,7 +770,7 @@
   .bh.t .try-pill a{padding:12px 18px;font-size:14px}
   .bh.t .sec{padding:56px 0}
   .bh.t .sec-sm{padding:40px 0}
-  .bh.t .be-hero-in{grid-template-columns:1fr;gap:32px;min-height:auto}
+  .bh.t .p-hero-in,.bh.t .be-hero-in{grid-template-columns:1fr;gap:32px;min-height:auto}
   .bh.t .be-photo{opacity:.45}
   .bh.t .be-stage{display:none}
   .bh.t .p-hero,.bh.t .be-hero{padding:44px 0 60px}
@@ -801,10 +801,15 @@
   .bh.t .p-hero .display,.bh.t .hero-split .display,.bh.t .be-h1{font-size:clamp(26px,6.8vw,34px) !important;line-height:1.2}
   .bh.t .p-hero .lead,.bh.t .hero-split .lead,.bh.t .be-lead{font-size:15px;line-height:1.6}
   .bh.t .p-hero .btns,.bh.t .be-hero .btns{gap:10px}
-  .bh.t .p-hero .btns .btn,.bh.t .be-hero .btns .btn{flex:1 1 auto;min-height:44px;padding:8px 14px;font-size:13.5px;text-align:center}
+  .bh.t .p-hero .btns .btn,.bh.t .be-hero .btns .btn{flex:1 1 auto;min-height:44px;padding:8px 14px;font-size:13.5px;text-align:center;white-space:nowrap}
   .bh.t .p-hero .card{max-width:calc(100% - 24px);margin:-24px 12px 0 auto !important}
   .bh.t .tl2-flow{flex-direction:column;align-items:flex-start;gap:8px}
   .bh.t .tl2-flow em{margin-left:10px;transform:rotate(90deg);display:inline-block}
   .bh.t .tl2-st{flex:none;width:100%}
   .bh.t .pay-feat-grid,.bh.t .pm-grid,.bh.t .mods,.bh.t .mods2{grid-template-columns:1fr}
+  .bh.t .tl2-vis{padding:12px !important}
+  .bh.t .tl2-body{padding:10px}
+  .bh.t .tl2-grid{grid-template-columns:36px repeat(7,minmax(0,1fr));font-size:9.5px}
+  .bh.t .tl2-r{padding-left:6px}
+  .bh.t .tl2-b{margin:0 2px;padding:0 4px;font-size:9px}
 }
