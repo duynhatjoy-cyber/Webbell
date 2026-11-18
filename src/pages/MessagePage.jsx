@@ -115,7 +115,7 @@ export default class MessagePage extends DCLogic {
     </div>
   </div></section><section className="sec" id="tinh-nang">
   <div className="wrap stack" style={{ gap: "120px" }}>
-    <div className="stack center" style={{ gap: "18px", alignItems: "center", maxWidth: "860px", margin: "0 auto" }}>
+    <div className="stack center hide-mob" style={{ gap: "18px", alignItems: "center", maxWidth: "860px", margin: "0 auto" }}>
       <span className="eyebrow">Tính năng</span>
       <h2 className="h2">Một hộp thư cho tất cả kênh, mỗi hội thoại có người phụ trách</h2>
     </div>

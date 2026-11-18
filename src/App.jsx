@@ -16,6 +16,7 @@ import PrivacyPage from './pages/PrivacyPage';
 import TermsPage from './pages/TermsPage';
 import PaymentPolicyPage from './pages/PaymentPolicyPage';
 import NewsPage from './pages/NewsPage';
+import NewsDetailPage from './pages/NewsDetailPage';
 import AboutPage from './pages/AboutPage';
 import PricingPage from './pages/PricingPage';
 
@@ -118,6 +119,7 @@ export default function App() {
 
         {/* Tin tức & Blog */}
         <Route path="/tin-tuc" element={<NewsPage />} />
+        <Route path="/tin-tuc/:slug" element={<NewsDetailPage />} />
         <Route path="/blog" element={<Navigate to="/tin-tuc" replace />} />
         <Route path="/News.dc.html" element={<Navigate to="/tin-tuc" replace />} />
 
