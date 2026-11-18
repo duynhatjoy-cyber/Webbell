@@ -135,7 +135,7 @@ export default class PMSPage extends DCLogic {
     <div className="feat rev" id="buong-phong">
       <div className="feat-txt">
         <span className="eyebrow">Buồng phòng · Miễn phí</span>
-        <h3 className="h2" style={{ fontSize: "clamp(26px, 2.6vw, 38px)", textWrap: "nowrap" }}>Lễ tân biết ngay phòng nào<br />sẵn sàng đón khách</h3>
+        <h3 className="h2" style={{ fontSize: "clamp(26px, 2.6vw, 38px)" }}>Lễ tân biết ngay phòng nào<br />sẵn sàng đón khách</h3>
         <p className="p">Buồng phòng cập nhật trạng thái dọn, sơ đồ phòng ở quầy lễ tân đổi theo – không cần báo miệng.</p>
         <div className="row" style={{ gap: "8px", flexWrap: "wrap" }}><span className="chip">Có khách</span><span>→</span><span className="chip" style={{ background: "#E6F6F7", color: "#1E6E76" }}>Cần dọn</span><span>→</span><span className="chip">Đang dọn</span><span>→</span><span className="chip" style={{ background: "#E7FAFD", color: "#122745" }}>Sẵn sàng</span></div>
         <ul className="ticks">
@@ -220,7 +220,7 @@ export default class PMSPage extends DCLogic {
   <div className="wrap stack" style={{ gap: "56px" }}>
     <div className="stack" style={{ gap: "16px", maxWidth: "760px" }}>
       <span className="eyebrow">Theo vai trò</span>
-      <h2 className="h2" style={{ color: "#fff", fontSize: "clamp(26px, 3.2vw, 44px)", textWrap: "nowrap", maxWidth: "none" }}>Mỗi người thấy đúng phần việc của mình</h2>
+      <h2 className="h2" style={{ color: "#fff", fontSize: "clamp(26px, 3.2vw, 44px)", maxWidth: "none" }}>Mỗi người thấy đúng phần việc của mình</h2>
     </div>
     <div className="picker">
       <div className="pick-list">

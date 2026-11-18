@@ -2,6 +2,7 @@ import React from 'react';
 import { DCLogic } from '../utils/DCLogic';
 import Header from '../components/Header';
 import Footer from '../components/Footer';
+import LeadForm from '../components/LeadForm';
 
 export default class HomestaySolutionPage extends DCLogic {
   constructor(p) { super(p); this.state = { day: 0, pick: 'pms', faq: 0 }; }
@@ -349,11 +350,7 @@ export default class HomestaySolutionPage extends DCLogic {
     </div>
   </div></section><section className="sec" id="dang-ky" style={{ paddingTop: "0" }}>
   <div className="wrap">
-    <div className="cta-band">
-      <h2 className="h2" style={{ color: "#FFFFFF", maxWidth: "760px" }}>Vận hành homestay nhẹ nhàng hơn, bắt đầu từ 0đ</h2>
-      <p className="lead">Tự đăng ký dùng Bellhop PMS miễn phí ngay, hoặc để lại thông tin để đội Bellhop demo hộp thư chung và website đặt phòng cho cơ sở của bạn.</p>
-      <div className="btns" style={{ justifyContent: "center" }}><a className="btn btn-primary" href="#">Dùng thử miễn phí</a><a className="btn btn-ghost" href="#">Đặt lịch demo</a></div>
-    </div>
+    <LeadForm defaultType="Homestay & Villa" />
   </div></section>
         <Footer /></div>
       </>

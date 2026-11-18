@@ -139,6 +139,8 @@ const EXACT_DICT = {
   'gọn trên một nền tảng': 'all in one platform',
   'Bellhop kết nối lễ tân, buồng phòng, kênh OTA, website đặt phòng, tin nhắn khách và kế toán trong cùng một hệ thống. Dùng miễn phí phần mềm lễ tân và vận hành, thêm tính năng khi cơ sở của bạn cần.':
     'Bellhop connects front desk, housekeeping, OTA channels, booking website, guest messaging, and accounting in a single system. Use core front desk & operations for free, and add modules as your property grows.',
+  'Lễ tân, kênh OTA, website, tin nhắn và kế toán trong một hệ thống. Phần lễ tân & vận hành miễn phí.':
+    'Front desk, OTA channels, website, messaging, and accounting in one system. Free front desk & operations software.',
   'Phần mềm lễ tân & vận hành ': 'Front desk & operations software ',
   ' · Dùng trên web và điện thoại': ' · Available on web and mobile',
   'Đặt phòng mọi nguồn': 'All-source Bookings',

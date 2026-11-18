@@ -157,7 +157,7 @@ export default class BookingEnginePage extends DCLogic {
     <div className="feat rev">
       <div className="feat-txt">
         <span className="eyebrow">Đồng bộ PMS</span>
-        <h2 className="h2" style={{ fontSize: "clamp(26px, 2.6vw, 38px)", textWrap: "nowrap" }}>Mỗi đặt phòng trực tiếp<br />tự vào sơ đồ phòng</h2>
+        <h2 className="h2" style={{ fontSize: "clamp(26px, 2.6vw, 38px)" }}>Mỗi đặt phòng trực tiếp<br />tự vào sơ đồ phòng</h2>
         <p className="p">Không còn kiểm tra phòng trống, báo giá rồi ghi chép lại bằng tay – lễ tân thấy ngay đặt phòng mới trên Bellhop PMS.</p>
         <ul className="ticks">
           <li><span><b>Thời gian thực</b>: phòng trống và giá đồng bộ với Bellhop PMS</span></li>
@@ -248,7 +248,7 @@ export default class BookingEnginePage extends DCLogic {
     <div className="calc2">
       <div className="stack" style={{ gap: "22px" }}>
         <span className="kick lt">Công cụ miễn phí</span>
-        <h2 className="h2" style={{ fontSize: "clamp(26px, 2.6vw, 38px)", textWrap: "nowrap" }}>Ước tính chi phí hoa hồng OTA<br />có thể tiết kiệm</h2>
+        <h2 className="h2" style={{ fontSize: "clamp(26px, 2.6vw, 38px)" }}>Ước tính chi phí hoa hồng OTA<br />có thể tiết kiệm</h2>
         <p className="sub">Nhập vài con số để ước tính khoản có thể giữ lại khi chuyển một phần đặt phòng sang kênh trực tiếp.</p>
         <div style={{ display: "grid", gridTemplateColumns: "repeat(2, minmax(0, 1fr))", gap: "16px" }}>
           <div className="calc-f"><label htmlFor="be-n">Số đêm phòng bán qua OTA / tháng</label><input id="be-n" className="calc-in" type="number" min="0" step="10" inputMode="numeric" value={v.calc.n ?? ''} onChange={v.onN} /></div>

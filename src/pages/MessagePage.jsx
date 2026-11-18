@@ -198,7 +198,7 @@ export default class MessagePage extends DCLogic {
   <div className="wrap stack" style={{ gap: "56px" }}>
     <div className="stack" style={{ gap: "16px", maxWidth: "760px" }}>
       <span className="eyebrow">Một ngày tại quầy lễ tân</span>
-      <h2 className="h2" style={{ color: "#fff", fontSize: "clamp(26px, 3.2vw, 44px)", textWrap: "nowrap", maxWidth: "none" }}>Một ngày làm việc với Bellhop Message</h2>
+      <h2 className="h2" style={{ color: "#fff", fontSize: "clamp(26px, 3.2vw, 44px)", maxWidth: "none" }}>Một ngày làm việc với Bellhop Message</h2>
     </div>
     <div className="picker">
       <div className="pick-list">

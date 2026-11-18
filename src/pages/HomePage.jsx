@@ -23,6 +23,8 @@ export default class HomePage extends DCLogic {
     ];
     const tab = this.state.tab;
     const tabs = T.map((t, i) => ({ label: t.label, cls: i === tab ? 'on' : '', pressed: i === tab ? 'true' : 'false', pick: () => this.setState({ tab: i }) }));
+    const prevTab = () => this.setState({ tab: (tab - 1 + T.length) % T.length });
+    const nextTab = () => this.setState({ tab: (tab + 1) % T.length });
     const P = [
       { key: 'ai', title: 'Bellhop AI Concierge', isNew: true, desc: 'Trả lời câu hỏi thường gặp của khách, kể cả ngoài giờ, dựa trên cơ sở kiến thức của chính cơ sở bạn.' },
       { key: 'msg', title: 'Hộp thư chung Bellhop Message', isNew: false, desc: 'Gom tin nhắn từ các kênh về một nơi; nhiều nhân viên cùng xử lý, xem lại lịch sử trao đổi.' },
@@ -96,7 +98,7 @@ export default class HomePage extends DCLogic {
       sent: s.sent, notSent: !s.sent, reset: () => this.setState({ sent: false })
     };
 
-    return { tabs, shot: T[tab], picks, isAi: pk === 'ai', isMsg: pk === 'msg', isLink: pk === 'link', hotel: mk('hotel'), home: mk('home'), chain: mk('chain'), calc, cats, posts, form };
+    return { tabs, prevTab, nextTab, shot: T[tab], picks, isAi: pk === 'ai', isMsg: pk === 'msg', isLink: pk === 'link', hotel: mk('hotel'), home: mk('home'), chain: mk('chain'), calc, cats, posts, form };
   }
 
   componentDidMount() {
@@ -112,35 +114,46 @@ export default class HomePage extends DCLogic {
   <img src="/assets/383384ea4d76acccc2ee15a8bffbdfd6.jpg" alt="" className="layer" style={{ width: "100%", height: "100%", objectFit: "cover", objectPosition: "50% 45%", opacity: "0.16", display: "block" }} />
   <div className="layer glow"></div>
   <div className="layer grid"></div>
-  <div className="wrap stack" style={{ position: "relative", gap: "28px", alignItems: "center" }}>
+  <div className="wrap stack" style={{ position: "relative", gap: "24px", alignItems: "center" }}>
     <span className="eyebrow">Nền tảng quản lý khách sạn</span>
     <h1 className="display" style={{ maxWidth: "1000px" }}>Mọi việc của khách sạn, <span className="hl">gọn trên một nền tảng</span></h1>
-    <p className="lead">Bellhop kết nối lễ tân, buồng phòng, kênh OTA, website đặt phòng, tin nhắn khách và kế toán trong cùng một hệ thống. Dùng miễn phí phần mềm lễ tân và vận hành, thêm tính năng khi cơ sở của bạn cần.</p>
-    <div className="btns" style={{ justifyContent: "center" }}><a className="btn btn-primary" href="#dang-ky">Dùng thử miễn phí</a><a className="btn btn-outline" href="#dang-ky">Đặt lịch demo</a></div>
-    <span className="small">Phần mềm lễ tân &amp; vận hành <b style={{ color: "#8BE3E8" }}>0đ</b> · Dùng trên web và điện thoại</span>
-    <div className="tabs" style={{ marginTop: "28px" }}>
-      
-              {(v.tabs || []).map((t, $index) => (
-                <React.Fragment key={$index}><button className={`tab ${t.cls ?? ''}`} type="button" aria-pressed={t.pressed} onClick={t.pick}>{t.label}</button>
-                </React.Fragment>
-              ))}
-    </div>
-    <div className="stage" style={{ marginTop: "8px" }}>
-      <div className="frame">
-        <div className="frame-bar"><i></i><i></i><i></i><span>{v.shot.url}</span></div>
+    <p className="lead">Lễ tân, kênh OTA, website, tin nhắn và kế toán trong một hệ thống. Phần lễ tân &amp; vận hành miễn phí.</p>
+    <div className="btns hero-btns-row" style={{ justifyContent: "center" }}><a className="btn btn-primary" href="#dang-ky">Dùng thử miễn phí</a><a className="btn btn-outline" href="#dang-ky">Đặt lịch demo</a></div>
+    <div className="stage" style={{ marginTop: "16px" }}>
+      <div className="frame" style={{ position: "relative" }}>
+        <div className="frame-bar"><i></i><i></i><i></i></div>
         <img src={v.shot.src} alt={v.shot.alt} />
+        <button type="button" className="hero-nav l" aria-label="Slide trước" onClick={v.prevTab}>‹</button>
+        <button type="button" className="hero-nav r" aria-label="Slide tiếp" onClick={v.nextTab}>›</button>
+      </div>
+      <div className="hero-stage-foot">
+        <b>{v.shot.label}</b>
+        <div className="hero-dots">
+          {(v.tabs || []).map((t, $index) => (
+            <button
+              key={$index}
+              type="button"
+              className={`hero-dot ${t.cls ?? ''}`}
+              aria-label={t.label}
+              aria-pressed={t.pressed}
+              onClick={t.pick}
+            />
+          ))}
+        </div>
       </div>
       <div className="float" style={{ left: "-64px", top: "120px" }}><span className="tile t-blue"><svg viewBox="0 0 24 24" aria-hidden="true"><rect x="4" y="5" width="16" height="15" rx="3" style={{ fill: "none", stroke: "#FFFFFF", strokeWidth: "2" }}></rect><path d="M4 10h16M9 3v4M15 3v4" style={{ fill: "none", stroke: "#FFFFFF", strokeWidth: "2", strokeLinecap: "round" }}></path></svg></span><span><b>Booking mới từ website</b><span>Deluxe · 2 đêm · Minh họa</span></span></div>
       <div className="float" style={{ right: "-56px", top: "64px" }}><span className="tile t-orange"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 12a8 8 0 0 1 14-5.3M20 12a8 8 0 0 1-14 5.3M18 3v4h-4M6 21v-4h4" style={{ fill: "none", stroke: "#FFFFFF", strokeWidth: "2.2", strokeLinecap: "round", strokeLinejoin: "round" }}></path></svg></span><span><b>Giá đã đồng bộ lên các kênh</b><span>Qua Bellhop CMS</span></span></div>
       <div className="float" style={{ right: "-40px", bottom: "120px" }}><span className="tile t-sky"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12.5l4.5 4.5L19 7.5" style={{ fill: "none", stroke: "#FFFFFF", strokeWidth: "2.6", strokeLinecap: "round", strokeLinejoin: "round" }}></path></svg></span><span><b>Phòng 203 đã dọn xong</b><span>Sẵn sàng đón khách</span></span></div>
     </div>
-    <p className="small" style={{ marginBottom: "88px" }}>{v.shot.cap}</p>
   </div>
   <div className="fade"></div></section><section className="sec-sm">
   <div className="wrap stack" style={{ gap: "28px" }}>
     <p className="center h4" style={{ color: "#4A5873", fontWeight: "600" }}>Được các cơ sở lưu trú tại Việt Nam tin dùng</p>
-    <div className="logos">
-      <div className="ph-box">Logo khách hàng</div><div className="ph-box">Logo khách hàng</div><div className="ph-box">Logo khách hàng</div><div className="ph-box">Logo khách hàng</div><div className="ph-box">Logo khách hàng</div><div className="ph-box">Logo khách hàng</div>
+    <div className="logos-marquee">
+      <div className="logos-track">
+        <div className="ph-box">Logo khách hàng</div><div className="ph-box">Logo khách hàng</div><div className="ph-box">Logo khách hàng</div><div className="ph-box">Logo khách hàng</div><div className="ph-box">Logo khách hàng</div><div className="ph-box">Logo khách hàng</div>
+        <div className="ph-box" aria-hidden="true">Logo khách hàng</div><div className="ph-box" aria-hidden="true">Logo khách hàng</div><div className="ph-box" aria-hidden="true">Logo khách hàng</div><div className="ph-box" aria-hidden="true">Logo khách hàng</div><div className="ph-box" aria-hidden="true">Logo khách hàng</div><div className="ph-box" aria-hidden="true">Logo khách hàng</div>
+      </div>
     </div>
     <p className="center note">Chỉ hiển thị logo khi khách hàng đồng ý giới thiệu</p>
   </div></section><section className="sec" id="tong-quan">
@@ -224,7 +237,7 @@ export default class HomePage extends DCLogic {
     <div className="feat rev">
       <div className="feat-txt">
         <span className="eyebrow">Thanh toán &amp; Kế toán</span>
-        <h3 className="h2" style={{ fontSize: "clamp(28px, 3vw, 40px)", textWrap: "nowrap" }}>Thu tiền gọn, sổ sách khớp</h3>
+        <h3 className="h2" style={{ fontSize: "clamp(28px, 3vw, 40px)" }}>Thu tiền gọn, sổ sách khớp</h3>
         <p className="p">Dữ liệu tài chính chạy thẳng từ quầy lễ tân đến phần mềm kế toán – kế toán không phải nhập lại.</p>
         <ul className="ticks">
           <li><span><b>Payment</b>: nhận thanh toán online qua cổng dành riêng cho ngành lưu trú</span></li>
@@ -248,7 +261,7 @@ export default class HomePage extends DCLogic {
   <div className="wrap stack" style={{ gap: "56px" }}>
     <div className="stack" style={{ gap: "16px" }}>
       <span className="eyebrow">Mới trên Bellhop</span>
-      <h2 className="h2" style={{ color: "#fff", fontSize: "clamp(26px, 3.2vw, 44px)", textWrap: "nowrap" }}>Trợ lý AI và hộp thư chung cho đội lễ tân</h2>
+      <h2 className="h2" style={{ color: "#fff", fontSize: "clamp(26px, 3.2vw, 44px)" }}>Trợ lý AI và hộp thư chung cho đội lễ tân</h2>
     </div>
     <div className="picker">
       <div className="pick-list">
@@ -376,7 +389,7 @@ export default class HomePage extends DCLogic {
     <div className="calc2">
       <div className="stack" style={{ gap: "22px" }}>
         <span className="kick lt">Công cụ miễn phí</span>
-        <h2 className="h2" style={{ fontSize: "clamp(26px, 2.6vw, 38px)", textWrap: "nowrap" }}>Mỗi năm bạn đang trả bao nhiêu<br />hoa hồng cho OTA?</h2>
+        <h2 className="h2" style={{ fontSize: "clamp(26px, 2.6vw, 38px)" }}>Mỗi năm bạn đang trả bao nhiêu<br />hoa hồng cho OTA?</h2>
         <p className="sub">Nhập vài con số để ước tính khoản có thể giữ lại khi chuyển một phần đặt phòng sang kênh trực tiếp.</p>
         <div style={{ display: "grid", gridTemplateColumns: "repeat(2, minmax(0, 1fr))", gap: "16px" }}>
           <div className="calc-f"><label htmlFor="c-b">Số đặt phòng qua OTA / tháng</label><input id="c-b" className="calc-in" inputMode="numeric" value={v.calc.b ?? ''} onChange={v.calc.onB} /></div>

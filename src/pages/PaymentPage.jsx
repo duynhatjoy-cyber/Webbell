@@ -278,7 +278,7 @@ export default class PaymentPage extends DCLogic {
   <div className="wrap stack" style={{ gap: "48px" }}>
     <div className="stack" style={{ gap: "16px", maxWidth: "820px" }}>
       <span className="eyebrow">Bắt đầu sử dụng</span>
-      <h2 className="h2" style={{ fontSize: "clamp(26px, 3.2vw, 44px)", textWrap: "nowrap", maxWidth: "none" }}>Đội Bellhop hỗ trợ kích hoạt cùng bạn</h2>
+      <h2 className="h2" style={{ fontSize: "clamp(26px, 3.2vw, 44px)", maxWidth: "none" }}>Đội Bellhop hỗ trợ kích hoạt cùng bạn</h2>
       <p className="lead">Chỉ cần chuẩn bị các thông tin dưới đây; Bellhop phối hợp với đối tác thanh toán thẩm định và kết nối vào tài khoản của cơ sở. Thời gian thẩm định <span className="ph">[ ]</span>.</p>
     </div>
     <div className="proc">

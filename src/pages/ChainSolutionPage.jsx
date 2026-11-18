@@ -2,6 +2,7 @@ import React from 'react';
 import { DCLogic } from '../utils/DCLogic';
 import Header from '../components/Header';
 import Footer from '../components/Footer';
+import LeadForm from '../components/LeadForm';
 
 export default class ChainSolutionPage extends DCLogic {
   constructor(p) { super(p); this.state = { day: 0, pick: 'pms', faq: 0 }; }
@@ -237,7 +238,7 @@ export default class ChainSolutionPage extends DCLogic {
   <div className="wrap stack" style={{ gap: "56px" }}>
     <div className="stack" style={{ gap: "16px" }}>
       <span className="eyebrow">Bộ công cụ gợi ý</span>
-      <h2 className="h2" style={{ color: "#FFFFFF", fontSize: "clamp(26px, 3.2vw, 44px)", textWrap: "nowrap", maxWidth: "none" }}>Bốn mảnh ghép cho một chuỗi lưu trú</h2>
+      <h2 className="h2" style={{ color: "#FFFFFF", fontSize: "clamp(26px, 3.2vw, 44px)", maxWidth: "none" }}>Bốn mảnh ghép cho một chuỗi lưu trú</h2>
     </div>
     <div className="picker">
       <div className="pick-list">
@@ -344,11 +345,7 @@ export default class ChainSolutionPage extends DCLogic {
     </div>
   </div></section><section className="sec" id="dang-ky" style={{ paddingTop: "0" }}>
   <div className="wrap">
-    <div className="cta-band">
-      <h2 className="h2" style={{ color: "#FFFFFF", maxWidth: "760px" }}>Đang vận hành nhiều cơ sở? Nói chuyện với Bellhop</h2>
-      <p className="lead">Để lại thông tin để đội Bellhop khảo sát mô hình chuỗi của bạn và trình bày phương án triển khai PMS, CMS và Finance cho từng cơ sở.</p>
-      <div className="btns" style={{ justifyContent: "center" }}><a className="btn btn-primary" href="#">Đặt lịch demo</a><a className="btn btn-ghost" href="#">Dùng thử miễn phí</a></div>
-    </div>
+    <LeadForm defaultType="Chuỗi lưu trú" />
   </div></section>
         <Footer /></div>
       </>

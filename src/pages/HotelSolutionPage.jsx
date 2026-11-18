@@ -2,6 +2,7 @@ import React from 'react';
 import { DCLogic } from '../utils/DCLogic';
 import Header from '../components/Header';
 import Footer from '../components/Footer';
+import LeadForm from '../components/LeadForm';
 
 export default class HotelSolutionPage extends DCLogic {
   constructor(p) { super(p); this.state = { day: 0, pick: 'pms', faq: 0 }; }
@@ -74,7 +75,7 @@ export default class HotelSolutionPage extends DCLogic {
   <div className="wrap stack" style={{ gap: "40px" }}>
     <div className="stack center" style={{ gap: "16px", alignItems: "center", margin: "0 auto" }}>
       <span className="eyebrow">Một ngày làm việc</span>
-      <h2 className="h2" style={{ fontSize: "clamp(26px, 3.2vw, 44px)", textWrap: "nowrap" }}>Mỗi vị trí thấy đúng phần việc của mình</h2>
+      <h2 className="h2" style={{ fontSize: "clamp(26px, 3.2vw, 44px)" }}>Mỗi vị trí thấy đúng phần việc của mình</h2>
       <p className="lead">Chọn một vị trí để xem họ làm việc trên Bellhop thế nào.</p>
     </div>
     <div className="tabs">
@@ -239,7 +240,7 @@ export default class HotelSolutionPage extends DCLogic {
   <div className="wrap stack" style={{ gap: "56px" }}>
     <div className="stack" style={{ gap: "16px" }}>
       <span className="eyebrow">Bộ công cụ gợi ý</span>
-      <h2 className="h2" style={{ color: "#FFFFFF", fontSize: "clamp(26px, 3.2vw, 44px)", textWrap: "nowrap", maxWidth: "none" }}>Ba sản phẩm, một bức tranh đầy đủ cho khách sạn</h2>
+      <h2 className="h2" style={{ color: "#FFFFFF", fontSize: "clamp(26px, 3.2vw, 44px)", maxWidth: "none" }}>Ba sản phẩm, một bức tranh đầy đủ cho khách sạn</h2>
     </div>
     <div className="picker">
       <div className="pick-list">
@@ -346,11 +347,7 @@ export default class HotelSolutionPage extends DCLogic {
     </div>
   </div></section><section className="sec" id="dang-ky" style={{ paddingTop: "0" }}>
   <div className="wrap">
-    <div className="cta-band">
-      <h2 className="h2" style={{ color: "#FFFFFF", maxWidth: "760px" }}>Sẵn sàng vận hành khách sạn gọn hơn?</h2>
-      <p className="lead">Tự đăng ký dùng miễn phí phần lễ tân &amp; vận hành, hoặc để lại thông tin để đội Bellhop demo PMS, CMS và Booking Engine trên chính hạng phòng và kênh bán của bạn.</p>
-      <div className="btns" style={{ justifyContent: "center" }}><a className="btn btn-primary" href="#">Dùng thử miễn phí</a><a className="btn btn-ghost" href="#">Đặt lịch demo</a></div>
-    </div>
+    <LeadForm defaultType="Khách sạn" />
   </div></section>
         <Footer /></div>
       </>

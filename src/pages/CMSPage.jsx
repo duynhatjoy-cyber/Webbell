@@ -101,7 +101,7 @@ export default class CMSPage extends DCLogic {
   <div className="wrap stack" style={{ gap: "56px" }}>
     <div className="stack" style={{ gap: "16px", maxWidth: "760px" }}>
       <span className="eyebrow">Cách hoạt động</span>
-      <h2 className="h2" style={{ color: "#fff", fontSize: "clamp(26px, 3.2vw, 44px)", textWrap: "nowrap", maxWidth: "none" }}>Thiết lập một lần, mọi kênh cùng cập nhật</h2>
+      <h2 className="h2" style={{ color: "#fff", fontSize: "clamp(26px, 3.2vw, 44px)", maxWidth: "none" }}>Thiết lập một lần, mọi kênh cùng cập nhật</h2>
       <p className="lead">Thời gian đồng bộ giá và tồn phòng: <span className="ph">[x phút]</span></p>
     </div>
     <div className="picker">

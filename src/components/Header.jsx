@@ -282,20 +282,36 @@ export default class Header extends DCLogic {
                       className={`mega-it ${v.act.pms ?? ''}`}
                       href="https://bellhop.vn/san-pham/bellhop-pms"
                     >
-                      <span className="tile t-blue">
+                      <span className="tile tile-soft">
                         <svg viewBox="0 0 24 24" aria-hidden="true">
-                          <rect
-                            x="4"
-                            y="4"
-                            width="16"
-                            height="16"
-                            rx="3"
-                            style={{ fill: 'none', stroke: '#FFFFFF', strokeWidth: '2' }}
-                          ></rect>
                           <path
-                            d="M4 10h16M10 10v10"
-                            style={{ fill: 'none', stroke: '#FFFFFF', strokeWidth: '2' }}
-                          ></path>
+                            d="M12 4.2v1.6M8.2 5.5l1 1.3M15.8 5.5l-1 1.3"
+                            fill="none"
+                            stroke="#5FB9C2"
+                            strokeWidth="1.8"
+                            strokeLinecap="round"
+                          />
+                          <path
+                            d="M10.2 9.2h3.6"
+                            fill="none"
+                            stroke="#2E9AA5"
+                            strokeWidth="1.8"
+                            strokeLinecap="round"
+                          />
+                          <path
+                            d="M6.8 16a5.2 5.2 0 0 1 10.4 0v.8H6.8V16Z"
+                            fill="#122745"
+                            stroke="#122745"
+                            strokeWidth="1.2"
+                            strokeLinejoin="round"
+                          />
+                          <path
+                            d="M5 18.2h14"
+                            fill="none"
+                            stroke="#122745"
+                            strokeWidth="1.8"
+                            strokeLinecap="round"
+                          />
                         </svg>
                       </span>
                       <div>
@@ -314,30 +330,38 @@ export default class Header extends DCLogic {
                       className={`mega-it ${v.act.booking ?? ''}`}
                       href="https://bellhop.vn/san-pham/bellhop-booking-engine"
                     >
-                      <span className="tile t-orange">
+                      <span className="tile tile-soft">
                         <svg viewBox="0 0 24 24" aria-hidden="true">
+                          <rect x="4.5" y="5.5" width="15" height="4.2" rx="1.5" fill="#A6E1E7" />
                           <rect
-                            x="4"
-                            y="5"
-                            width="16"
-                            height="15"
-                            rx="3"
-                            style={{ fill: 'none', stroke: '#FFFFFF', strokeWidth: '2' }}
-                          ></rect>
+                            x="4.5"
+                            y="5.5"
+                            width="15"
+                            height="14"
+                            rx="2.5"
+                            fill="none"
+                            stroke="#122745"
+                            strokeWidth="1.7"
+                          />
                           <path
-                            d="M4 10h16M9 3v4M15 3v4M9 15l2 2 4-4"
-                            style={{
-                              fill: 'none',
-                              stroke: '#FFFFFF',
-                              strokeWidth: '2',
-                              strokeLinecap: 'round',
-                              strokeLinejoin: 'round',
-                            }}
-                          ></path>
+                            d="M4.5 9.8h15M8.5 3.8v3M15.5 3.8v3"
+                            fill="none"
+                            stroke="#122745"
+                            strokeWidth="1.7"
+                            strokeLinecap="round"
+                          />
+                          <path
+                            d="M9.2 14.5l2 2 3.8-3.8"
+                            fill="none"
+                            stroke="#2E9AA5"
+                            strokeWidth="2"
+                            strokeLinecap="round"
+                            strokeLinejoin="round"
+                          />
                         </svg>
                       </span>
                       <div>
-                        <b>Booking Engine</b>
+                        <b>Bellhop Booking Engine</b>
                         <span>
                           {isEn
                             ? 'Direct bookings on your website'
@@ -349,18 +373,47 @@ export default class Header extends DCLogic {
                       className={`mega-it ${v.act.cms ?? ''}`}
                       href="https://bellhop.vn/san-pham/bellhop-cms"
                     >
-                      <span className="tile t-sky">
+                      <span className="tile tile-soft">
                         <svg viewBox="0 0 24 24" aria-hidden="true">
                           <path
-                            d="M4 12a8 8 0 0 1 14-5.3M20 12a8 8 0 0 1-14 5.3M18 3v4h-4M6 21v-4h4"
-                            style={{
-                              fill: 'none',
-                              stroke: '#FFFFFF',
-                              strokeWidth: '2.2',
-                              strokeLinecap: 'round',
-                              strokeLinejoin: 'round',
-                            }}
-                          ></path>
+                            d="M12 12L7.5 8M12 12L16.5 8M12 12v5.8"
+                            fill="none"
+                            stroke="#122745"
+                            strokeWidth="1.7"
+                            strokeLinecap="round"
+                          />
+                          <circle
+                            cx="12"
+                            cy="12"
+                            r="2.4"
+                            fill="#FFFFFF"
+                            stroke="#122745"
+                            strokeWidth="1.7"
+                          />
+                          <circle
+                            cx="6.8"
+                            cy="7.4"
+                            r="2.1"
+                            fill="#8BE3E8"
+                            stroke="#2E9AA5"
+                            strokeWidth="1.5"
+                          />
+                          <circle
+                            cx="17.2"
+                            cy="7.4"
+                            r="2.1"
+                            fill="#8BE3E8"
+                            stroke="#2E9AA5"
+                            strokeWidth="1.5"
+                          />
+                          <circle
+                            cx="12"
+                            cy="18.2"
+                            r="2.1"
+                            fill="#8BE3E8"
+                            stroke="#2E9AA5"
+                            strokeWidth="1.5"
+                          />
                         </svg>
                       </span>
                       <div>
@@ -376,25 +429,34 @@ export default class Header extends DCLogic {
                       className={`mega-it ${v.act.website ?? ''}`}
                       href="https://bellhop.vn/san-pham/bellhop-website"
                     >
-                      <span className="tile t-navy">
+                      <span className="tile tile-soft">
                         <svg viewBox="0 0 24 24" aria-hidden="true">
                           <rect
-                            x="3"
-                            y="4"
-                            width="18"
-                            height="16"
-                            rx="3"
-                            style={{ fill: 'none', stroke: '#FFFFFF', strokeWidth: '2' }}
-                          ></rect>
+                            x="3.5"
+                            y="5"
+                            width="17"
+                            height="14"
+                            rx="2.5"
+                            fill="none"
+                            stroke="#122745"
+                            strokeWidth="1.7"
+                          />
                           <path
-                            d="M3 9h18M7 6.5h.01M10 6.5h.01"
-                            style={{
-                              fill: 'none',
-                              stroke: '#FFFFFF',
-                              strokeWidth: '2',
-                              strokeLinecap: 'round',
-                            }}
-                          ></path>
+                            d="M3.5 9h17"
+                            fill="none"
+                            stroke="#122745"
+                            strokeWidth="1.6"
+                          />
+                          <circle cx="6.2" cy="7" r="0.8" fill="#122745" />
+                          <circle cx="8.5" cy="7" r="0.8" fill="#122745" />
+                          <rect x="12.5" y="11.2" width="5.2" height="5.2" rx="1" fill="#5FB9C2" />
+                          <path
+                            d="M6.2 12.2h4.2M6.2 15.2h4.2"
+                            fill="none"
+                            stroke="#122745"
+                            strokeWidth="1.6"
+                            strokeLinecap="round"
+                          />
                         </svg>
                       </span>
                       <div>
@@ -413,17 +475,24 @@ export default class Header extends DCLogic {
                       className={`mega-it ${v.act.message ?? ''}`}
                       href="https://bellhop.vn/san-pham/bellhop-message"
                     >
-                      <span className="tile t-blue">
+                      <span className="tile tile-soft">
                         <svg viewBox="0 0 24 24" aria-hidden="true">
                           <path
-                            d="M5 5h14a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2h-7l-5 4v-4H5a2 2 0 0 1-2-2V7a2 2 0 0 1 2-2z"
-                            style={{
-                              fill: 'none',
-                              stroke: '#FFFFFF',
-                              strokeWidth: '2',
-                              strokeLinejoin: 'round',
-                            }}
-                          ></path>
+                            d="M10.5 9.2h7.8a1.8 1.8 0 0 1 1.8 1.8v5a1.8 1.8 0 0 1-1.8 1.8h-2l-2.4 2.1v-2.1h-3.4a1.8 1.8 0 0 1-1.8-1.8v-5a1.8 1.8 0 0 1 1.8-1.8Z"
+                            fill="#8BE3E8"
+                            stroke="#2E9AA5"
+                            strokeWidth="1.5"
+                            strokeLinejoin="round"
+                          />
+                          <path
+                            d="M5.5 5.5h9.2a1.8 1.8 0 0 1 1.8 1.8v5.2a1.8 1.8 0 0 1-1.8 1.8H9.2l-2.8 2.4v-2.4h-.9a1.8 1.8 0 0 1-1.8-1.8V7.3a1.8 1.8 0 0 1 1.8-1.8Z"
+                            fill="#FFFFFF"
+                            stroke="#122745"
+                            strokeWidth="1.7"
+                            strokeLinejoin="round"
+                          />
+                          <circle cx="8.2" cy="9.9" r="0.9" fill="#122745" />
+                          <circle cx="10.8" cy="9.9" r="0.9" fill="#122745" />
                         </svg>
                       </span>
                       <div>
@@ -439,21 +508,26 @@ export default class Header extends DCLogic {
                       className={`mega-it ${v.act.ai ?? ''}`}
                       href="https://bellhop.vn/san-pham/bellhop-ai-concierge"
                     >
-                      <span className="tile t-orange">
+                      <span className="tile tile-soft">
                         <svg viewBox="0 0 24 24" aria-hidden="true">
                           <path
-                            d="M12 3l1.8 5.2L19 10l-5.2 1.8L12 17l-1.8-5.2L5 10l5.2-1.8zM18 16l.8 2.2L21 19l-2.2.8L18 22l-.8-2.2L15 19l2.2-.8z"
-                            style={{
-                              fill: 'none',
-                              stroke: '#FFFFFF',
-                              strokeWidth: '1.8',
-                              strokeLinejoin: 'round',
-                            }}
-                          ></path>
+                            d="M5.2 5.2h13.6a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2h-6.6l-3.8 3v-3H5.2a2 2 0 0 1-2-2v-8a2 2 0 0 1 2-2Z"
+                            fill="none"
+                            stroke="#122745"
+                            strokeWidth="1.7"
+                            strokeLinejoin="round"
+                          />
+                          <path
+                            d="M12 7.5l1.1 2.6 2.6 1.1-2.6 1.1-1.1 2.6-1.1-2.6-2.6-1.1 2.6-1.1L12 7.5Z"
+                            fill="#5FB9C2"
+                            stroke="#2E9AA5"
+                            strokeWidth="0.8"
+                            strokeLinejoin="round"
+                          />
                         </svg>
                       </span>
                       <div>
-                        <b>AI Concierge</b>
+                        <b>Bellhop AI Concierge</b>
                         <span>{isEn ? 'AI assistant for guest inquiries' : 'Trợ lý AI trả lời khách'}</span>
                       </div>
                     </a>
@@ -461,33 +535,38 @@ export default class Header extends DCLogic {
                   <div className="mega-col">
                     <h4>{isEn ? 'Payments & Accounting' : 'Thanh toán & Kế toán'}</h4>
                     <a className={`mega-it ${v.act.payment ?? ''}`} href="/san-pham/bellhop-payment">
-                      <span className="tile t-sky">
+                      <span className="tile tile-soft">
                         <svg viewBox="0 0 24 24" aria-hidden="true">
                           <rect
-                            x="3"
-                            y="5"
-                            width="18"
-                            height="14"
-                            rx="3"
-                            style={{ fill: 'none', stroke: '#FFFFFF', strokeWidth: '2' }}
-                          ></rect>
+                            x="3.5"
+                            y="5.5"
+                            width="17"
+                            height="13"
+                            rx="2.5"
+                            fill="none"
+                            stroke="#122745"
+                            strokeWidth="1.7"
+                          />
                           <path
-                            d="M3 10h18M7 15h4"
-                            style={{
-                              fill: 'none',
-                              stroke: '#FFFFFF',
-                              strokeWidth: '2',
-                              strokeLinecap: 'round',
-                            }}
-                          ></path>
+                            d="M3.5 9.5h17"
+                            fill="none"
+                            stroke="#122745"
+                            strokeWidth="1.8"
+                          />
+                          <rect x="6.5" y="12.5" width="4.5" height="3" rx="0.8" fill="#5FB9C2" />
+                          <path
+                            d="M13.5 14h4"
+                            fill="none"
+                            stroke="#122745"
+                            strokeWidth="1.6"
+                            strokeLinecap="round"
+                          />
                         </svg>
                       </span>
                       <div>
                         <b>Bellhop Payment</b>
                         <span>
-                          {isEn
-                            ? 'Online payment acceptance for properties'
-                            : 'Nhận thanh toán online cho cơ sở'}
+                          {isEn ? 'Online payments' : 'Thanh toán online'}
                         </span>
                       </div>
                     </a>
@@ -495,17 +574,25 @@ export default class Header extends DCLogic {
                       className={`mega-it ${v.act.finance ?? ''}`}
                       href="https://bellhop.vn/san-pham/bellhop-finance"
                     >
-                      <span className="tile t-navy">
+                      <span className="tile tile-soft">
                         <svg viewBox="0 0 24 24" aria-hidden="true">
                           <path
-                            d="M5 20V10M12 20V4M19 20v-7"
-                            style={{
-                              fill: 'none',
-                              stroke: '#FFFFFF',
-                              strokeWidth: '2.4',
-                              strokeLinecap: 'round',
-                            }}
-                          ></path>
+                            d="M6.5 3.8h7.2l3.8 3.8v11.6a1.5 1.5 0 0 1-1.5 1.5h-9.5A1.5 1.5 0 0 1 5 19.2V5.3a1.5 1.5 0 0 1 1.5-1.5Z"
+                            fill="none"
+                            stroke="#122745"
+                            strokeWidth="1.7"
+                            strokeLinejoin="round"
+                          />
+                          <path
+                            d="M13.5 3.8v4h4"
+                            fill="none"
+                            stroke="#122745"
+                            strokeWidth="1.6"
+                            strokeLinejoin="round"
+                          />
+                          <rect x="7.8" y="13.5" width="2" height="3.8" rx="0.5" fill="#5FB9C2" />
+                          <rect x="10.8" y="11.5" width="2" height="5.8" rx="0.5" fill="#2E9AA5" />
+                          <rect x="13.8" y="9.8" width="2" height="7.5" rx="0.5" fill="#122745" />
                         </svg>
                       </span>
                       <div>
@@ -524,39 +611,117 @@ export default class Header extends DCLogic {
 
             {Boolean(v.open.m) && (
               <div className="mnav">
-                <div className="mnav-lang">
-                  <span>{isEn ? 'Language:' : 'Ngôn ngữ:'}</span>
-                  <div className="mnav-lang-btns">
-                    <button
-                      type="button"
-                      className={`mnav-lang-btn ${!isEn ? 'on' : ''}`}
-                      onClick={() => this.setLang('vi')}
-                    >
-                      <FlagVN /> Tiếng Việt
-                    </button>
-                    <button
-                      type="button"
-                      className={`mnav-lang-btn ${isEn ? 'on' : ''}`}
-                      onClick={() => this.setLang('en')}
-                    >
-                      <FlagEN /> English
-                    </button>
-                  </div>
-                </div>
                 <details open={true}>
-                  <summary>{isEn ? 'Products' : 'Sản phẩm'}</summary>
-                  <a href="/#tong-quan">{isEn ? 'Platform Overview' : 'Tổng quan nền tảng'}</a>
-                  <a href="https://bellhop.vn/san-pham/bellhop-pms">Bellhop PMS</a>
-                  <a href="https://bellhop.vn/san-pham/bellhop-booking-engine">Booking Engine</a>
-                  <a href="https://bellhop.vn/san-pham/bellhop-cms">Bellhop CMS</a>
-                  <a href="https://bellhop.vn/san-pham/bellhop-website">Bellhop Website</a>
-                  <a href="https://bellhop.vn/san-pham/bellhop-message">Bellhop Message</a>
-                  <a href="https://bellhop.vn/san-pham/bellhop-ai-concierge">AI Concierge</a>
-                  <a href="/san-pham/bellhop-payment">Bellhop Payment</a>
-                  <a href="https://bellhop.vn/san-pham/bellhop-finance">Bellhop Finance</a>
+                  <summary>
+                    <span>{isEn ? 'Products' : 'Sản phẩm'}</span>
+                    <span>+</span>
+                  </summary>
+                  <a href="/#tong-quan">
+                    <span className="tile tile-soft">
+                      <svg viewBox="0 0 24 24" aria-hidden="true">
+                        <rect x="4" y="9" width="5.5" height="6" rx="1.5" fill="#8BE3E8" stroke="#122745" strokeWidth="1.6" />
+                        <rect x="14.5" y="9" width="5.5" height="6" rx="1.5" fill="#FFFFFF" stroke="#122745" strokeWidth="1.6" />
+                        <path d="M9.5 12h5" stroke="#2E9AA5" strokeWidth="1.8" strokeLinecap="round" />
+                      </svg>
+                    </span>
+                    <span>{isEn ? 'Platform Overview' : 'Tổng quan nền tảng'}</span>
+                  </a>
+                  <a href="https://bellhop.vn/san-pham/bellhop-pms">
+                    <span className="tile tile-soft">
+                      <svg viewBox="0 0 24 24" aria-hidden="true">
+                        <path d="M12 4.2v1.6M8.2 5.5l1 1.3M15.8 5.5l-1 1.3" fill="none" stroke="#5FB9C2" strokeWidth="1.8" strokeLinecap="round" />
+                        <path d="M10.2 9.2h3.6" fill="none" stroke="#2E9AA5" strokeWidth="1.8" strokeLinecap="round" />
+                        <path d="M6.8 16a5.2 5.2 0 0 1 10.4 0v.8H6.8V16Z" fill="#122745" stroke="#122745" strokeWidth="1.2" strokeLinejoin="round" />
+                        <path d="M5 18.2h14" fill="none" stroke="#122745" strokeWidth="1.8" strokeLinecap="round" />
+                      </svg>
+                    </span>
+                    <span>Bellhop PMS</span>
+                  </a>
+                  <a href="https://bellhop.vn/san-pham/bellhop-booking-engine">
+                    <span className="tile tile-soft">
+                      <svg viewBox="0 0 24 24" aria-hidden="true">
+                        <rect x="4.5" y="5.5" width="15" height="4.2" rx="1.5" fill="#A6E1E7" />
+                        <rect x="4.5" y="5.5" width="15" height="14" rx="2.5" fill="none" stroke="#122745" strokeWidth="1.7" />
+                        <path d="M4.5 9.8h15M8.5 3.8v3M15.5 3.8v3" fill="none" stroke="#122745" strokeWidth="1.7" strokeLinecap="round" />
+                        <path d="M9.2 14.5l2 2 3.8-3.8" fill="none" stroke="#2E9AA5" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" />
+                      </svg>
+                    </span>
+                    <span>Bellhop Booking Engine</span>
+                  </a>
+                  <a href="https://bellhop.vn/san-pham/bellhop-cms">
+                    <span className="tile tile-soft">
+                      <svg viewBox="0 0 24 24" aria-hidden="true">
+                        <path d="M12 12L7.5 8M12 12L16.5 8M12 12v5.8" fill="none" stroke="#122745" strokeWidth="1.7" strokeLinecap="round" />
+                        <circle cx="12" cy="12" r="2.4" fill="#FFFFFF" stroke="#122745" strokeWidth="1.7" />
+                        <circle cx="6.8" cy="7.4" r="2.1" fill="#8BE3E8" stroke="#2E9AA5" strokeWidth="1.5" />
+                        <circle cx="17.2" cy="7.4" r="2.1" fill="#8BE3E8" stroke="#2E9AA5" strokeWidth="1.5" />
+                        <circle cx="12" cy="18.2" r="2.1" fill="#8BE3E8" stroke="#2E9AA5" strokeWidth="1.5" />
+                      </svg>
+                    </span>
+                    <span>Bellhop CMS</span>
+                  </a>
+                  <a href="https://bellhop.vn/san-pham/bellhop-website">
+                    <span className="tile tile-soft">
+                      <svg viewBox="0 0 24 24" aria-hidden="true">
+                        <rect x="3.5" y="5" width="17" height="14" rx="2.5" fill="none" stroke="#122745" strokeWidth="1.7" />
+                        <path d="M3.5 9h17" fill="none" stroke="#122745" strokeWidth="1.6" />
+                        <circle cx="6.2" cy="7" r="0.8" fill="#122745" />
+                        <circle cx="8.5" cy="7" r="0.8" fill="#122745" />
+                        <rect x="12.5" y="11.2" width="5.2" height="5.2" rx="1" fill="#5FB9C2" />
+                        <path d="M6.2 12.2h4.2M6.2 15.2h4.2" fill="none" stroke="#122745" strokeWidth="1.6" strokeLinecap="round" />
+                      </svg>
+                    </span>
+                    <span>Bellhop Website</span>
+                  </a>
+                  <a href="https://bellhop.vn/san-pham/bellhop-message">
+                    <span className="tile tile-soft">
+                      <svg viewBox="0 0 24 24" aria-hidden="true">
+                        <path d="M10.5 9.2h7.8a1.8 1.8 0 0 1 1.8 1.8v5a1.8 1.8 0 0 1-1.8 1.8h-2l-2.4 2.1v-2.1h-3.4a1.8 1.8 0 0 1-1.8-1.8v-5a1.8 1.8 0 0 1 1.8-1.8Z" fill="#8BE3E8" stroke="#2E9AA5" strokeWidth="1.5" strokeLinejoin="round" />
+                        <path d="M5.5 5.5h9.2a1.8 1.8 0 0 1 1.8 1.8v5.2a1.8 1.8 0 0 1-1.8 1.8H9.2l-2.8 2.4v-2.4h-.9a1.8 1.8 0 0 1-1.8-1.8V7.3a1.8 1.8 0 0 1 1.8-1.8Z" fill="#FFFFFF" stroke="#122745" strokeWidth="1.7" strokeLinejoin="round" />
+                        <circle cx="8.2" cy="9.9" r="0.9" fill="#122745" />
+                        <circle cx="10.8" cy="9.9" r="0.9" fill="#122745" />
+                      </svg>
+                    </span>
+                    <span>Bellhop Message</span>
+                  </a>
+                  <a href="https://bellhop.vn/san-pham/bellhop-ai-concierge">
+                    <span className="tile tile-soft">
+                      <svg viewBox="0 0 24 24" aria-hidden="true">
+                        <path d="M5.2 5.2h13.6a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2h-6.6l-3.8 3v-3H5.2a2 2 0 0 1-2-2v-8a2 2 0 0 1 2-2Z" fill="none" stroke="#122745" strokeWidth="1.7" strokeLinejoin="round" />
+                        <path d="M12 7.5l1.1 2.6 2.6 1.1-2.6 1.1-1.1 2.6-1.1-2.6-2.6-1.1 2.6-1.1L12 7.5Z" fill="#5FB9C2" stroke="#2E9AA5" strokeWidth="0.8" strokeLinejoin="round" />
+                      </svg>
+                    </span>
+                    <span>Bellhop AI Concierge</span>
+                  </a>
+                  <a href="/san-pham/bellhop-payment">
+                    <span className="tile tile-soft">
+                      <svg viewBox="0 0 24 24" aria-hidden="true">
+                        <rect x="3.5" y="5.5" width="17" height="13" rx="2.5" fill="none" stroke="#122745" strokeWidth="1.7" />
+                        <path d="M3.5 9.5h17" fill="none" stroke="#122745" strokeWidth="1.8" />
+                        <rect x="6.5" y="12.5" width="4.5" height="3" rx="0.8" fill="#5FB9C2" />
+                        <path d="M13.5 14h4" fill="none" stroke="#122745" strokeWidth="1.6" strokeLinecap="round" />
+                      </svg>
+                    </span>
+                    <span>Bellhop Payment</span>
+                  </a>
+                  <a href="https://bellhop.vn/san-pham/bellhop-finance">
+                    <span className="tile tile-soft">
+                      <svg viewBox="0 0 24 24" aria-hidden="true">
+                        <path d="M6.5 3.8h7.2l3.8 3.8v11.6a1.5 1.5 0 0 1-1.5 1.5h-9.5A1.5 1.5 0 0 1 5 19.2V5.3a1.5 1.5 0 0 1 1.5-1.5Z" fill="none" stroke="#122745" strokeWidth="1.7" strokeLinejoin="round" />
+                        <path d="M13.5 3.8v4h4" fill="none" stroke="#122745" strokeWidth="1.6" strokeLinejoin="round" />
+                        <rect x="7.8" y="13.5" width="2" height="3.8" rx="0.5" fill="#5FB9C2" />
+                        <rect x="10.8" y="11.5" width="2" height="5.8" rx="0.5" fill="#2E9AA5" />
+                        <rect x="13.8" y="9.8" width="2" height="7.5" rx="0.5" fill="#122745" />
+                      </svg>
+                    </span>
+                    <span>Bellhop Finance</span>
+                  </a>
                 </details>
                 <details>
-                  <summary>{isEn ? 'Solutions' : 'Giải pháp'}</summary>
+                  <summary>
+                    <span>{isEn ? 'Solutions' : 'Giải pháp'}</span>
+                    <span>+</span>
+                  </summary>
                   <a href="/giai-phap/khach-san">{isEn ? 'Hotels' : 'Khách sạn'}</a>
                   <a href="/giai-phap/homestay-villa">Homestay &amp; Villa</a>
                   <a href="/giai-phap/chuoi-luu-tru">{isEn ? 'Hotel Chains' : 'Chuỗi lưu trú'}</a>
@@ -570,7 +735,7 @@ export default class Header extends DCLogic {
                 <a
                   className="btn btn-primary"
                   href="/#dang-ky"
-                  style={{ marginTop: '16px', borderBottom: '0' }}
+                  style={{ marginTop: '16px', borderBottom: '0', justifyContent: 'center' }}
                 >
                   {isEn ? 'Free Trial' : 'Dùng thử'}
                 </a>
