@@ -30,16 +30,8 @@
     <div class="btns hero-btns-row" style="justify-content: center"><a class="btn btn-primary" href="#dang-ky">Dùng thử miễn phí</a><a class="btn btn-outline" href="#dang-ky">Đặt lịch demo</a></div>
     <div class="stage" style="margin-top: 16px">
       <div class="frame" style="position: relative">
-        <div class="frame-bar"><i></i><i></i><i></i></div>
-        <img src="{{shot.src}}" alt="{{shot.alt}}">
-        <button type="button" class="hero-nav l" aria-label="Slide trước" onClick="{{prevTab}}">‹</button>
-        <button type="button" class="hero-nav r" aria-label="Slide tiếp" onClick="{{nextTab}}">›</button>
-      </div>
-      <div class="hero-stage-foot">
-        <b>{{shot.label}}</b>
-        <div class="hero-dots">
-          <sc-for list="{{tabs}}" as="t" hint-placeholder-count="3"><button class="hero-dot {{t.cls}}" type="button" aria-label="{{t.label}}" aria-pressed="{{t.pressed}}" onClick="{{t.pick}}"></button></sc-for>
-        </div>
+        <div class="frame-bar"><i></i><i></i><i></i><span>Video giới thiệu · Bellhop Platform</span></div>
+        <video class="hero-video" src="/assets/hero-demo.mp4" poster="/assets/d8e97cd43f9f645eec6abba0f8eee195.png" controls autoplay muted loop playsinline></video>
       </div>
       <div class="float" style="left: -64px; top: 120px"><span class="tile t-blue"><svg viewBox="0 0 24 24" aria-hidden="true"><rect x="4" y="5" width="16" height="15" rx="3" style="fill: none; stroke: #FFFFFF; stroke-width: 2"></rect><path d="M4 10h16M9 3v4M15 3v4" style="fill: none; stroke: #FFFFFF; stroke-width: 2; stroke-linecap: round"></path></svg></span><span><b>Booking mới từ website</b><span>Deluxe · 2 đêm · Minh họa</span></span></div>
       <div class="float" style="right: -56px; top: 64px"><span class="tile t-orange"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 12a8 8 0 0 1 14-5.3M20 12a8 8 0 0 1-14 5.3M18 3v4h-4M6 21v-4h4" style="fill: none; stroke: #FFFFFF; stroke-width: 2.2; stroke-linecap: round; stroke-linejoin: round"></path></svg></span><span><b>Giá đã đồng bộ lên các kênh</b><span>Qua Bellhop CMS</span></span></div>

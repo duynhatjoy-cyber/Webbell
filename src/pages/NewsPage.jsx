@@ -69,7 +69,7 @@ export default class NewsPage extends DCLogic {
           <div className="wrap">
             <div className="news-hero-head">
               <span className="eyebrow" style={{ color: '#1f7a84' }}>
-                LIFROOMS &amp; BELLHOP · BLOG &amp; KIẾN THỨC CHUYÊN SÂU
+                BLOG &amp; KIẾN THỨC CHUYÊN SÂU
               </span>
               <h1 className="h1" style={{ fontSize: '42px', lineHeight: '1.25' }}>
                 Cẩm nang Vận hành &amp; Quản trị Doanh thu Khách sạn

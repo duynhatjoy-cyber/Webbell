@@ -121,25 +121,17 @@ export default class HomePage extends DCLogic {
     <div className="btns hero-btns-row" style={{ justifyContent: "center" }}><a className="btn btn-primary" href="#dang-ky">Dùng thử miễn phí</a><a className="btn btn-outline" href="#dang-ky">Đặt lịch demo</a></div>
     <div className="stage" style={{ marginTop: "16px" }}>
       <div className="frame" style={{ position: "relative" }}>
-        <div className="frame-bar"><i></i><i></i><i></i></div>
-        <img src={v.shot.src} alt={v.shot.alt} />
-        <button type="button" className="hero-nav l" aria-label="Slide trước" onClick={v.prevTab}>‹</button>
-        <button type="button" className="hero-nav r" aria-label="Slide tiếp" onClick={v.nextTab}>›</button>
-      </div>
-      <div className="hero-stage-foot">
-        <b>{v.shot.label}</b>
-        <div className="hero-dots">
-          {(v.tabs || []).map((t, $index) => (
-            <button
-              key={$index}
-              type="button"
-              className={`hero-dot ${t.cls ?? ''}`}
-              aria-label={t.label}
-              aria-pressed={t.pressed}
-              onClick={t.pick}
-            />
-          ))}
-        </div>
+        <div className="frame-bar"><i></i><i></i><i></i><span>Video giới thiệu · Bellhop Platform</span></div>
+        <video
+          className="hero-video"
+          src="/assets/hero-demo.mp4"
+          poster="/assets/d8e97cd43f9f645eec6abba0f8eee195.png"
+          controls
+          autoPlay
+          muted
+          loop
+          playsInline
+        />
       </div>
       <div className="float" style={{ left: "-64px", top: "120px" }}><span className="tile t-blue"><svg viewBox="0 0 24 24" aria-hidden="true"><rect x="4" y="5" width="16" height="15" rx="3" style={{ fill: "none", stroke: "#FFFFFF", strokeWidth: "2" }}></rect><path d="M4 10h16M9 3v4M15 3v4" style={{ fill: "none", stroke: "#FFFFFF", strokeWidth: "2", strokeLinecap: "round" }}></path></svg></span><span><b>Booking mới từ website</b><span>Deluxe · 2 đêm · Minh họa</span></span></div>
       <div className="float" style={{ right: "-56px", top: "64px" }}><span className="tile t-orange"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 12a8 8 0 0 1 14-5.3M20 12a8 8 0 0 1-14 5.3M18 3v4h-4M6 21v-4h4" style={{ fill: "none", stroke: "#FFFFFF", strokeWidth: "2.2", strokeLinecap: "round", strokeLinejoin: "round" }}></path></svg></span><span><b>Giá đã đồng bộ lên các kênh</b><span>Qua Bellhop CMS</span></span></div>

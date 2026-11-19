@@ -38,6 +38,7 @@
 .bh.t .float b{display:block;font-size:14px}
 .bh.t .float span{display:block;font-size:12px;color:#4A5873}
 .bh.t .hero-t .stage{position:relative;width:100%;max-width:1080px;margin-bottom:48px}
+.bh.t .hero-video{display:block;width:100%;aspect-ratio:16/9;object-fit:cover;background:#081633}
 .bh.t .hero-nav{position:absolute;top:54%;transform:translateY(-50%);width:42px;height:42px;border-radius:50%;border:0;background:rgba(18,39,69,.78);color:#fff;font-size:24px;line-height:1;display:grid;place-items:center;cursor:pointer;box-shadow:0 8px 20px rgba(8,22,51,.35);transition:background .18s,transform .18s;z-index:3}
 .bh.t .hero-nav.l{left:14px}.bh.t .hero-nav.r{right:14px}
 .bh.t .hero-nav:hover{background:#122745;transform:translateY(-50%) scale(1.06)}
@@ -130,7 +131,7 @@
 .bh.t .seg-link:hover{color:var(--blue-d);border-color:var(--blue)}
 .bh.t .seg-nav{background:rgba(8,22,51,.65)}
 .bh.t .seg-nav:hover{background:var(--blue)}
-.bh.t .calc2{position:relative;overflow:hidden;background:radial-gradient(560px 320px at 0% 0%,rgba(20,80,240,.5),transparent 70%),radial-gradient(480px 300px at 100% 100%,rgba(63,224,255,.22),transparent 70%),var(--deep)}
+.bh.t .calc2{position:relative;overflow:hidden;background:radial-gradient(560px 320px at 0% 0%,rgba(20,80,240,.5),transparent 70%),radial-gradient(480px 300px at 100% 100%,rgba(95,185,194,.22),transparent 70%),#0C1D35}
 .bh.t .calc2::before{content:"";position:absolute;inset:0;background-image:linear-gradient(rgba(139,227,232,.07) 1px,transparent 1px),linear-gradient(90deg,rgba(139,227,232,.07) 1px,transparent 1px);background-size:56px 56px;pointer-events:none}
 .bh.t .calc2 > *{position:relative}
 .bh.t .calc2 .sub{color:#C3D2F2}
