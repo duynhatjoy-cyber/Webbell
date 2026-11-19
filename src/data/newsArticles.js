@@ -26,6 +26,8 @@ export const NEWS_ARTICLES = [
           'Đây là tình trạng rất phổ biến tại các khách sạn 2–4 sao và boutique hotel ở Việt Nam: chủ cơ sở thấy phòng sáng đèn gần như kín cả tuần, lễ tân liên tục check-in/check-out, nhưng khi kế toán tổng hợp thu chi cuối tháng thì lợi nhuận lại mỏng hoặc âm.',
           'Nguyên nhân cốt lõi nằm ở việc định giá cố định quá thấp để cạnh tranh trên các sàn OTA, dẫn đến giá bán phòng bình quân (ADR) không đủ bù đắp chi phí biến đổi (giặt ủi, điện nước, đồ amenities, nhân công dọn phòng) cộng với 15–25% hoa hồng OTA.',
         ],
+        image: '/assets/d8e97cd43f9f645eec6abba0f8eee195.png',
+        imageCaption: 'Theo dõi danh sách đặt phòng và cơ cấu nguồn khách trực tiếp so với OTA ngay trên Bellhop PMS',
         callout: {
           title: 'Ví dụ thực tế tại khách sạn 30 phòng',
           text: 'Nếu bán giá 550.000đ qua OTA (trừ 18% hoa hồng còn 451.000đ) và chi phí biến đổi mỗi lượt phòng là 160.000đ, phần đóng góp gộp chỉ còn 291.000đ/đêm. Trong khi đó, bán ở mức 720.000đ với 70% công suất (trực tiếp + OTA cân bằng) lại mang về lợi nhuận ròng cao hơn hẳn mà ít hao mòn cơ sở vật chất.',
@@ -36,10 +38,29 @@ export const NEWS_ARTICLES = [
         paragraphs: [
           'Thay vì chỉ nhìn vào tỷ lệ lấp đầy (OCC), người quản lý cần theo dõi đồng thời 3 chỉ số trên báo cáo doanh thu mỗi ngày:',
         ],
-        bullets: [
-          'OCC (Occupancy Rate): Tỷ lệ phòng có khách trên tổng số phòng khả dụng. Phản ánh sức hút về lượng.',
-          'ADR (Average Daily Rate): Doanh thu tiền phòng chia cho tổng số phòng đã bán. Phản ánh sức mạnh về giá.',
-          'RevPAR (Revenue Per Available Room): Doanh thu tiền phòng chia cho tổng số phòng hiện có (= OCC × ADR). Đây là chỉ số cân bằng giữa giá và công suất.',
+        subsections: [
+          {
+            title: '2.1. OCC & ADR – Tỷ lệ lấp đầy và Giá bán bình quân',
+            bullets: [
+              'OCC (Occupancy Rate): Tỷ lệ phòng có khách trên tổng số phòng khả dụng, phản ánh sức hút về lượng.',
+              'ADR (Average Daily Rate): Doanh thu tiền phòng chia cho tổng số phòng đã bán, phản ánh sức mạnh về giá.',
+            ],
+            paragraphs: [
+              'Nếu chỉ tập trung kéo OCC lên cao bằng cách giảm giá sâu, ADR sẽ tụt dưới ngưỡng an toàn và làm biên lợi nhuận sụt giảm nhanh chóng.',
+            ],
+            image: '/assets/1feca9cfcb63e1777de6b728389ffe5a.jpg',
+            imageCaption: 'Cân bằng giữa tỷ lệ lấp đầy (OCC) và giá phòng trung bình (ADR) giúp tối ưu doanh thu thực',
+          },
+          {
+            title: '2.2. RevPAR – Thước đo hiệu quả khai thác quỹ phòng',
+            bullets: [
+              'Công thức: RevPAR = Doanh thu phòng ÷ Tổng số phòng hiện có (= OCC × ADR).',
+              'Mục tiêu: Tối đa hóa RevPAR theo từng ngày trong tuần thay vì chạy theo 100% công suất giá rẻ.',
+            ],
+            paragraphs: [
+              'Một khách sạn bán 70% phòng với giá 800.000đ (RevPAR = 560.000đ) sẽ có lợi nhuận ròng cao hơn nhiều so với bán 95% phòng với giá 550.000đ (RevPAR = 522.500đ) vì tiết kiệm được chi phí dọn phòng, giặt là và khấu hao.',
+            ],
+          },
         ],
       },
       {
@@ -52,6 +73,8 @@ export const NEWS_ARTICLES = [
           'Công suất đạt 45% – 75%: Tăng giá bậc 1 (+10% đến +15%), đóng dần các hạng phòng giá rẻ trên OTA để nhường tồn phòng cho kênh trực tiếp.',
           'Công suất vượt 75% hoặc cận ngày lễ: Tăng giá bậc 2 (+20% đến +35%), áp dụng điều kiện lưu trú tối thiểu (MinLOS 2 đêm) để tối đa hóa RevPAR.',
         ],
+        image: '/assets/de8ede5a8ea84f4225237b7fd9aebf2d.png',
+        imageCaption: 'Cấu hình bảng giá và tồn phòng linh động theo từng giai đoạn công suất',
       },
       {
         heading: '4. Giảm phụ thuộc OTA bằng Booking Engine gắn ngay trên website',
@@ -85,6 +108,8 @@ export const NEWS_ARTICLES = [
           'Vào cuối tuần hoặc dịp lễ, chỉ cần lễ tân quên khóa phòng trên một kênh OTA sau khi nhận khách walk-in, hai khách khác nhau hoàn toàn có thể đặt cùng một phòng cuối cùng chỉ cách nhau vài phút.',
           'Hậu quả của Overbooking không chỉ là chi phí chuyển khách sang khách sạn lân cận, mà còn là đánh giá 1 sao và bị tụt hạng hiển thị trên Booking.com, Agoda.',
         ],
+        image: '/assets/184ed4c8d5b0f118849e24490114f4af.jpg',
+        imageCaption: 'Kiểm soát đồng bộ phòng trống giữa quầy lễ tân và các kênh OTA',
       },
       {
         heading: '2. Giải pháp đồng bộ 2 chiều tự động với Bellhop CMS',

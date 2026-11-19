@@ -122,14 +122,7 @@ export default class NewsPage extends DCLogic {
                     </div>
                     <h2 className="featured-title">{v.featuredArticle.title}</h2>
                     <p className="featured-desc">{v.featuredArticle.desc}</p>
-                    <div className="post-author-row" style={{ justifyContent: 'space-between', flexWrap: 'wrap', gap: '12px' }}>
-                      <div style={{ display: 'flex', alignItems: 'center', gap: '12px' }}>
-                        <div className="author-avatar">{v.featuredArticle.authorInitials}</div>
-                        <div>
-                          <div className="author-name">{v.featuredArticle.author}</div>
-                          <div className="author-role">{v.featuredArticle.authorRole}</div>
-                        </div>
-                      </div>
+                    <div style={{ marginTop: '8px' }}>
                       <span className="article-readmore">Đọc bài chi tiết →</span>
                     </div>
                   </div>

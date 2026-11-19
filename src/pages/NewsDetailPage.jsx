@@ -63,20 +63,6 @@ export default function NewsDetailPage() {
                 {article.tag || article.cat}
               </span>
               <h1 className="article-detail-title">{article.title}</h1>
-              <div className="article-detail-meta">
-                <div className="post-author-row">
-                  <div className="author-avatar">{article.authorInitials || 'BH'}</div>
-                  <div>
-                    <div className="author-name">{article.author}</div>
-                    <div className="author-role">{article.authorRole || 'Bellhop Editorial Team'}</div>
-                  </div>
-                </div>
-                <div className="post-meta">
-                  <span>{article.date}</span>
-                  <span className="dot-sep"></span>
-                  <span>{article.readTime}</span>
-                </div>
-              </div>
               <p className="article-detail-lead">{article.desc}</p>
             </header>
 
@@ -110,17 +96,6 @@ export default function NewsDetailPage() {
             )}
 
             <div className="article-detail-body">
-              {article.keyTakeaways && article.keyTakeaways.length > 0 && (
-                <div className="article-takeaways">
-                  <div className="article-takeaways-title">Tóm tắt nhanh</div>
-                  <ul className="ticks">
-                    {article.keyTakeaways.map((point, idx) => (
-                      <li key={idx}>{point}</li>
-                    ))}
-                  </ul>
-                </div>
-              )}
-
               {(article.sections || []).map((sec, idx) => (
                 <section className="article-detail-section" id={`sec-${idx}`} key={idx}>
                   <h2>{sec.heading}</h2>
@@ -128,12 +103,39 @@ export default function NewsDetailPage() {
                     <p key={pIdx}>{p}</p>
                   ))}
                   {sec.bullets && sec.bullets.length > 0 && (
-                    <ul className="ticks">
+                    <ul className="article-bullets">
                       {sec.bullets.map((b, bIdx) => (
                         <li key={bIdx}>{b}</li>
                       ))}
                     </ul>
                   )}
+                  {sec.image && (
+                    <figure className="article-inline-img">
+                      <img src={sec.image} alt={sec.imageCaption || sec.heading} />
+                      {sec.imageCaption && <figcaption>{sec.imageCaption}</figcaption>}
+                    </figure>
+                  )}
+                  {(sec.subsections || []).map((sub, sIdx) => (
+                    <div className="article-subsection" key={sIdx}>
+                      <h3>{sub.title}</h3>
+                      {sub.bullets && sub.bullets.length > 0 && (
+                        <ul className="article-bullets">
+                          {sub.bullets.map((b, bIdx) => (
+                            <li key={bIdx}>{b}</li>
+                          ))}
+                        </ul>
+                      )}
+                      {(sub.paragraphs || []).map((p, pIdx) => (
+                        <p key={pIdx}>{p}</p>
+                      ))}
+                      {sub.image && (
+                        <figure className="article-inline-img">
+                          <img src={sub.image} alt={sub.imageCaption || sub.title} />
+                          {sub.imageCaption && <figcaption>{sub.imageCaption}</figcaption>}
+                        </figure>
+                      )}
+                    </div>
+                  ))}
                   {sec.callout && (
                     <div className="article-callout">
                       <b>{sec.callout.title}</b>
@@ -218,26 +220,6 @@ export default function NewsDetailPage() {
                     <span className="ez-share-txt">Email</span>
                   </a>
                 </div>
-              </div>
-
-              {/* AUTHOR BIO BOX */}
-              <div className="article-author-box">
-                <div className="author-avatar lg">{article.authorInitials || 'BH'}</div>
-                <div className="stack" style={{ gap: '4px' }}>
-                  <b style={{ fontSize: '16px', color: '#122745' }}>{article.author}</b>
-                  <span style={{ fontSize: '13px', color: '#1f7a84', fontWeight: 700 }}>
-                    {article.authorRole || 'Ban Biên tập Kiến thức Lưu trú Bellhop'}
-                  </span>
-                  <p style={{ fontSize: '14px', color: '#475569', margin: '4px 0 0', lineHeight: 1.6 }}>
-                    Chia sẻ kinh nghiệm thực chiến về vận hành khách sạn, quản trị doanh thu, phân phối kênh OTA và ứng dụng công nghệ giúp cơ sở lưu trú tăng trưởng bền vững.
-                  </p>
-                </div>
-              </div>
-
-              <div className="article-back-row">
-                <a className="lnk" href="/tin-tuc">
-                  <span className="arr">←</span> Quay lại danh sách Tin tức &amp; Blog
-                </a>
               </div>
             </div>
           </article>
