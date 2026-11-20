@@ -133,6 +133,7 @@
 .bh.t .seg-nav{background:rgba(8,22,51,.65)}
 .bh.t .seg-nav:hover{background:var(--blue)}
 .bh.t .calc2{position:relative;overflow:hidden;background:radial-gradient(560px 320px at 0% 0%,rgba(20,80,240,.5),transparent 70%),radial-gradient(480px 300px at 100% 100%,rgba(95,185,194,.22),transparent 70%),#0C1D35}
+.bh.t .calc2{position:relative;overflow:hidden;background:radial-gradient(620px 360px at 95% 95%,rgba(95,210,216,.38),transparent 70%),radial-gradient(520px 320px at 10% 10%,rgba(22,82,135,.5),transparent 70%),linear-gradient(135deg,#16487D 0%,#195D83 52%,#1C8894 100%)}
 .bh.t .calc2::before{content:"";position:absolute;inset:0;background-image:linear-gradient(rgba(139,227,232,.07) 1px,transparent 1px),linear-gradient(90deg,rgba(139,227,232,.07) 1px,transparent 1px);background-size:56px 56px;pointer-events:none}
 .bh.t .calc2 > *{position:relative}
 .bh.t .calc2 .sub{color:#C3D2F2}
@@ -151,7 +152,8 @@
 .bh.t .fchip.on{background:var(--grad);border-color:transparent;color:#fff}
 .bh.t .rcard{box-shadow:0 0 0 1px var(--line)}
 .bh.t .rcard:hover{transform:translateY(-3px);box-shadow:0 0 0 1px rgba(20,80,240,.35),0 30px 60px -30px rgba(20,80,240,.45)}
-.bh.t .lead2{background:radial-gradient(520px 280px at 85% 0%,rgba(63,224,255,.4),transparent 70%),radial-gradient(600px 340px at 0% 100%,rgba(31,162,255,.4),transparent 70%),linear-gradient(135deg,#1450F0,#0B2A8A 60%,#081633)}
+.bh.t .lead2{background:radial-gradient(620px 360px at 95% 95%,rgba(95,210,216,.38),transparent 70%),radial-gradient(520px 320px at 10% 10%,rgba(22,82,135,.5),transparent 70%),linear-gradient(135deg,#16487D 0%,#195D83 52%,#1C8894 100%)}
+.bh.t .lform .btn-primary,.bh.t .lead-card .btn-primary{background:linear-gradient(90deg,#6CE3E8 0%,#4BB7C1 55%,#379AA6 100%);color:#0E1E3D !important;box-shadow:0 14px 30px -12px rgba(75,183,193,.55),inset 0 1px 0 rgba(255,255,255,.55)}
 .bh.t .lead2::before{content:"";position:absolute;inset:0;background-image:linear-gradient(rgba(255,255,255,.07) 1px,transparent 1px),linear-gradient(90deg,rgba(255,255,255,.07) 1px,transparent 1px);background-size:48px 48px;pointer-events:none}
 .bh.t .lead2 > *{position:relative}
 .bh.t .lform{box-shadow:0 30px 60px -30px rgba(8,22,51,.6)}

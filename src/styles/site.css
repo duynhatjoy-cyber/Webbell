@@ -303,11 +303,14 @@
 .seg-link:hover{color:#122745}
 /* Công cụ tính */
 .calc2{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,.95fr);gap:40px;align-items:center;padding:56px;border-radius:28px;background:radial-gradient(560px 320px at 0% 0%,rgba(20,80,240,.5),transparent 70%),radial-gradient(480px 300px at 100% 100%,rgba(95,185,194,.22),transparent 70%),#0C1D35}
+.calc2{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,.95fr);gap:40px;align-items:center;padding:56px;border-radius:28px;background:radial-gradient(620px 360px at 95% 95%,rgba(95,210,216,.38),transparent 70%),radial-gradient(520px 320px at 10% 10%,rgba(22,82,135,.5),transparent 70%),linear-gradient(135deg,#16487D 0%,#195D83 52%,#1C8894 100%)}
 .calc2 .h2{background:none;-webkit-background-clip:border-box;background-clip:border-box;-webkit-text-fill-color:#fff;color:#fff}
 .calc2 .sub{font-size:16px;line-height:1.6;color:#C3D2F2}
+.calc2 .sub{font-size:16px;line-height:1.6;color:#D6E6FF}
 .calc-f{display:flex;flex-direction:column;gap:8px}
 .calc-f label{font-size:13px;font-weight:700;color:#fff}
 .calc-in{height:52px;padding:0 16px;border-radius:10px;border:1px solid rgba(139,227,232,.3);background:rgba(255,255,255,.06);color:#fff;font-family:inherit;font-size:16px;font-weight:600;width:100%}
+.calc-in{height:52px;padding:0 16px;border-radius:10px;border:1px solid rgba(139,227,232,.35);background:rgba(19,58,92,.48);color:#fff;font-family:inherit;font-size:16px;font-weight:600;width:100%}
 .calc-in:focus{outline:2px solid #5FB9C2;outline-offset:1px}
 .calc-range{width:100%;accent-color:#5FB9C2}
 .calc-res{display:flex;flex-direction:column;gap:18px;padding:32px;border-radius:20px;background:#fff}
@@ -328,6 +331,7 @@
 .rcard:hover .thumb img{transform:scale(1.04)}
 /* Form đăng ký */
 .lead2{display:grid;grid-template-columns:minmax(0,.9fr) minmax(0,1.1fr);gap:48px;align-items:start;padding:56px;border-radius:28px;color:#fff;position:relative;overflow:hidden;background:radial-gradient(520px 280px at 85% 0%,rgba(95,185,194,.4),transparent 70%),radial-gradient(600px 340px at 0% 100%,rgba(61,143,214,.4),transparent 70%),linear-gradient(135deg,#1450F0,#0B2A8A 60%,#0C1D35)}
+.lead2{display:grid;grid-template-columns:minmax(0,.9fr) minmax(0,1.1fr);gap:48px;align-items:start;padding:56px;border-radius:28px;color:#fff;position:relative;overflow:hidden;background:radial-gradient(620px 360px at 95% 95%,rgba(95,210,216,.38),transparent 70%),radial-gradient(520px 320px at 10% 10%,rgba(22,82,135,.5),transparent 70%),linear-gradient(135deg,#16487D 0%,#195D83 52%,#1C8894 100%)}
 .lead2::before{content:"";position:absolute;inset:0;background-image:linear-gradient(rgba(255,255,255,.07) 1px,transparent 1px),linear-gradient(90deg,rgba(255,255,255,.07) 1px,transparent 1px);background-size:48px 48px;pointer-events:none}
 .lead2 > *{position:relative;z-index:1}
 .lead2 .kick.lt{width:fit-content;padding:5px 14px;border-radius:999px;font-size:12px;line-height:1.4;letter-spacing:.08em;color:#8BE3E8 !important;background:rgba(63,224,255,.1);box-shadow:inset 0 0 0 1px rgba(63,224,255,.35)}
@@ -340,6 +344,7 @@
 .lform{display:flex;flex-direction:column;gap:16px;padding:32px;border-radius:20px;background:#fff;color:#122745;box-shadow:0 30px 60px -30px rgba(8,22,51,.6)}
 .lform .h3{font-size:22px;color:#0E1E3D}
 .lform .btn-primary{background:linear-gradient(135deg,#5FB9C2,#5FB9C2 55%,#2E9AA5);color:#0C1D35 !important;box-shadow:0 14px 30px -12px rgba(95,185,194,.65),inset 0 1px 0 rgba(255,255,255,.6)}
+.lform .btn-primary{background:linear-gradient(90deg,#6CE3E8 0%,#4BB7C1 55%,#379AA6 100%);color:#0E1E3D !important;box-shadow:0 14px 30px -12px rgba(75,183,193,.55),inset 0 1px 0 rgba(255,255,255,.55)}
 .fgrid2{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:14px}
 .fld{display:flex;flex-direction:column;gap:6px}
 .fld label,.flab{font-size:13px;font-weight:700;color:#122745}
@@ -673,6 +678,7 @@
 
 /* ===== LeadForm Component (.lead-blk) ===== */
 .bh .lead-blk{display:grid;grid-template-columns:minmax(0,.9fr) minmax(0,1.1fr);gap:48px;align-items:start;padding:56px;border-radius:28px;color:#fff;position:relative;overflow:hidden;background:radial-gradient(520px 280px at 85% 0%,rgba(95,185,194,.4),transparent 70%),radial-gradient(600px 340px at 0% 100%,rgba(61,143,214,.4),transparent 70%),linear-gradient(135deg,#1450F0,#0B2A8A 60%,#0C1D35)}
+.bh .lead-blk{display:grid;grid-template-columns:minmax(0,.9fr) minmax(0,1.1fr);gap:48px;align-items:start;padding:56px;border-radius:28px;color:#fff;position:relative;overflow:hidden;background:radial-gradient(620px 360px at 95% 95%,rgba(95,210,216,.38),transparent 70%),radial-gradient(520px 320px at 10% 10%,rgba(22,82,135,.5),transparent 70%),linear-gradient(135deg,#16487D 0%,#195D83 52%,#1C8894 100%)}
 .bh .lead-blk .eyebrow{color:#8BE3E8}
 .bh .lead-blk .h2{color:#fff}
 .bh .lead-blk .lead{font-size:17px;line-height:1.65;color:#D6E2FF}
