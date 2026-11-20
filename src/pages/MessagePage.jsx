@@ -67,7 +67,7 @@ export default class MessagePage extends DCLogic {
         <div className="bh t">
         <Header active="message" startOpen={false} /><section className="p-hero p-hero-c">
   <div className="wrap stack" style={{ gap: "22px", alignItems: "center" }}>
-    <nav className="crumb" aria-label="Breadcrumb" style={{ marginBottom: "0" }}><a href="/">Trang chủ</a><span>›</span><a href="/#tong-quan">Sản phẩm</a><span>›</span><span>Chăm sóc khách hàng</span><span>›</span><b>Bellhop Message</b></nav>
+    <nav className="crumb" aria-label="Breadcrumb" style={{ marginBottom: "0", alignSelf: "flex-start" }}><a href="/">Trang chủ</a><span>›</span><a href="/#tong-quan">Sản phẩm</a><span>›</span><b>Bellhop Message</b></nav>
     <h1 className="display" style={{ maxWidth: "820px" }}>Tin nhắn từ mọi kênh, quản lý <span className="hl">trong một hộp thư</span></h1>
     <p className="lead" style={{ maxWidth: "760px" }}>Bellhop Message tập hợp tin nhắn của khách từ các kênh mạng xã hội về một hộp thư chung. Đội ngũ phân công xử lý, xem lịch sử trao đổi và thông tin đặt phòng của khách ngay trong hệ thống Bellhop.</p>
     <div className="btns" style={{ justifyContent: "center" }}><a className="btn btn-primary" href="#dang-ky">Đặt lịch demo →</a><a className="btn btn-outline" href="#tinh-nang">Khám phá tính năng</a></div>

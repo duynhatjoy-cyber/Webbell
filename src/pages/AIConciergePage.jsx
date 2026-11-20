@@ -75,7 +75,7 @@ export default class AIConciergePage extends DCLogic {
         <div className="bh t">
         <Header active="ai" startOpen={false} /><section className="p-hero ai-hero">
   <div className="wrap">
-    <nav className="crumb" aria-label="Breadcrumb" style={{ marginBottom: "28px" }}><a href="/">Trang chủ</a><span>›</span><a href="/#tong-quan">Sản phẩm</a><span>›</span><span>Chăm sóc khách hàng</span><span>›</span><b>Bellhop AI Concierge</b></nav>
+    <nav className="crumb" aria-label="Breadcrumb" style={{ marginBottom: "28px" }}><a href="/">Trang chủ</a><span>›</span><a href="/#tong-quan">Sản phẩm</a><span>›</span><b>Bellhop AI Concierge</b></nav>
     <div className="p-hero-in">
       <div className="stack" style={{ gap: "22px" }}>
         <span className="eyebrow">Bellhop AI Concierge</span>

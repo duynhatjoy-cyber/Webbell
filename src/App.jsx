@@ -37,6 +37,53 @@ function SpaRouterHandler() {
   }, [location.pathname, location.hash]);
 
   useEffect(() => {
+    const timer = setTimeout(() => {
+      document.querySelectorAll('.grid3, .grid4').forEach((grid) => {
+        if (!grid.querySelector(':scope > .fcard')) return;
+        if (grid.parentElement && grid.parentElement.classList.contains('fcard-slider-wrap')) return;
+        const wrap = document.createElement('div');
+        wrap.className = 'fcard-slider-wrap';
+        grid.parentNode.insertBefore(wrap, grid);
+        wrap.appendChild(grid);
+
+        const prev = document.createElement('button');
+        prev.type = 'button';
+        prev.className = 'fcard-slider-btn prev is-hidden';
+        prev.setAttribute('aria-label', 'Slide trước');
+        prev.textContent = '‹';
+
+        const next = document.createElement('button');
+        next.type = 'button';
+        next.className = 'fcard-slider-btn next';
+        next.setAttribute('aria-label', 'Slide tiếp');
+        next.textContent = '›';
+
+        const update = () => {
+          const maxScroll = grid.scrollWidth - grid.clientWidth;
+          prev.classList.toggle('is-hidden', grid.scrollLeft <= 4);
+          next.classList.toggle('is-hidden', maxScroll <= 4 || grid.scrollLeft >= maxScroll - 4);
+        };
+
+        prev.onclick = () => {
+          const step = Math.max(240, Math.round(grid.clientWidth * 0.84));
+          grid.scrollBy({ left: -step, behavior: 'smooth' });
+        };
+        next.onclick = () => {
+          const step = Math.max(240, Math.round(grid.clientWidth * 0.84));
+          grid.scrollBy({ left: step, behavior: 'smooth' });
+        };
+
+        grid.addEventListener('scroll', update, { passive: true });
+        window.addEventListener('resize', update, { passive: true });
+        wrap.appendChild(prev);
+        wrap.appendChild(next);
+        update();
+      });
+    }, 80);
+    return () => clearTimeout(timer);
+  }, [location.pathname]);
+
+  useEffect(() => {
     const handleClick = (e) => {
       const a = e.target.closest ? e.target.closest('a[href]') : null;
       if (!a || e.defaultPrevented || e.button !== 0 || e.metaKey || e.ctrlKey || e.shiftKey || e.altKey) return;

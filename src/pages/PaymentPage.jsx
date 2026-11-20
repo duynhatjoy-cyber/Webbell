@@ -63,7 +63,7 @@ export default class PaymentPage extends DCLogic {
         <div className="bh t">
         <Header active="payment" startOpen={false} /><section className="p-hero pay-hero">
   <div className="wrap stack" style={{ gap: "22px", alignItems: "center", textAlign: "center" }}>
-    <nav className="crumb" aria-label="Breadcrumb" style={{ marginBottom: "0", justifyContent: "center" }}><a href="/">Trang chủ</a><span>›</span><a href="/#tong-quan">Sản phẩm</a><span>›</span><b>Bellhop Payment</b></nav>
+    <nav className="crumb" aria-label="Breadcrumb" style={{ marginBottom: "0", alignSelf: "flex-start", justifyContent: "flex-start" }}><a href="/">Trang chủ</a><span>›</span><a href="/#tong-quan">Sản phẩm</a><span>›</span><b>Bellhop Payment</b></nav>
     <span className="eyebrow">Bellhop Payment</span>
     <h1 className="display" style={{ maxWidth: "900px" }}>Thanh toán online cho cơ sở lưu trú, <span className="hl">đối soát ngay trên Bellhop</span></h1>
     <p className="lead" style={{ maxWidth: "780px" }}>Bellhop Payment kết nối với nền tảng thanh toán dành riêng cho ngành lưu trú, giúp khách sạn nhận thanh toán online và theo dõi giao dịch cùng dữ liệu đặt phòng trong hệ thống Bellhop.</p>

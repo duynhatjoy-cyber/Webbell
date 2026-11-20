@@ -7,7 +7,8 @@
   --grad:linear-gradient(90deg,#1450F0 0%,#1FA2FF 55%,#3FE0FF 100%);
 }
 /* Chữ nhấn dạng gradient */
-.bh.t .hl{background:var(--grad);-webkit-background-clip:text;background-clip:text;-webkit-text-fill-color:transparent;color:transparent}
+.bh.t .hl{background:none;-webkit-background-clip:border-box;background-clip:border-box;-webkit-text-fill-color:#1450F0;color:#1450F0}
+.bh.t .hero-t .hl,.bh.t .p-hero:not(.p-hero-c) .hl,.bh.t .dark .hl{background:none;-webkit-background-clip:border-box;background-clip:border-box;-webkit-text-fill-color:#3FE0FF;color:#3FE0FF}
 .bh.t .eyebrow{width:fit-content;max-width:100%;padding:5px 14px;border-radius:999px;background:#F4F7FD;box-shadow:inset 0 0 0 1px #C9D6EE;font-size:12px;line-height:1.4;color:#3A5A9E}
 .bh.t .eyebrow::before{display:none}
 .bh.t .dark .eyebrow,.bh.t .stats-band .eyebrow,.bh.t .cta-band .eyebrow{color:#9FD9DE;background:rgba(255,255,255,.06);box-shadow:inset 0 0 0 1px rgba(159,217,222,.35)}
