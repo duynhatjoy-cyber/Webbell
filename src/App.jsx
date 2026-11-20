@@ -38,8 +38,9 @@ function SpaRouterHandler() {
 
   useEffect(() => {
     const timer = setTimeout(() => {
-      document.querySelectorAll('.grid3, .grid4').forEach((grid) => {
-        if (!grid.querySelector(':scope > .fcard')) return;
+      document.querySelectorAll('.grid4').forEach((grid) => {
+        if (!grid.querySelector(':scope > a.fcard')) return;
+        if (!grid.children || grid.children.length < 2) return;
         if (grid.parentElement && grid.parentElement.classList.contains('fcard-slider-wrap')) return;
         const wrap = document.createElement('div');
         wrap.className = 'fcard-slider-wrap';

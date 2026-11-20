@@ -404,9 +404,9 @@
   .hide-mob{display:none !important}
   .stats,.grid4,.steps{grid-template-columns:minmax(0,1fr)}
   .fcard-slider-wrap{display:block;position:relative;width:100%}
-  .grid4:has(> .fcard),.grid3:has(> .fcard){display:flex !important;flex-wrap:nowrap;overflow-x:auto;scroll-snap-type:x mandatory;-webkit-overflow-scrolling:touch;gap:14px;padding:4px 2px 14px;margin:0 -2px;scrollbar-width:none}
-  .grid4:has(> .fcard)::-webkit-scrollbar,.grid3:has(> .fcard)::-webkit-scrollbar{display:none}
-  .grid4:has(> .fcard) > .fcard,.grid3:has(> .fcard) > .fcard{flex:0 0 82%;max-width:300px;scroll-snap-align:start}
+  .grid4:has(> a.fcard){display:flex !important;flex-wrap:nowrap;overflow-x:auto;scroll-snap-type:x mandatory;-webkit-overflow-scrolling:touch;gap:14px;padding:4px 2px 14px;margin:0 -2px;scrollbar-width:none}
+  .grid4:has(> a.fcard)::-webkit-scrollbar{display:none}
+  .grid4:has(> a.fcard) > a.fcard{flex:0 0 82%;max-width:300px;scroll-snap-align:start}
   .fcard-slider-btn{position:absolute;top:50%;transform:translateY(-50%);z-index:4;width:36px;height:36px;border-radius:50%;border:1px solid #cbd5e1;background:rgba(255,255,255,.94);color:#122745;font-size:20px;line-height:1;display:grid;place-items:center;cursor:pointer;box-shadow:0 8px 20px -6px rgba(18,39,69,.32);transition:opacity .18s,background .15s,border-color .15s,color .15s}
   .fcard-slider-btn.prev{left:4px}
   .fcard-slider-btn.next{right:4px}
