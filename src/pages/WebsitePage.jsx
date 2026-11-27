@@ -73,29 +73,41 @@ export default class WebsitePage extends DCLogic {
     <div className="stack" style={{ gap: "24px" }}>
       <nav className="crumb" aria-label="Breadcrumb" style={{ marginBottom: "0" }}><a href="/">Trang chủ</a><span>›</span><a href="/#tong-quan">Sản phẩm</a><span>›</span><b style={{ color: "#0B1B3F" }}>Bellhop Website</b></nav>
       <span className="eyebrow">Bellhop Website · Website cho cơ sở lưu trú</span>
-      <h1 className="display" style={{ fontSize: "clamp(38px, 5vw, 60px)" }}>Website chuyên nghiệp cho khách sạn, homestay và villa, <span className="hl">tích hợp sẵn đặt phòng trực tiếp</span></h1>
-      <p className="lead">Chọn mẫu theo loại hình, thêm hình ảnh và giá phòng của bạn. Website kết nối sẵn Bellhop Booking Engine và Bellhop PMS: khách xem phòng, chọn ngày và đặt trực tiếp.</p>
-      <div className="btns"><a className="btn btn-primary" href="#mau">Xem mẫu website</a><a className="btn btn-outline" href="#dang-ky">Đặt lịch tư vấn</a></div>
-      <span className="small">Mẫu riêng cho từng loại hình · Tích hợp đặt phòng · Đặt phòng vào thẳng Bellhop PMS</span>
+      <h1 className="display" style={{ fontSize: "clamp(38px, 5vw, 60px)" }}>Website chuyên nghiệp <span className="hl">tích hợp đặt phòng trực tiếp</span></h1>
+      <p className="lead">Dễ dàng tạo website theo mẫu có sẵn, cập nhật hình ảnh và giá phòng. Kết nối Bellhop Booking Engine và PMS, giúp khách xem phòng và đặt trực tiếp ngay trên website.</p>
+      <div className="btns"><a className="btn btn-primary" href="#dang-ky">Đặt lịch tư vấn</a><a className="btn btn-outline" href="#mau">Xem mẫu website</a></div>
     </div>
-    <div style={{ position: "relative" }}>
+    <div>
       <div className="frame">
-        <div className="frame-bar"><i></i><i></i><i></i><span>www.breezehotel.vn</span></div>
-        <div style={{ position: "relative" }}>
-          <img src="/assets/383384ea4d76acccc2ee15a8bffbdfd6.jpg" alt="Website mẫu khách sạn" style={{ display: "block", width: "100%", height: "210px", objectFit: "cover" }} />
-          <div style={{ position: "absolute", inset: "0", background: "linear-gradient(180deg, rgba(7,26,77,.55), rgba(7,26,77,.15) 45%, rgba(7,26,77,.7))", color: "#fff", padding: "20px 24px", display: "flex", flexDirection: "column", justifyContent: "space-between" }}>
-            <div className="row" style={{ justifyContent: "space-between", gap: "12px", fontSize: "13px" }}><b style={{ letterSpacing: ".14em" }}>BREEZE HOTEL</b><span>Phòng · Tiện ích · Ưu đãi · Liên hệ</span></div>
-            <div><b style={{ display: "block", fontSize: "28px", lineHeight: "1.15", letterSpacing: "-.02em" }}>Nghỉ dưỡng sát biển,<br />đặt phòng trực tiếp</b><span style={{ fontSize: "12px", color: "#D6E2FF" }}>Mẫu Breeze · Minh họa</span></div>
-          </div>
-        </div>
-        <div style={{ padding: "16px", display: "grid", gridTemplateColumns: "repeat(3, minmax(0, 1fr)) auto", gap: "8px", alignItems: "center", fontSize: "13px" }}>
-          <span style={{ padding: "8px 10px", borderRadius: "10px", background: "#F5F8FE" }}><span className="small" style={{ fontSize: "11px" }}>Nhận phòng</span><br /><b>Th 6, 23/10</b></span>
-          <span style={{ padding: "8px 10px", borderRadius: "10px", background: "#F5F8FE" }}><span className="small" style={{ fontSize: "11px" }}>Trả phòng</span><br /><b>CN, 25/10</b></span>
-          <span style={{ padding: "8px 10px", borderRadius: "10px", background: "#F5F8FE" }}><span className="small" style={{ fontSize: "11px" }}>Khách</span><br /><b>2 người lớn</b></span>
-          <span className="btn btn-primary btn-sm">Đặt phòng</span>
-        </div>
+        <svg viewBox="0 0 640 440" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Minh họa website villa nghỉ dưỡng" style={{ display: "block", width: "100%", height: "auto" }}>
+          <defs>
+            <linearGradient id="bwSky" x1="0" y1="0" x2="0" y2="1"><stop offset="0%" stopColor="#89CEE2"/><stop offset="100%" stopColor="#BCE4EE"/></linearGradient>
+            <linearGradient id="bwPool" x1="0" y1="0" x2="1" y2="1"><stop offset="0%" stopColor="#3DA4BD"/><stop offset="100%" stopColor="#1E7B94"/></linearGradient>
+          </defs>
+          <rect width="640" height="440" fill="url(#bwSky)"/>
+          <path d="M0 240 Q160 200 320 225 T640 215 L640 310 L0 310 Z" fill="#6BB39B" opacity="0.65"/>
+          <path d="M0 265 Q200 235 420 255 T640 245 L640 320 L0 320 Z" fill="#5CA388" opacity="0.75"/>
+          <rect x="0" y="385" width="640" height="55" fill="#F4EDE2"/>
+          <rect x="85" y="295" width="470" height="95" rx="6" fill="url(#bwPool)"/>
+          <path d="M135 332 Q155 325 175 332 M310 350 Q335 342 360 350 M445 325 Q465 318 485 325" fill="none" stroke="#9BE0EE" strokeWidth="3" strokeLinecap="round"/>
+          <rect x="155" y="135" width="330" height="150" fill="#FBF7EE"/>
+          <rect x="295" y="80" width="185" height="65" fill="#FBF7EE"/>
+          <rect x="285" y="70" width="205" height="14" rx="2" fill="#ECE2CE"/>
+          <rect x="142" y="128" width="356" height="12" rx="2" fill="#ECE2CE"/>
+          <rect x="180" y="165" width="120" height="95" fill="#5A8798"/>
+          <rect x="330" y="165" width="130" height="95" fill="#5A8798"/>
+          <rect x="315" y="96" width="68" height="36" fill="#5A8798"/>
+          <rect x="395" y="96" width="68" height="36" fill="#5A8798"/>
+          <path d="M180 165 L230 260 M330 165 L390 260" stroke="#7AA5B5" strokeWidth="10" opacity="0.35"/>
+          <rect x="155" y="285" width="330" height="10" fill="#E4D8C1"/>
+          <g fill="#2C5E3B">
+            <rect x="52" y="260" width="8" height="145" fill="#6E4E37"/>
+            <path d="M56 265 Q10 245 0 275 Q30 265 56 265 M56 265 Q18 220 5 235 Q35 245 56 265 M56 265 Q65 215 95 225 Q75 245 56 265 M56 265 Q105 240 120 270 Q85 262 56 265"/>
+            <rect x="572" y="268" width="8" height="137" fill="#6E4E37"/>
+            <path d="M576 272 Q530 252 515 280 Q545 270 576 272 M576 272 Q540 230 525 245 Q555 255 576 272 M576 272 Q585 222 618 232 Q596 252 576 272 M576 272 Q620 248 638 278 Q604 270 576 272"/>
+          </g>
+        </svg>
       </div>
-      <div className="card" style={{ position: "relative", margin: "-28px 24px 0 auto", width: "290px", padding: "16px 18px", display: "flex", gap: "12px", alignItems: "center" }}><span className="tile t-orange"><svg viewBox="0 0 24 24" aria-hidden="true"><rect x="4" y="5" width="16" height="15" rx="3" style={{ fill: "none", stroke: "#FFFFFF", strokeWidth: "2" }}></rect><path d="M4 10h16M9 3v4M15 3v4M9 15l2 2 4-4" style={{ fill: "none", stroke: "#FFFFFF", strokeWidth: "2", strokeLinecap: "round", strokeLinejoin: "round" }}></path></svg></span><span><b style={{ display: "block", fontSize: "15px" }}>Đặt phòng mới từ website</b><span className="small">Deluxe hướng biển · 2 đêm</span></span></div>
     </div>
   </div></section><section className="sec" id="van-de">
   <div className="wrap stack" style={{ gap: "48px" }}>

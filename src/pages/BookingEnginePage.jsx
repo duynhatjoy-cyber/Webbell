@@ -4,9 +4,101 @@ import Header from '../components/Header';
 import Footer from '../components/Footer';
 
 export default class BookingEnginePage extends DCLogic {
-  constructor(p) { super(p); this.state = { f: { name: '', phone: '', email: '', org: '', type: '', rooms: '', consent: false }, prods: ['Booking Engine'], err: {}, sent: false, g: 0, open: 0, n: '300', price: '900000', rate: '18', shift: '20' }; }
+  constructor(p) { super(p); this.state = { f: { name: '', phone: '', email: '', org: '', type: '', rooms: '', consent: false }, prods: ['Booking Engine'], err: {}, sent: false, step: 0, g: 0, open: 0, n: '300', price: '900000', rate: '18', shift: '20' }; }
   renderVals() {
     const s = this.state;
+    const STEPS = [
+      {
+        num: '01',
+        title: 'Tăng tỷ lệ khách đặt thành công',
+        sub: 'Khách xem là đặt được ngay',
+        pill: 'Ít khách bỏ ngang hơn',
+        pts: [
+          'Tìm phòng theo ngày lưu trú và số khách',
+          'Trang hạng phòng đủ hình ảnh, diện tích, tiện nghi, chính sách hủy',
+          'Đặt xong trong 3 bước, giữ phòng ngay',
+          'Giao diện tối ưu cho điện thoại'
+        ],
+        img: '/assets/d8e97cd43f9f645eec6abba0f8eee195.png',
+        alt: 'Màn hình danh sách đặt phòng trực tiếp của Bellhop'
+      },
+      {
+        num: '02',
+        title: 'Tăng doanh thu mỗi đặt phòng',
+        sub: 'Bán đúng giá, đúng hạng phòng',
+        pill: 'Tối ưu doanh thu trực tiếp',
+        pts: [
+          'Hiển thị đầy đủ hạng phòng kèm hình ảnh và tiện nghi nổi bật',
+          'Gợi ý nâng hạng phòng hoặc gói kèm bữa sáng, dịch vụ',
+          'Áp dụng giá theo ngày và giá linh động theo mùa vụ',
+          'Khách đặt trực tiếp, không tốn phí hoa hồng OTA'
+        ],
+        img: '/assets/de8ede5a8ea84f4225237b7fd9aebf2d.png',
+        alt: 'Màn hình cấu hình hạng phòng và giá của Bellhop'
+      },
+      {
+        num: '03',
+        title: 'Lấp đầy phòng mùa cao điểm',
+        sub: 'Bán hết phòng, không bán trùng',
+        pill: 'Đồng bộ tồn phòng tức thì',
+        pts: [
+          'Tồn phòng trừ đồng thời giữa website và các kênh OTA',
+          'Hạn chế tình trạng bán trùng khi lượng đặt phòng tăng cao',
+          'Mở bán linh hoạt từng hạng phòng theo công suất thực tế',
+          'Theo dõi ngày còn trống để chủ động đẩy bán kịp thời'
+        ],
+        img: '/assets/d967b787263d4b619b118217c8635099.png',
+        alt: 'Màn hình quản lý phòng và công suất của Bellhop'
+      },
+      {
+        num: '04',
+        title: 'Giảm việc tay và sai sót',
+        sub: 'Đơn tự vào sơ đồ phòng',
+        pill: 'Không cần nhập lại thủ công',
+        pts: [
+          'Đặt phòng từ website tự động vào thẳng sơ đồ phòng PMS',
+          'Không phải kiểm tra phòng trống và báo giá thủ công qua tin nhắn',
+          'Lễ tân nhận thông báo ngay khi có đặt phòng mới',
+          'Hạn chế nhầm lẫn ngày ở, hạng phòng hoặc thông tin khách'
+        ],
+        img: '/assets/d8e97cd43f9f645eec6abba0f8eee195.png',
+        alt: 'Màn hình danh sách đặt phòng của Bellhop PMS'
+      },
+      {
+        num: '05',
+        title: 'Thiết lập giá thông minh',
+        sub: 'Một bảng giá cho mọi kênh',
+        pill: 'Quản lý giá tập trung',
+        pts: [
+          'Cấu hình bảng giá một lần, dùng chung cho website, PMS và OTA',
+          'Thiết lập giá theo ngày thường, cuối tuần và ngày lễ',
+          'Tùy chỉnh chính sách hoàn hủy rõ ràng theo từng loại giá',
+          'Đồng bộ giá tức thì, không lo lệch giá giữa các kênh'
+        ],
+        img: '/assets/de8ede5a8ea84f4225237b7fd9aebf2d.png',
+        alt: 'Màn hình thiết lập bảng giá của Bellhop'
+      },
+      {
+        num: '06',
+        title: 'Bán ở mọi nơi khách tìm thấy bạn',
+        sub: 'Website, fanpage, tin nhắn',
+        pill: 'Đa điểm chạm đặt phòng',
+        pts: [
+          'Gắn nút đặt phòng trực tiếp lên website hiện có của khách sạn',
+          'Dùng ngay Bellhop Website nếu cơ sở chưa có website riêng',
+          'Chia sẻ link đặt phòng trực tiếp qua Zalo, Messenger, fanpage',
+          'Ghi nhận nguồn đặt phòng để đánh giá hiệu quả từng kênh'
+        ],
+        img: '/assets/d967b787263d4b619b118217c8635099.png',
+        alt: 'Màn hình bán phòng đa kênh của Bellhop'
+      }
+    ];
+    const flowSteps = STEPS.map((st, i) => ({
+      ...st,
+      cls: i === s.step ? 'on' : '',
+      pressed: i === s.step ? 'true' : 'false',
+      pick: () => this.setState({ step: i })
+    }));
     const G = [
       { label: '1 · Chọn ngày', num: 'Bước 1', title: 'Chọn ngày và số khách', desc: 'Khách chọn ngày nhận, trả phòng và số người ngay trên website của cơ sở.' },
       { label: '2 · Chọn phòng', num: 'Bước 2', title: 'Chọn hạng phòng, xem giá và chính sách', desc: 'Hạng phòng còn trống hiện kèm hình ảnh, diện tích, tiện nghi, giá theo ngày và chính sách hủy.' },
@@ -56,6 +148,7 @@ export default class BookingEnginePage extends DCLogic {
     };
 
     return { form: _form,
+      flowSteps, curStep: STEPS[s.step] || STEPS[0],
       gsteps, gs: G[s.g], isG1: s.g === 0, isG2: s.g === 1, isG3: s.g === 2,
       calc,
       onN: (e) => this.setState({ n: e.target.value }),
@@ -75,18 +168,17 @@ export default class BookingEnginePage extends DCLogic {
     return (
       <>
         <div className="bh t">
-        <Header active="booking" startOpen={false} /><section className="be-hero">
-  <div className="be-photo" aria-hidden="true"><img src="/assets/383384ea4d76acccc2ee15a8bffbdfd6.jpg" alt="" /></div>
-  <div className="wrap be-hero-in">
-    <div className="stack be-copy" style={{ gap: "22px" }}>
-      <nav className="be-crumb" aria-label="Breadcrumb"><a href="/">Trang chủ</a><span>/</span><a href="/#tong-quan">Sản phẩm</a><span>/</span><span>Bellhop Booking Engine</span></nav>
-      <h1 className="be-h1">Nhận đặt phòng trực tiếp trên website, giảm chi phí hoa hồng OTA</h1>
-      <p className="be-lead">Bellhop Booking Engine bổ sung chức năng đặt phòng cho website của khách sạn. Khách xem phòng trống, giá theo ngày và hoàn tất đặt phòng ngay trên website; đặt phòng tự vào Bellhop PMS.</p>
-      <div className="btns" style={{ marginTop: "6px" }}><a className="btn be-btn" href="#dang-ky">Đặt lịch demo</a><a className="btn be-btn-o" href="#uoc-tinh">Ước tính chi phí hoa hồng</a></div>
+        <Header active="booking" startOpen={false} /><section className="p-hero">
+  <div className="wrap p-hero-in">
+    <div className="stack" style={{ gap: "24px" }}>
+      <nav className="crumb" aria-label="Breadcrumb" style={{ marginBottom: "0" }}><a href="/">Trang chủ</a><span>›</span><a href="/#tong-quan">Sản phẩm</a><span>›</span><b>Bellhop Booking Engine</b></nav>
+      <span className="eyebrow">Bellhop Booking Engine</span>
+      <h1 className="display" style={{ fontSize: "clamp(38px, 5vw, 60px)" }}>Công cụ đặt phòng <span className="hl">tăng doanh thu bán trực tiếp</span></h1>
+      <p className="lead">Khách đặt phòng ngay trên website hoặc fanpage, không qua trung gian. Phòng trống và giá luôn khớp với Bellhop PMS, đặt phòng mới tự vào sơ đồ phòng.</p>
+      <div className="btns"><a className="btn btn-primary" href="#dang-ky">Đặt lịch demo</a><a className="btn btn-outline" href="#uoc-tinh">Ước tính chi phí hoa hồng</a></div>
     </div>
-    <div className="be-frame">
-      <div className="frame-bar"><i></i><i></i><i></i><span>www.khachsanmau.vn/dat-phong</span></div>
-      <img src="/assets/d8e97cd43f9f645eec6abba0f8eee195.png" alt="Màn hình danh sách đặt phòng của Bellhop" />
+    <div className="frame">
+      <img src="/assets/383384ea4d76acccc2ee15a8bffbdfd6.jpg" alt="Khách sạn ven biển tích hợp Bellhop Booking Engine" style={{ display: "block", width: "100%", aspectRatio: "4 / 3", objectFit: "cover" }} />
     </div>
   </div></section><section className="soft-grid sec">
   <div className="wrap stack" style={{ gap: "56px" }}>
@@ -101,30 +193,37 @@ export default class BookingEnginePage extends DCLogic {
       <div className="fcard"><span className="tile t-sky"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 12a4 4 0 1 0 0-8 4 4 0 0 0 0 8zM4 21a8 8 0 0 1 16 0" style={{ fill: "none", stroke: "#FFFFFF", strokeWidth: "2", strokeLinecap: "round" }}></path></svg></span><h3 className="h4">Thiếu dữ liệu khách đặt trực tiếp</h3><p className="p" style={{ fontSize: "16px" }}>Thông tin khách nằm ở OTA, khó chăm sóc lại và xây dựng tệp khách quen.</p></div>
     </div>
   </div></section><section className="sec" id="cach-hoat-dong">
-  <div className="wrap stack" style={{ gap: "56px" }}>
-    <div className="stack center" style={{ gap: "16px", alignItems: "center" }}>
-      <span className="eyebrow">Cách hoạt động</span>
-      <h2 className="h2">Từ website đến sơ đồ phòng, không cần nhập tay</h2>
+  <div className="wrap stack" style={{ gap: "44px" }}>
+    <div className="stack center" style={{ gap: "14px", alignItems: "center", maxWidth: "780px", margin: "0 auto" }}>
+      <span className="eyebrow">Tính năng</span>
+      <h2 className="h2">Tính năng phù hợp với mục tiêu của khách sạn bạn</h2>
+      <p className="lead">Chọn mục tiêu bạn đang quan tâm để xem Bellhop giúp được gì.</p>
     </div>
-    <div className="proc">
-      <div className="proc-img"><img src="/assets/63e0d2bfe1224291a4be1d6730facb48.jpg" alt="Quầy lễ tân khách sạn" /></div>
-      <div className="proc-list">
-        <details className="proc-it" name="proc" open={true}>
-          <summary><span className="n">01</span><b>Khách vào website</b><i className="pm" aria-hidden="true"></i></summary>
-          <div className="proc-body"><p>Khách truy cập website của cơ sở và chọn ngày lưu trú, số khách.</p></div>
-        </details>
-        <details className="proc-it" name="proc">
-          <summary><span className="n">02</span><b>Xem phòng trống &amp; giá</b><i className="pm" aria-hidden="true"></i></summary>
-          <div className="proc-body"><p>Hệ thống hiển thị hạng phòng còn trống cùng giá theo ngày, lấy từ Bellhop PMS.</p></div>
-        </details>
-        <details className="proc-it" name="proc">
-          <summary><span className="n">03</span><b>Xác nhận đặt phòng</b><i className="pm" aria-hidden="true"></i></summary>
-          <div className="proc-body"><p>Khách nhập thông tin và xác nhận đặt phòng.</p></div>
-        </details>
-        <details className="proc-it" name="proc">
-          <summary><span className="n">04</span><b>Vào thẳng PMS</b><i className="pm" aria-hidden="true"></i></summary>
-          <div className="proc-body"><p>Đặt phòng được ghi nhận ngay trên sơ đồ phòng của Bellhop PMS.</p></div>
-        </details>
+    <div className="be-flow">
+      <div className="be-flow-list">
+        {(v.flowSteps || []).map((st, $index) => (
+          <button key={$index} className={`be-flow-item ${st.cls}`} type="button" aria-pressed={st.pressed} onClick={st.pick}>
+            <span className="num">{st.num}</span>
+            <span className="txt">
+              <b>{st.title}</b>
+              <span>{st.sub}</span>
+            </span>
+          </button>
+        ))}
+      </div>
+      <div className="be-flow-panel">
+        <div className="be-flow-copy">
+          <h3>{v.curStep.title}</h3>
+          <span className="be-flow-pill">{v.curStep.pill}</span>
+          <ul className="be-flow-pts">
+            {(v.curStep.pts || []).map((pt, $index) => (
+              <li key={$index}>{pt}</li>
+            ))}
+          </ul>
+        </div>
+        <div className="be-flow-shot">
+          <img src={v.curStep.img} alt={v.curStep.alt} />
+        </div>
       </div>
     </div>
   </div></section><section className="sec" id="tinh-nang" style={{ paddingTop: "0" }}>

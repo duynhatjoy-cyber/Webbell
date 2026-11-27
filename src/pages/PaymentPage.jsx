@@ -63,11 +63,11 @@ export default class PaymentPage extends DCLogic {
         <div className="bh t">
         <Header active="payment" startOpen={false} /><section className="p-hero pay-hero">
   <div className="wrap stack" style={{ gap: "22px", alignItems: "center", textAlign: "center" }}>
-    <nav className="crumb" aria-label="Breadcrumb" style={{ marginBottom: "0", alignSelf: "flex-start", justifyContent: "flex-start" }}><a href="/">Trang chủ</a><span>›</span><a href="/#tong-quan">Sản phẩm</a><span>›</span><b>Bellhop Payment</b></nav>
+    <nav className="crumb" aria-label="Breadcrumb" style={{ marginBottom: "0", alignSelf: "center", justifyContent: "center" }}><a href="/">Trang chủ</a><span>›</span><a href="/#tong-quan">Sản phẩm</a><span>›</span><b>Bellhop Payment</b></nav>
     <span className="eyebrow">Bellhop Payment</span>
     <h1 className="display" style={{ maxWidth: "900px" }}>Thanh toán online cho cơ sở lưu trú, <span className="hl">đối soát ngay trên Bellhop</span></h1>
     <p className="lead" style={{ maxWidth: "780px" }}>Bellhop Payment kết nối với nền tảng thanh toán dành riêng cho ngành lưu trú, giúp khách sạn nhận thanh toán online và theo dõi giao dịch cùng dữ liệu đặt phòng trong hệ thống Bellhop.</p>
-    <div className="btns" style={{ justifyContent: "center" }}><a className="btn ai-cta" href="#dang-ky">Đặt lịch tư vấn <span>→</span></a><a className="btn btn-outline" href="#phi">Xem phí giao dịch</a></div>
+    <div className="btns" style={{ justifyContent: "center" }}><a className="btn btn-primary" href="#dang-ky">Đặt lịch tư vấn</a><a className="btn btn-outline" href="#phi">Xem phí giao dịch</a></div>
   </div></section><section className="pay-feats">
   <div className="wrap pay-feat-grid">
     <div className="pay-feat"><span className="pay-fic"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M9 11a4 4 0 1 0 0-8 4 4 0 0 0 0 8zM2 21a7 7 0 0 1 14 0M17 11a3 3 0 1 0 0-6M22 21a6 6 0 0 0-5-6" style={{ fill: "none", stroke: "currentColor", strokeWidth: "1.8", strokeLinecap: "round", strokeLinejoin: "round" }}></path></svg></span><h3>Tinh giản vận hành</h3><p>Tiết kiệm thời gian và giảm lỗi nhập thủ công với các khoản thanh toán và giao dịch tập trung trên một nền tảng.</p></div>
@@ -184,8 +184,6 @@ export default class PaymentPage extends DCLogic {
                   <>
           <div className="card" style={{ padding: "24px", display: "flex", flexDirection: "column", gap: "12px", maxWidth: "420px", width: "100%", margin: "0 auto" }}>
             <b style={{ fontSize: "16px" }}>Chính sách thu tiền của cơ sở</b>
-            <div className="row" style={{ justifyContent: "space-between", gap: "12px", fontSize: "14px", padding: "12px 14px", borderRadius: "12px", background: "#F5F8FE" }}><span>Phí hủy phòng</span><span className="ph">[theo chính sách]</span></div>
-            <div className="row" style={{ justifyContent: "space-between", gap: "12px", fontSize: "14px", padding: "12px 14px", borderRadius: "12px", background: "#F5F8FE" }}><span>No-show</span><span className="ph">[theo chính sách]</span></div>
             <div className="row" style={{ justifyContent: "space-between", gap: "12px", fontSize: "14px", padding: "12px 14px", borderRadius: "12px", background: "#F5F8FE" }}><span>Mức đặt cọc</span><b>50%</b></div>
             <span className="small" style={{ fontSize: "12px" }}>Minh họa</span>
           </div>

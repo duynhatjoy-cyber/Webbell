@@ -117,11 +117,10 @@ export default class HomePage extends DCLogic {
   <div className="wrap stack" style={{ position: "relative", gap: "24px", alignItems: "center" }}>
     <span className="eyebrow">Nền tảng quản lý khách sạn</span>
     <h1 className="display" style={{ maxWidth: "1000px" }}>Mọi việc của khách sạn, <span className="hl">gọn trên một nền tảng</span></h1>
-    <p className="lead">Lễ tân, kênh OTA, website, tin nhắn và kế toán trong một hệ thống. Phần lễ tân &amp; vận hành miễn phí.</p>
+    <p className="lead">Bellhop kết nối lễ tân, buồng phòng, kênh OTA, website đặt phòng, tin nhắn khách và kế toán trong cùng một hệ thống. Dùng miễn phí phần mềm lễ tân và vận hành, thêm tính năng khi cơ sở của bạn cần.</p>
     <div className="btns hero-btns-row" style={{ justifyContent: "center" }}><a className="btn btn-primary" href="#dang-ky">Dùng thử miễn phí</a><a className="btn btn-outline" href="#dang-ky">Đặt lịch demo</a></div>
     <div className="stage" style={{ marginTop: "16px" }}>
       <div className="frame" style={{ position: "relative" }}>
-        <div className="frame-bar"><i></i><i></i><i></i><span>Video giới thiệu · Bellhop Platform</span></div>
         <video
           className="hero-video"
           src="/assets/hero-demo.mp4"
@@ -133,12 +132,9 @@ export default class HomePage extends DCLogic {
           playsInline
         />
       </div>
-      <div className="float" style={{ left: "-64px", top: "120px" }}><span className="tile t-blue"><svg viewBox="0 0 24 24" aria-hidden="true"><rect x="4" y="5" width="16" height="15" rx="3" style={{ fill: "none", stroke: "#FFFFFF", strokeWidth: "2" }}></rect><path d="M4 10h16M9 3v4M15 3v4" style={{ fill: "none", stroke: "#FFFFFF", strokeWidth: "2", strokeLinecap: "round" }}></path></svg></span><span><b>Booking mới từ website</b><span>Deluxe · 2 đêm · Minh họa</span></span></div>
-      <div className="float" style={{ right: "-56px", top: "64px" }}><span className="tile t-orange"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 12a8 8 0 0 1 14-5.3M20 12a8 8 0 0 1-14 5.3M18 3v4h-4M6 21v-4h4" style={{ fill: "none", stroke: "#FFFFFF", strokeWidth: "2.2", strokeLinecap: "round", strokeLinejoin: "round" }}></path></svg></span><span><b>Giá đã đồng bộ lên các kênh</b><span>Qua Bellhop CMS</span></span></div>
-      <div className="float" style={{ right: "-40px", bottom: "120px" }}><span className="tile t-sky"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12.5l4.5 4.5L19 7.5" style={{ fill: "none", stroke: "#FFFFFF", strokeWidth: "2.6", strokeLinecap: "round", strokeLinejoin: "round" }}></path></svg></span><span><b>Phòng 203 đã dọn xong</b><span>Sẵn sàng đón khách</span></span></div>
     </div>
   </div>
-  <div className="fade"></div></section><section className="sec-sm">
+  <div className="fade"></div></section><section className="sec-sm" style={{ paddingBottom: "24px" }}>
   <div className="wrap stack" style={{ gap: "28px" }}>
     <p className="center h4" style={{ color: "#4A5873", fontWeight: "600" }}>Được các cơ sở lưu trú tại Việt Nam tin dùng</p>
     <div className="logos-marquee">
@@ -148,7 +144,7 @@ export default class HomePage extends DCLogic {
       </div>
     </div>
     <p className="center note">Chỉ hiển thị logo khi khách hàng đồng ý giới thiệu</p>
-  </div></section><section className="sec" id="tong-quan">
+  </div></section><section className="sec" id="tong-quan" style={{ paddingTop: "28px" }}>
   <div className="wrap stack" style={{ gap: "120px" }}>
     <div className="stack center" style={{ gap: "18px", alignItems: "center", maxWidth: "860px", margin: "0 auto" }}>
       <span className="eyebrow">Một nền tảng · bốn nhóm công việc</span>

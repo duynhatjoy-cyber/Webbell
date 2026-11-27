@@ -52,26 +52,39 @@ export default class ChainSolutionPage extends DCLogic {
       <span className="eyebrow">Giải pháp cho chuỗi lưu trú</span>
       <h1 className="display" style={{ fontSize: "clamp(38px, 5vw, 60px)" }}>Mở thêm cơ sở, <span className="hl">không mở thêm mớ sổ sách</span></h1>
       <p className="lead">Mỗi cơ sở vận hành trên cùng bộ công cụ: Bellhop PMS cho lễ tân và vận hành, CMS cho kênh bán và giá, Finance đưa số liệu sang phần mềm kế toán. Cùng một cách làm, cùng một chuẩn số liệu.</p>
-      <div className="btns"><a className="btn btn-primary" href="/#dang-ky">Dùng thử miễn phí</a><a className="btn btn-outline" href="#dang-ky">Đặt lịch demo</a></div>
+      <div className="btns"><a className="btn btn-primary" href="#dang-ky">Đặt lịch demo</a><a className="btn btn-outline" href="#thach-thuc">Xem bộ giải pháp</a></div>
     </div>
-    <div className="stack" style={{ gap: "14px" }}>
-      <div className="card" style={{ overflow: "hidden" }}>
-        <div className="row" style={{ justifyContent: "space-between", gap: "12px", padding: "14px 18px", borderBottom: "1px solid #E3E8F2", flexWrap: "wrap" }}>
-          <span className="row" style={{ gap: "10px" }}><img src="/assets/4f97ede20a93cc1bba22d88175df59a4.png" alt="Bellhop" style={{ height: "22px", width: "auto" }} /></span>
-          <span className="row" style={{ gap: "8px", padding: "8px 12px", borderRadius: "10px", border: "1px solid #E3E8F2", fontSize: "13px" }}><span className="small" style={{ fontSize: "12px" }}>Cơ sở:</span><b><span className="ph">[Tên cơ sở 1]</span></b><span aria-hidden="true">▾</span></span>
-        </div>
-        <div style={{ padding: "14px 18px", display: "flex", flexDirection: "column", gap: "8px" }}>
-          <span className="small" style={{ fontSize: "12px", fontWeight: "700", letterSpacing: "0.06em", textTransform: "uppercase" }}>Các cơ sở</span>
-          <div className="row" style={{ gap: "12px", padding: "12px", borderRadius: "12px", background: "#EAF1FF" }}><span className="tile t-navy" style={{ fontSize: "12px", fontWeight: "800" }}>01</span><span style={{ flex: "1", minWidth: "0", fontSize: "14px" }}><b style={{ display: "block" }}><span className="ph">[Cơ sở A]</span></b><span className="small" style={{ fontSize: "12px" }}><span className="ph">[x]</span> phòng</span></span><span style={{ textAlign: "right", fontSize: "13px" }}><span className="small" style={{ fontSize: "12px", display: "block" }}>Công suất</span><b><span className="ph">[x]%</span></b></span></div>
-          <div className="row" style={{ gap: "12px", padding: "12px", borderRadius: "12px", background: "#F5F8FE" }}><span className="tile t-blue" style={{ fontSize: "12px", fontWeight: "800" }}>02</span><span style={{ flex: "1", minWidth: "0", fontSize: "14px" }}><b style={{ display: "block" }}><span className="ph">[Cơ sở B]</span></b><span className="small" style={{ fontSize: "12px" }}><span className="ph">[x]</span> phòng</span></span><span style={{ textAlign: "right", fontSize: "13px" }}><span className="small" style={{ fontSize: "12px", display: "block" }}>Công suất</span><b><span className="ph">[x]%</span></b></span></div>
-          <div className="row" style={{ gap: "12px", padding: "12px", borderRadius: "12px", background: "#F5F8FE" }}><span className="tile t-orange" style={{ fontSize: "12px", fontWeight: "800" }}>03</span><span style={{ flex: "1", minWidth: "0", fontSize: "14px" }}><b style={{ display: "block" }}><span className="ph">[Cơ sở C]</span></b><span className="small" style={{ fontSize: "12px" }}><span className="ph">[x]</span> phòng</span></span><span style={{ textAlign: "right", fontSize: "13px" }}><span className="small" style={{ fontSize: "12px", display: "block" }}>Công suất</span><b><span className="ph">[x]%</span></b></span></div>
-        </div>
-        <div style={{ display: "grid", gridTemplateColumns: "repeat(2, minmax(0, 1fr))", gap: "12px", padding: "0 18px 18px" }}>
-          <div style={{ padding: "14px", borderRadius: "12px", background: "#F5F8FE", display: "flex", flexDirection: "column", gap: "4px" }}><span className="small" style={{ fontSize: "12px" }}>Doanh thu hôm nay · toàn chuỗi</span><b style={{ fontSize: "18px" }}>48.200.000đ</b></div>
-          <div style={{ padding: "14px", borderRadius: "12px", background: "#F5F8FE", display: "flex", flexDirection: "column", gap: "4px" }}><span className="small" style={{ fontSize: "12px" }}>Công suất trung bình</span><b style={{ fontSize: "18px" }}>82%</b></div>
-        </div>
+    <div>
+      <div className="frame">
+        <svg viewBox="0 0 640 440" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Minh họa chuỗi cơ sở lưu trú" style={{ display: "block", width: "100%", height: "auto" }}>
+          <rect width="640" height="440" fill="#29244D"/>
+          <rect x="0" y="405" width="640" height="35" fill="#7D7265"/>
+          <rect x="0" y="135" width="185" height="270" fill="#D49B35"/>
+          <polygon points="0,135 72,70 198,135" fill="#8C3626"/>
+          <rect x="28" y="185" width="52" height="62" fill="#3B6E75"/>
+          <rect x="102" y="185" width="52" height="62" fill="#3B6E75"/>
+          <rect x="52" y="295" width="84" height="110" fill="#5A3921"/>
+          <rect x="208" y="158" width="210" height="247" fill="#F4DFA2"/>
+          <polygon points="196,158 313,95 430,158" fill="#8C3626"/>
+          <rect x="242" y="198" width="54" height="58" fill="#3B6E75"/>
+          <rect x="330" y="198" width="54" height="58" fill="#3B6E75"/>
+          <rect x="255" y="280" width="116" height="22" rx="4" fill="#172A45"/>
+          <text x="313" y="295" textAnchor="middle" fill="#FFFFFF" fontSize="11" fontWeight="700" letterSpacing="3">HOTEL</text>
+          <rect x="275" y="314" width="76" height="91" fill="#5A3921"/>
+          <rect x="442" y="145" width="198" height="260" fill="#D49B35"/>
+          <polygon points="428,145 552,80 640,128 640,145" fill="#8C3626"/>
+          <rect x="478" y="190" width="54" height="60" fill="#3B6E75"/>
+          <rect x="556" y="190" width="54" height="60" fill="#3B6E75"/>
+          <rect x="498" y="298" width="86" height="107" fill="#5A3921"/>
+          <path d="M0 175 Q220 205 640 168" fill="none" stroke="#1E1A38" strokeWidth="2.5"/>
+          <g>
+            <circle cx="45" cy="182" r="14" fill="#E45143"/><circle cx="135" cy="187" r="14" fill="#F2BE54"/>
+            <circle cx="222" cy="192" r="14" fill="#E45143"/><circle cx="315" cy="193" r="14" fill="#F2BE54"/>
+            <circle cx="408" cy="189" r="14" fill="#E45143"/><circle cx="502" cy="182" r="14" fill="#E45143"/>
+            <circle cx="595" cy="174" r="14" fill="#F2BE54"/>
+          </g>
+        </svg>
       </div>
-      <p className="note">Minh họa</p>
     </div>
   </div></section><section className="soft-grid sec" id="thach-thuc" style={{ paddingTop: "72px", paddingBottom: "56px" }}>
   <div className="wrap stack" style={{ gap: "36px" }}>

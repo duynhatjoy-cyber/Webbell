@@ -53,12 +53,38 @@ export default class HotelSolutionPage extends DCLogic {
       <p className="lead">Lễ tân, buồng phòng, kênh OTA và website đặt phòng chạy trên cùng một dữ liệu. Ca sau nắm đủ việc ca trước, giá cập nhật một lần cho mọi kênh, khách đặt thẳng trên website của bạn.</p>
       <div className="btns"><a className="btn btn-primary" href="/#dang-ky">Dùng thử miễn phí</a><a className="btn btn-outline" href="#dang-ky">Đặt lịch demo</a></div>
     </div>
-    <div style={{ position: "relative" }}>
+    <div>
       <div className="frame">
-        <div className="frame-bar"><i></i><i></i><i></i><span>app.bellhop.vn/dat-phong</span></div>
-        <img src="/assets/d8e97cd43f9f645eec6abba0f8eee195.png" alt="Màn hình Danh sách đặt phòng của Bellhop PMS" />
+        <svg viewBox="0 0 640 440" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Minh họa quầy lễ tân khách sạn" style={{ display: "block", width: "100%", height: "auto" }}>
+          <rect width="640" height="440" fill="#102542"/>
+          <rect x="75" y="45" width="490" height="225" rx="6" fill="#C99663"/>
+          <rect x="225" y="102" width="190" height="64" rx="8" fill="#172A45"/>
+          <text x="320" y="133" textAnchor="middle" fill="#F2CA66" fontSize="16" fontWeight="700" letterSpacing="4">RECEPTION</text>
+          <text x="320" y="153" textAnchor="middle" fill="#9BB3D4" fontSize="10" letterSpacing="3">WELCOME</text>
+          <line x1="150" y1="0" x2="150" y2="80" stroke="#4D688C" strokeWidth="2"/>
+          <path d="M132 80 Q150 64 168 80 Z" fill="#F2CA66"/>
+          <line x1="320" y1="0" x2="320" y2="62" stroke="#4D688C" strokeWidth="2"/>
+          <path d="M302 62 Q320 46 338 62 Z" fill="#F2CA66"/>
+          <line x1="490" y1="0" x2="490" y2="80" stroke="#4D688C" strokeWidth="2"/>
+          <path d="M472 80 Q490 64 508 80 Z" fill="#F2CA66"/>
+          <rect x="0" y="268" width="640" height="22" fill="#E6D9C5"/>
+          <rect x="0" y="290" width="640" height="150" fill="#152B49"/>
+          <rect x="95" y="182" width="140" height="86" rx="4" fill="#1C3454" stroke="#DCE5F2" strokeWidth="5"/>
+          <rect x="108" y="194" width="114" height="14" rx="2" fill="#4DB3C2"/>
+          <rect x="108" y="216" width="84" height="8" rx="2" fill="#DCE5F2"/>
+          <rect x="108" y="232" width="102" height="8" rx="2" fill="#DCE5F2"/>
+          <rect x="82" y="268" width="166" height="8" rx="3" fill="#B6C4D8"/>
+          <path d="M368 268 A38 38 0 0 1 444 268 Z" fill="#D4AF37"/>
+          <rect x="401" y="226" width="10" height="6" rx="2" fill="#F5D76E"/>
+          <g transform="translate(495 232) rotate(-12)">
+            <rect width="74" height="46" rx="6" fill="#FFFFFF"/>
+            <rect width="74" height="14" rx="4" fill="#4DB3C2"/>
+            <text x="12" y="34" fill="#152B49" fontSize="13" fontWeight="800">203</text>
+          </g>
+          <path d="M0 320 Q45 340 58 415 Q20 390 0 375 Z" fill="#2B8A5B"/>
+          <path d="M640 320 Q595 340 582 415 Q620 390 640 375 Z" fill="#2B8A5B"/>
+        </svg>
       </div>
-      <div className="card" style={{ position: "relative", margin: "-36px 24px 0 auto", width: "300px", padding: "16px 18px", display: "flex", gap: "12px", alignItems: "center" }}><span className="tile t-orange"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 12a8 8 0 0 1 14-5.3M20 12a8 8 0 0 1-14 5.3M18 3v4h-4M6 21v-4h4" style={{ fill: "none", stroke: "#FFFFFF", strokeWidth: "2", strokeLinecap: "round", strokeLinejoin: "round" }}></path></svg></span><span><b style={{ display: "block", fontSize: "15px" }}>Đặt phòng OTA mới · Deluxe</b><span className="small">Đã về sơ đồ phòng PMS · Minh họa</span></span></div>
     </div>
   </div></section><section className="soft-grid sec" id="thach-thuc" style={{ paddingTop: "72px", paddingBottom: "56px" }}>
   <div className="wrap stack" style={{ gap: "36px" }}>

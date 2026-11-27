@@ -47,7 +47,7 @@ export default class Header extends DCLogic {
       if (this.state.open && this.state.open !== 'm') {
         this.setState({ open: null });
       }
-    }, 140);
+    }, 220);
   }
 
   handleScroll() {
@@ -173,7 +173,7 @@ export default class Header extends DCLogic {
                     {isEn ? 'Solutions' : 'Giải pháp'} <i className="cv"></i>
                   </button>
 
-                  <div className={`dd ${v.open.gp ? 'is-open' : ''}`} aria-hidden={!v.open.gp}>
+                  <div className={`dd ${v.open.gp ? 'is-open' : ''}`} aria-hidden={!v.open.gp} onMouseEnter={v.keepOpen}>
                     <a href="/giai-phap/khach-san">{isEn ? 'Hotels' : 'Khách sạn'}</a>
                     <a href="/giai-phap/homestay-villa">Homestay &amp; Villa</a>
                     <a href="/giai-phap/chuoi-luu-tru">{isEn ? 'Hotel Chains' : 'Chuỗi lưu trú'}</a>
@@ -212,6 +212,7 @@ export default class Header extends DCLogic {
                     className={`lang-dd ${v.open.lang ? 'is-open' : ''}`}
                     role="menu"
                     aria-hidden={!v.open.lang}
+                    onMouseEnter={v.keepOpen}
                   >
                     <button
                       type="button"

@@ -69,21 +69,19 @@ export default class FinancePage extends DCLogic {
     return (
       <>
         <div className="bh t">
-        <Header active="finance" startOpen={false} /><section className="p-hero fin-hero">
+        <Header active="finance" startOpen={false} /><section className="p-hero">
   <div className="wrap p-hero-in">
-    <div className="stack" style={{ gap: "22px" }}>
-      <nav className="crumb" aria-label="Breadcrumb" style={{ marginBottom: "0" }}><a href="/">Trang chủ</a><span>›</span><a href="/#tong-quan">Sản phẩm</a><span>›</span><span style={{ color: "#0B1B3F", fontWeight: "600" }}>Bellhop Finance</span></nav>
-      <span className="kick">Bellhop Finance · Kết nối phần mềm kế toán</span>
-      <h1 className="display">Số liệu khách sạn tự sang phần mềm kế toán, kế toán không phải nhập lại</h1>
-      <p className="lead">Bellhop Finance chuyển dữ liệu doanh thu, thu chi và hóa đơn từ hệ thống Bellhop sang phần mềm kế toán, giúp giảm nhập liệu thủ công và rút ngắn thời gian đối chiếu khi chốt sổ.</p>
-      <div className="btns"><a className="btn btn-navy" href="#dang-ky">Đặt lịch tư vấn <span>→</span></a></div>
+    <div className="stack" style={{ gap: "24px" }}>
+      <nav className="crumb" aria-label="Breadcrumb" style={{ marginBottom: "0" }}><a href="/">Trang chủ</a><span>›</span><a href="/#tong-quan">Sản phẩm</a><span>›</span><b>Bellhop Finance</b></nav>
+      <span className="eyebrow">Bellhop Finance · Kết nối phần mềm kế toán</span>
+      <h1 className="display" style={{ fontSize: "clamp(38px, 5vw, 60px)" }}>Đồng bộ số liệu khách sạn <span className="hl">sang phần mềm kế toán</span></h1>
+      <p className="lead">Bellhop Finance tự động chuyển dữ liệu doanh thu, thu chi và hóa đơn sang phần mềm kế toán, giảm nhập liệu và rút ngắn thời gian đối chiếu.</p>
+      <div className="btns"><a className="btn btn-primary" href="#dang-ky">Đặt lịch tư vấn</a><a className="btn btn-outline" href="#quy-trinh">Xem quy trình chốt sổ</a></div>
     </div>
-    <div className="fn-vis">
-      <div className="fn-scene" aria-hidden="true"><span className="fn-lamp"></span><span className="fn-sign">RECEPTION</span><span className="fn-desk"></span></div>
-      <div className="fn-tb a"><div className="fn-th"><b>Bellhop · Doanh thu 23/10</b><span className="fn-tag">Lễ tân</span></div><div className="fn-tr hd"><b>Chứng từ</b><span>Diễn giải</span><em>Số tiền</em></div><div className="fn-tr"><b>PT0218</b><span>Tiền phòng 101</span><em className="">2.670.000</em></div><div className="fn-tr"><b>PT0219</b><span>F&amp;B bàn B4 → P201</span><em className="">215.000</em></div><div className="fn-tr"><b>PC0045</b><span>Mua nước suối</span><em className="neg">-480.000</em></div></div>
-      <span className="fn-sync"><i></i>Bellhop Finance đồng bộ <span>›</span></span>
-      <div className="fn-tb b"><div className="fn-th"><b>Phần mềm kế toán · Chứng từ đã nhận</b><span className="fn-tag g">Kế toán</span></div><div className="fn-tr hd"><b>Số CT</b><span>TK Nợ / Có</span><em>Số tiền</em></div><div className="fn-tr"><b>PT0218</b><span>1111 / 5113</span><em>2.670.000</em></div><div className="fn-tr"><b>PT0219</b><span>1111 / 5113</span><em>215.000</em></div><div className="fn-tr"><b>PC0045</b><span>1561 / 1111</span><em>480.000</em></div></div>
-      <span className="fn-note">✦ Dữ liệu minh họa · tài khoản theo ánh xạ của từng cơ sở</span>
+    <div>
+      <div className="frame">
+        <img src="/assets/d967b787263d4b619b118217c8635099.png" alt="Màn hình Bellhop Finance" style={{ display: "block", width: "100%", aspectRatio: "4 / 3", objectFit: "cover", objectPosition: "right top" }} />
+      </div>
     </div>
   </div></section><section className="sec-sm">
   <div className="wrap stack" style={{ gap: "40px" }}>

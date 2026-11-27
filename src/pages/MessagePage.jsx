@@ -65,12 +65,12 @@ export default class MessagePage extends DCLogic {
     return (
       <>
         <div className="bh t">
-        <Header active="message" startOpen={false} /><section className="p-hero p-hero-c">
+        <Header active="message" startOpen={false} /><section className="p-hero p-hero-c msg-hero" style={{ background: "radial-gradient(960px 460px at 50% 0%, #E7F3F7 0%, #F7FAFC 55%, #FFFFFF 100%)", color: "var(--ink)" }}>
   <div className="wrap stack" style={{ gap: "22px", alignItems: "center" }}>
-    <nav className="crumb" aria-label="Breadcrumb" style={{ marginBottom: "0", alignSelf: "flex-start" }}><a href="/">Trang chủ</a><span>›</span><a href="/#tong-quan">Sản phẩm</a><span>›</span><b>Bellhop Message</b></nav>
-    <h1 className="display" style={{ maxWidth: "820px" }}>Tin nhắn từ mọi kênh, quản lý <span className="hl">trong một hộp thư</span></h1>
-    <p className="lead" style={{ maxWidth: "760px" }}>Bellhop Message tập hợp tin nhắn của khách từ các kênh mạng xã hội về một hộp thư chung. Đội ngũ phân công xử lý, xem lịch sử trao đổi và thông tin đặt phòng của khách ngay trong hệ thống Bellhop.</p>
-    <div className="btns" style={{ justifyContent: "center" }}><a className="btn btn-primary" href="#dang-ky">Đặt lịch demo →</a><a className="btn btn-outline" href="#tinh-nang">Khám phá tính năng</a></div>
+    <nav className="crumb" aria-label="Breadcrumb" style={{ marginBottom: "0", color: "#5A6478" }}><a href="/" style={{ color: "#5A6478" }}>Trang chủ</a><span>›</span><a href="/#tong-quan" style={{ color: "#5A6478" }}>Sản phẩm</a><span>›</span><a href="/#cham-soc-khach-hang" style={{ color: "#5A6478" }}>Chăm sóc khách hàng</a><span>›</span><b style={{ color: "#122745" }}>Bellhop Message</b></nav>
+    <h1 className="display" style={{ maxWidth: "820px", color: "#122745" }}>Tin nhắn từ mọi kênh, quản lý <span className="hl" style={{ color: "#1B7A8A" }}>trong một hộp thư</span></h1>
+    <p className="lead" style={{ maxWidth: "760px", color: "#4A5873" }}>Bellhop Message tập hợp tin nhắn của khách từ các kênh mạng xã hội về một hộp thư chung. Đội ngũ phân công xử lý, xem lịch sử trao đổi và thông tin đặt phòng của khách ngay trong hệ thống Bellhop.</p>
+    <div className="btns" style={{ justifyContent: "center" }}><a className="btn btn-navy" href="#dang-ky" style={{ background: "#122745", color: "#fff" }}>Đặt lịch demo</a><a className="btn btn-outline" href="#tinh-nang" style={{ background: "#fff", color: "#122745", borderColor: "#122745" }}>Khám phá tính năng</a></div>
     <div className="frame mx" style={{ marginTop: "28px" }}>
       <div className="frame-bar"><i></i><i></i><i></i><span>app.bellhop.vn/hop-thu</span></div>
       <div className="mx-grid">

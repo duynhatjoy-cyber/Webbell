@@ -73,15 +73,52 @@ export default class AIConciergePage extends DCLogic {
     return (
       <>
         <div className="bh t">
-        <Header active="ai" startOpen={false} /><section className="p-hero ai-hero">
+        <Header active="ai" startOpen={false} /><section className="p-hero">
+  <div className="wrap p-hero-in">
+    <div className="stack" style={{ gap: "24px" }}>
+      <nav className="crumb" aria-label="Breadcrumb" style={{ marginBottom: "0" }}><a href="/">Trang chủ</a><span>›</span><a href="/#tong-quan">Sản phẩm</a><span>›</span><a href="/#cham-soc-khach-hang">Chăm sóc khách hàng</a><span>›</span><b>Bellhop AI Concierge</b></nav>
+      <span className="eyebrow">Bellhop AI Concierge</span>
+      <h1 className="display" style={{ fontSize: "clamp(38px, 5vw, 60px)" }}>Trợ lý AI hỗ trợ <span className="hl">trả lời khách 24/7</span></h1>
+      <p className="lead">Bellhop AI Concierge tự động giải đáp thắc mắc về phòng, tiện ích, chính sách và dịch vụ theo dữ liệu khách sạn cung cấp.</p>
+      <div className="btns"><a className="btn btn-primary" href="#dang-ky">Đặt lịch demo</a><a className="btn btn-outline" href="#pham-vi">Xem phạm vi hỗ trợ</a></div>
+    </div>
+    <div>
+      <div className="frame">
+        <svg viewBox="0 0 640 440" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Minh họa phòng khách sạn hướng biển" style={{ display: "block", width: "100%", height: "auto" }}>
+          <rect width="640" height="440" fill="#F9ECDA"/>
+          <rect x="0" y="340" width="640" height="100" fill="#A67C52"/>
+          <line x1="0" y1="365" x2="640" y2="365" stroke="#8C633B" strokeWidth="2"/>
+          <line x1="0" y1="395" x2="640" y2="395" stroke="#8C633B" strokeWidth="2"/>
+          <rect x="330" y="35" width="240" height="230" fill="#8CD0E3" stroke="#5A3821" strokeWidth="8"/>
+          <rect x="330" y="185" width="240" height="30" fill="#3294AF"/>
+          <path d="M330 225 Q420 205 570 218 L570 265 L330 265 Z" fill="#E8C99B"/>
+          <circle cx="515" cy="90" r="24" fill="#FFF0A8"/>
+          <line x1="450" y1="35" x2="450" y2="265" stroke="#5A3821" strokeWidth="6"/>
+          <rect x="312" y="24" width="276" height="14" rx="4" fill="#FAF6EE"/>
+          <rect x="315" y="38" width="24" height="250" fill="#FAF6EE" opacity="0.85"/>
+          <rect x="562" y="38" width="24" height="250" fill="#FAF6EE" opacity="0.85"/>
+          <rect x="35" y="160" width="220" height="120" rx="8" fill="#8C5E3C"/>
+          <rect x="20" y="245" width="245" height="95" rx="8" fill="#FFFFFF"/>
+          <rect x="20" y="305" width="245" height="20" fill="#1C3A5E"/>
+          <rect x="20" y="295" width="245" height="8" fill="#3CA4B5"/>
+          <rect x="42" y="218" width="76" height="44" rx="10" fill="#FFFFFF" stroke="#E5E9F0" strokeWidth="2"/>
+          <rect x="132" y="218" width="76" height="44" rx="10" fill="#FFFFFF" stroke="#E5E9F0" strokeWidth="2"/>
+          <rect x="175" y="226" width="56" height="36" rx="8" fill="#4EB4C4"/>
+          <rect x="295" y="275" width="68" height="75" rx="4" fill="#7D5233"/>
+          <ellipse cx="329" cy="212" rx="22" ry="18" fill="#FFF2BA"/>
+          <rect x="325" y="230" width="8" height="45" fill="#B68B59"/>
+          <polygon points="560,360 612,360 604,415 568,415" fill="#D4C4A8"/>
+          <path d="M586 360 Q550 300 520 290 Q560 320 586 360 M586 360 Q575 270 592 250 Q598 305 586 360 M586 360 Q625 295 638 285 Q615 330 586 360" fill="#2E7D52"/>
+        </svg>
+      </div>
+    </div>
+  </div></section><section className="sec dark" style={{ paddingTop: "72px" }}>
   <div className="wrap">
-    <nav className="crumb" aria-label="Breadcrumb" style={{ marginBottom: "28px" }}><a href="/">Trang chủ</a><span>›</span><a href="/#tong-quan">Sản phẩm</a><span>›</span><b>Bellhop AI Concierge</b></nav>
     <div className="p-hero-in">
-      <div className="stack" style={{ gap: "22px" }}>
-        <span className="eyebrow">Bellhop AI Concierge</span>
-        <h1 className="display">Trợ lý AI trả lời khách theo thông tin <span className="hl">của chính khách sạn</span></h1>
-        <p className="lead">Bellhop AI Concierge giải đáp các câu hỏi thường gặp về phòng, tiện ích, chính sách và chỉ đường dựa trên cơ sở kiến thức do khách sạn thiết lập; những yêu cầu cần xử lý riêng được chuyển cho nhân viên.</p>
-        <div className="btns"><a className="btn ai-cta" href="#dang-ky">Đặt lịch demo với dữ liệu của khách sạn <span>→</span></a></div>
+      <div className="stack" style={{ gap: "18px" }}>
+        <span className="eyebrow">Trải nghiệm thực tế</span>
+        <h2 className="h2" style={{ color: "#fff" }}>Thử đặt câu hỏi cho AI Concierge</h2>
+        <p className="lead" style={{ color: "#C3D2F2" }}>Chọn câu hỏi gợi ý bên dưới để xem AI trả lời theo cơ sở kiến thức của khách sạn.</p>
       </div>
       <div className="ai-chat">
         <div className="ai-chat-h">

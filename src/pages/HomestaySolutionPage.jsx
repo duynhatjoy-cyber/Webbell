@@ -53,22 +53,37 @@ export default class HomestaySolutionPage extends DCLogic {
       <p className="lead">Tin nhắn từ các kênh về một hộp thư, khách tự đặt qua link bạn gửi trong cuộc trò chuyện, đặt phòng tự vào sơ đồ phòng. Bắt đầu với phần mềm quản lý miễn phí.</p>
       <div className="btns"><a className="btn btn-primary" href="/#dang-ky">Dùng thử miễn phí</a><a className="btn btn-outline" href="#dang-ky">Đặt lịch demo</a></div>
     </div>
-    <div className="feat-vis bg-tint-c" style={{ position: "relative", display: "flex", flexDirection: "column", alignItems: "center", gap: "0", padding: "24px" }}>
-      <div style={{ width: "min(280px, 100%)", borderRadius: "36px", background: "#122745", padding: "10px", boxShadow: "0 40px 70px -36px rgba(18,39,69,.6)" }}>
-        <div style={{ borderRadius: "31px", background: "#FFFFFF", overflow: "hidden", display: "flex", flexDirection: "column" }}>
-          <div className="row" style={{ gap: "10px", padding: "16px 16px 12px", borderBottom: "1px solid #E3E8F2" }}><span className="tile t-orange" style={{ fontSize: "12px", fontWeight: "800" }}>TH</span><span style={{ flex: "1", minWidth: "0" }}><b style={{ display: "block", fontSize: "14px" }}>Thu Hà</b><span className="small" style={{ fontSize: "11px" }}>Bellhop Message · Zalo</span></span><span className="chip" style={{ height: "24px", fontSize: "11px", background: "#E6F6F7", color: "#1F7A84" }}>Mới</span></div>
-          <div style={{ padding: "14px", display: "flex", flexDirection: "column", gap: "10px", background: "#F5F8FE" }}>
-            <span style={{ alignSelf: "flex-start", maxWidth: "86%", padding: "9px 12px", borderRadius: "14px 14px 14px 4px", background: "#FFFFFF", boxShadow: "0 0 0 1px #E3E8F2", fontSize: "13px" }}>Cuối tuần này còn villa 2 phòng ngủ không ạ?</span>
-            <span style={{ alignSelf: "flex-end", maxWidth: "86%", padding: "9px 12px", borderRadius: "14px 14px 4px 14px", background: "#1450F0", color: "#FFFFFF", fontSize: "13px" }}>Dạ còn ạ. Em gửi chị link để chọn ngày và đặt luôn nhé.</span>
-            <div style={{ alignSelf: "flex-end", width: "88%", borderRadius: "14px", overflow: "hidden", background: "#FFFFFF", boxShadow: "0 0 0 1px #E3E8F2" }}>
-              <img src="/assets/383384ea4d76acccc2ee15a8bffbdfd6.jpg" alt="" style={{ display: "block", width: "100%", height: "64px", objectFit: "cover" }} />
-              <div style={{ padding: "10px 12px", display: "flex", flexDirection: "column", gap: "6px" }}><b style={{ fontSize: "13px" }}>Hillside Villa · Đặt phòng</b><span className="small" style={{ fontSize: "12px" }}>Xem phòng trống, giá và xác nhận ngay</span><span className="btn btn-primary btn-sm" style={{ minHeight: "34px", fontSize: "11px" }}>Mở link đặt phòng</span></div>
-            </div>
-          </div>
-          <div className="row" style={{ gap: "8px", padding: "10px 12px", borderTop: "1px solid #E3E8F2" }}><span className="chip" style={{ height: "28px", fontSize: "11px", background: "#F5F8FE" }}>Mẫu trả lời nhanh</span><span style={{ flex: "1" }}></span><span className="btn btn-primary btn-sm" style={{ minHeight: "32px", padding: "0 12px", fontSize: "11px" }}>Gửi</span></div>
-        </div>
+    <div>
+      <div className="frame">
+        <svg viewBox="0 0 640 440" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Minh họa homestay buổi tối ấm cúng" style={{ display: "block", width: "100%", height: "auto" }}>
+          <defs>
+            <linearGradient id="hsSky" x1="0" y1="0" x2="0" y2="1"><stop offset="0%" stopColor="#262A53"/><stop offset="65%" stopColor="#5C4467"/><stop offset="100%" stopColor="#8F5D6B"/></linearGradient>
+          </defs>
+          <rect width="640" height="440" fill="url(#hsSky)"/>
+          <circle cx="535" cy="70" r="22" fill="#F3E5B8"/>
+          <path d="M0 315 Q160 250 320 295 T640 280 L640 440 L0 440 Z" fill="#2A5B47"/>
+          <rect x="0" y="385" width="640" height="55" fill="#1E4636"/>
+          <polygon points="275,365 365,365 395,440 245,440" fill="#E6D5B8"/>
+          <rect x="135" y="195" width="370" height="175" fill="#FBF2DF"/>
+          <polygon points="105,205 320,85 535,205" fill="#8D3B2B"/>
+          <rect x="285" y="255" width="70" height="115" rx="35" fill="#6D4A32"/>
+          <circle cx="340" cy="316" r="4" fill="#F4C95D"/>
+          <rect x="172" y="232" width="68" height="68" fill="#F6D86E"/>
+          <line x1="206" y1="232" x2="206" y2="300" stroke="#9C6B3B" strokeWidth="3"/>
+          <line x1="172" y1="266" x2="240" y2="266" stroke="#9C6B3B" strokeWidth="3"/>
+          <rect x="400" y="232" width="68" height="68" fill="#F6D86E"/>
+          <line x1="434" y1="232" x2="434" y2="300" stroke="#9C6B3B" strokeWidth="3"/>
+          <line x1="400" y1="266" x2="468" y2="266" stroke="#9C6B3B" strokeWidth="3"/>
+          <path d="M125 185 Q320 140 515 185" fill="none" stroke="#3D2B24" strokeWidth="2"/>
+          <g fill="#FFE484">
+            <circle cx="145" cy="180" r="6"/><circle cx="178" cy="172" r="6"/><circle cx="212" cy="166" r="6"/><circle cx="248" cy="162" r="6"/><circle cx="284" cy="160" r="6"/><circle cx="320" cy="159" r="6"/><circle cx="356" cy="160" r="6"/><circle cx="392" cy="162" r="6"/><circle cx="428" cy="166" r="6"/><circle cx="462" cy="172" r="6"/><circle cx="495" cy="180" r="6"/>
+          </g>
+          <polygon points="105,365 155,365 148,405 112,405" fill="#C9BC9C"/>
+          <path d="M130 365 Q95 315 78 300 Q112 330 130 365 M130 365 Q122 295 130 278 Q138 320 130 365 M130 365 Q162 315 182 300 Q150 330 130 365" fill="#358C5E"/>
+          <polygon points="485,365 535,365 528,405 492,405" fill="#C9BC9C"/>
+          <path d="M510 365 Q475 315 458 300 Q492 330 510 365 M510 365 Q502 295 510 278 Q518 320 510 365 M510 365 Q542 315 562 300 Q530 330 510 365" fill="#358C5E"/>
+        </svg>
       </div>
-      <div className="card" style={{ position: "absolute", right: "16px", bottom: "28px", width: "min(250px, 100%)", padding: "14px 16px", display: "flex", gap: "12px", alignItems: "center" }}><span className="tile t-blue"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12.5l4.5 4.5L19 7.5" style={{ fill: "none", stroke: "#FFFFFF", strokeWidth: "2.6", strokeLinecap: "round", strokeLinejoin: "round" }}></path></svg></span><span><b style={{ display: "block", fontSize: "15px" }}>Đặt phòng mới · Villa 2PN</b><span className="small">Đã ghi vào sơ đồ phòng PMS</span></span></div>
     </div>
   </div></section><section className="soft-grid sec" id="thach-thuc" style={{ paddingTop: "72px", paddingBottom: "56px" }}>
   <div className="wrap stack" style={{ gap: "36px" }}>

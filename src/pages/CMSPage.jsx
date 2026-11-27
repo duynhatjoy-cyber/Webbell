@@ -63,24 +63,13 @@ export default class CMSPage extends DCLogic {
     <div className="stack" style={{ gap: "24px" }}>
       <nav className="crumb" aria-label="Breadcrumb" style={{ marginBottom: "0" }}><a href="/">Trang chủ</a><span>›</span><a href="/#tong-quan">Sản phẩm</a><span>›</span><b style={{ color: "#0B1B3F" }}>Bellhop CMS</b></nav>
       <span className="eyebrow">Bellhop CMS · Quản lý kênh OTA &amp; định giá linh động</span>
-      <h1 className="display" style={{ fontSize: "clamp(38px, 5vw, 60px)" }}>Giá và tồn phòng trên mọi kênh OTA, <span className="hl">quản lý từ một nơi</span></h1>
-      <p className="lead">Bellhop CMS (Channel Manager – quản lý kênh OTA) đồng bộ giá, phòng trống và đặt phòng giữa Bellhop PMS với các kênh OTA, đồng thời cho phép thiết lập giá linh động theo nhu cầu, mùa vụ và thời điểm đặt phòng.</p>
-      <div className="btns"><a className="btn btn-primary" href="#dang-ky">Đặt lịch demo</a><a className="btn btn-outline" href="#kenh">Xem các kênh kết nối</a></div>
-      <span className="small">Cập nhật giá và tồn phòng một lần · Đặt phòng OTA về thẳng Bellhop PMS</span>
+      <h1 className="display" style={{ fontSize: "clamp(38px, 5vw, 60px)" }}>Quản lý giá và tồn phòng <span className="hl">trên mọi kênh OTA</span></h1>
+      <p className="lead">CMS đồng bộ giá, phòng trống và đặt phòng giữa Bellhop PMS với các kênh OTA, giúp khách sạn quản lý tập trung và linh hoạt điều chỉnh giá theo mùa vụ, nhu cầu.</p>
+      <div className="btns"><a className="btn btn-primary" href="#dang-ky">Đặt lịch demo</a><a className="btn btn-outline" href="tel:0972096499">Hotline 0972 096 499</a></div>
     </div>
-    <div className="stack" style={{ gap: "0" }}>
+    <div>
       <div className="frame">
-        <div className="frame-bar"><i></i><i></i><i></i><span>Lịch giá · Tháng 10</span></div>
-        <div style={{ padding: "20px", overflowX: "auto" }}>
-          <div style={{ display: "grid", gridTemplateColumns: "minmax(84px, 1.2fr) repeat(4, minmax(56px, 1fr))", gap: "6px", fontSize: "14px", textAlign: "center", alignItems: "center", minWidth: "360px" }}>
-            <span className="small" style={{ textAlign: "left", fontWeight: "700" }}>Hạng</span><span className="small" style={{ fontWeight: "700" }}>T5 22</span><span className="small" style={{ fontWeight: "700" }}>T6 23</span><span className="small" style={{ fontWeight: "700" }}>T7 24</span><span className="small" style={{ fontWeight: "700" }}>CN 25</span>
-            <b style={{ textAlign: "left" }}>Standard</b><span style={{ padding: "10px 0", borderRadius: "8px", background: "#F5F8FE" }}>650k</span><span style={{ padding: "10px 0", borderRadius: "8px", background: "#F5F8FE" }}>650k</span><span style={{ padding: "10px 0", borderRadius: "8px", background: "#EAF1FF", color: "#0F3FC4", fontWeight: "700" }}>790k</span><span style={{ padding: "10px 0", borderRadius: "8px", background: "#EAF1FF", color: "#0F3FC4", fontWeight: "700" }}>790k</span>
-            <b style={{ textAlign: "left" }}>Deluxe</b><span style={{ padding: "10px 0", borderRadius: "8px", background: "#F5F8FE" }}>890k</span><span style={{ padding: "10px 0", borderRadius: "8px", background: "#EAF1FF", color: "#0F3FC4", fontWeight: "700" }}>990k</span><span style={{ padding: "10px 0", borderRadius: "8px", background: "#EAF1FF", color: "#0F3FC4", fontWeight: "700" }}>1,05tr</span><span style={{ padding: "10px 0", borderRadius: "8px", background: "#F5F8FE" }}>890k</span>
-            <b style={{ textAlign: "left" }}>Family</b><span style={{ padding: "10px 0", borderRadius: "8px", background: "#E6F6F7", color: "#1E6E76", fontWeight: "700" }}>1,1tr</span><span style={{ padding: "10px 0", borderRadius: "8px", background: "#F5F8FE" }}>1,3tr</span><span style={{ padding: "10px 0", borderRadius: "8px", background: "#E3E8F2", color: "#4A5873" }}>Đóng</span><span style={{ padding: "10px 0", borderRadius: "8px", background: "#F5F8FE" }}>1,3tr</span>
-            <span className="small" style={{ textAlign: "left" }}>Tồn phòng</span><b>9</b><b>5</b><b>2</b><b>7</b>
-          </div>
-          <div className="row" style={{ justifyContent: "space-between", gap: "12px", marginTop: "14px", flexWrap: "wrap" }}><span className="small" style={{ fontSize: "12px" }}>Minh họa</span><span className="chip" style={{ background: "#E7FAFD" }}>Đã đồng bộ lên các kênh</span></div>
-        </div>
+        <img src="/assets/de8ede5a8ea84f4225237b7fd9aebf2d.png" alt="Màn hình Phòng &amp; Giá của Bellhop CMS" style={{ display: "block", width: "100%", aspectRatio: "4 / 3", objectFit: "cover", objectPosition: "right top" }} />
       </div>
     </div>
   </div></section><section className="sec" id="van-de">
@@ -99,9 +88,9 @@ export default class CMSPage extends DCLogic {
     </div>
   </div></section><section className="sec dark" id="cach-hoat-dong">
   <div className="wrap stack" style={{ gap: "56px" }}>
-    <div className="stack" style={{ gap: "16px", maxWidth: "760px" }}>
+    <div className="stack" style={{ gap: "16px", maxWidth: "100%" }}>
       <span className="eyebrow">Cách hoạt động</span>
-      <h2 className="h2" style={{ color: "#fff", fontSize: "clamp(26px, 3.2vw, 44px)", maxWidth: "none" }}>Thiết lập một lần, mọi kênh cùng cập nhật</h2>
+      <h2 className="h2" style={{ color: "#fff", fontSize: "clamp(24px, 3vw, 40px)", maxWidth: "none" }}>Thiết lập một lần, mọi kênh cùng cập nhật</h2>
       <p className="lead">Thời gian đồng bộ giá và tồn phòng: <span className="ph">[x phút]</span></p>
     </div>
     <div className="picker">
@@ -169,10 +158,6 @@ export default class CMSPage extends DCLogic {
           <li><span>Cập nhật giá và tồn phòng hàng loạt theo khoảng ngày, hạng phòng</span></li>
           <li><span>Nhận đặt phòng từ OTA về Bellhop PMS</span></li>
         </ul>
-        <div className="row" style={{ gap: "28px", flexWrap: "wrap" }}>
-          <span><b style={{ display: "block", fontSize: "34px", lineHeight: "1.1" }}><span className="ph">[x]</span></b><span className="small">kênh đang kết nối</span></span>
-          <span><b style={{ display: "block", fontSize: "34px", lineHeight: "1.1" }}><span className="ph">[x]</span></b><span className="small">kênh <span className="chip" style={{ height: "22px", fontSize: "11px" }}>Sắp ra mắt</span></span></span>
-        </div>
       </div>
       <div className="feat-vis bg-tint">
         <div className="card" style={{ padding: "22px", display: "flex", flexDirection: "column", gap: "12px", maxWidth: "460px", margin: "0 auto" }}>
